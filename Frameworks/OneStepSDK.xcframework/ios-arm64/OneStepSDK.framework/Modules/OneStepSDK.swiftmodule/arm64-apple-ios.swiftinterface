@@ -419,10 +419,10 @@ public struct OSTMotionMeasurement : Swift.Codable, Swift.Identifiable {
   public var status: Swift.Int
   public var error: OneStepSDK.OSTMeasurementError?
   public var result_state: Swift.Int?
-  public var metadata: OneStepSDK.OSTMeasurementMetadataOut?
+  public var metadata: OneStepSDK.OSTMeasurementMetadata?
   public var parameters: Swift.Dictionary<Swift.String, Swift.Double>?
   public var custom_metadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?
-  public init(id: Foundation.UUID, status: Swift.Int, error: OneStepSDK.OSTMeasurementError? = nil, result_state: Swift.Int? = nil, timestamp: Foundation.Date, type: Swift.String, metadata: OneStepSDK.OSTMeasurementMetadataOut? = nil, parameters: Swift.Dictionary<Swift.String, Swift.Double>? = nil, custom_metadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>? = nil)
+  public init(id: Foundation.UUID, status: Swift.Int, error: OneStepSDK.OSTMeasurementError? = nil, result_state: Swift.Int? = nil, timestamp: Foundation.Date, type: Swift.String, metadata: OneStepSDK.OSTMeasurementMetadata? = nil, parameters: Swift.Dictionary<Swift.String, Swift.Double>? = nil, custom_metadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>? = nil)
   public typealias ID = Foundation.UUID
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -441,7 +441,7 @@ public struct OSTMeasurementError : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct OSTMeasurementMetadataOut : Swift.Codable {
+public struct OSTMeasurementMetadata : Swift.Codable {
   public var locale: Swift.String?
   public var seconds: Swift.Int?
   public var steps: Swift.Int?
@@ -483,7 +483,6 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable {
   case walkingDistance
   case walkingCadenceVariability
   case walkingVelocityVariability
-  case steps
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OneStepSDK.OSTParamName]
   public typealias RawValue = Swift.String
