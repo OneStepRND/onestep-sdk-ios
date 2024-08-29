@@ -1,0 +1,218 @@
+
+{
+    "parameters": [
+        {
+            "param_name": "walk_score",
+            "display_name": "Walk score",
+            "sort_key": 10,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 30.0,
+            "high_range": 100.0,
+            "round_digits": 0
+        },
+        {
+            "param_name": "distance",
+            "display_name": "Distance",
+            "units": "m",
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 10000.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "cadence",
+            "display_name": "Step rate",
+            "units": "steps/minute",
+            "sort_key": 20,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 20.0,
+            "high_range": 140.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "cadence_variability",
+            "display_name": "Step rate variability",
+            "units": "%",
+            "sort_key": 21,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 7.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "velocity",
+            "display_name": "Velocity",
+            "units": "m/s",
+            "sort_key": 30,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.1,
+            "high_range": 2.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "velocity_variability",
+            "display_name": "Speed variability",
+            "units": "%",
+            "sort_key": 31,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 30.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "consistency",
+            "display_name": "Consistency",
+            "sort_key": 40,
+            "category": "general",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 40.0,
+            "high_range": 100.0,
+            "round_digits": 0
+        },
+        {
+            "param_name": "stride_length",
+            "display_name": "Stride length",
+            "units": "cm",
+            "sort_key": 50,
+            "category": "spatial",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 40.0,
+            "high_range": 160.0,
+            "round_digits": 0
+        },
+        {
+            "param_name": "step_length_left",
+            "display_name": "Step length left",
+            "units": "cm",
+            "sort_key": 80,
+            "category": "spatial",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 20.0,
+            "high_range": 80.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "step_length_right",
+            "display_name": "Step length right",
+            "units": "cm",
+            "sort_key": 70,
+            "category": "spatial",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 20.0,
+            "high_range": 80.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "step_length_asymmetry",
+            "display_name": "Step length asymmetry",
+            "units": "%",
+            "sort_key": 100,
+            "category": "spatial",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 20.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "base_width",
+            "display_name": "Base width",
+            "units": "cm",
+            "sort_key": 110,
+            "category": "spatial",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 50.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "double_support",
+            "display_name": "Double support",
+            "units": "%",
+            "sort_key": 120,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 20.0,
+            "high_range": 55.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "single_support_right",
+            "display_name": "Single support right",
+            "units": "%",
+            "sort_key": 150,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 10.0,
+            "high_range": 50.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "single_support_left",
+            "display_name": "Single support left",
+            "units": "%",
+            "sort_key": 140,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 10.0,
+            "high_range": 50.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "stance_right",
+            "display_name": "Stance right",
+            "units": "%",
+            "sort_key": 180,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 15.0,
+            "high_range": 100.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "stance_left",
+            "display_name": "Stance left",
+            "units": "%",
+            "sort_key": 170,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 15.0,
+            "high_range": 100.0,
+            "round_digits": 1
+        },
+        {
+            "param_name": "stance_asymmetry",
+            "display_name": "Stance asymmetry",
+            "units": "%",
+            "sort_key": 190,
+            "category": "temporal",
+            "activity": "walk",
+            "is_main_param": false,
+            "low_range": 0.0,
+            "high_range": 20.0,
+            "round_digits": 1
+        }
+    ]
+}

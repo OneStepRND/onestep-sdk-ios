@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "OneStepSDK",
+    name: "OneStepSDKiOS",
     products: [
         .library(
-            name: "OneStepSDK",
-            targets: ["OneStepSDK", "OneStep_iOS_SDK"])
+            name: "OneStepSDKiOS",
+            targets: ["OneStepSDKiOS", "OneStepSDK"])
     ],
     targets: [
         .target(
-            name: "OneStepSDK"),
-        .binaryTarget(name: "OneStep_iOS_SDK", path: "Frameworks/OneStep_iOS_SDK.xcframework"),
+            name: "OneStepSDKiOS"),
+        .binaryTarget(name: "OneStepSDK", path: "Frameworks/OneStepSDK.xcframework"),
     ]
 )

@@ -1,0 +1,6 @@
+framework module OneStepSDK {
+  umbrella header "OneStepSDK.h"
+  export *
+
+  module * { export * }
+}

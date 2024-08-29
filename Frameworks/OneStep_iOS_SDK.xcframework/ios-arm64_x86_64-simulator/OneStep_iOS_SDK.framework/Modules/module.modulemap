@@ -1,6 +1,0 @@
-framework module OneStep_iOS_SDK {
-  umbrella header "OneStep_iOS_SDK.h"
-  export *
-
-  module * { export * }
-}
