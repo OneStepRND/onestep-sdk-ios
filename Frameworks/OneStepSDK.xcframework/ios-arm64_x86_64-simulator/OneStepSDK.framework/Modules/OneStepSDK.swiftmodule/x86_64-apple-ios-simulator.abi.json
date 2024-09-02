@@ -5627,9 +5627,9 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "isConnected",
-            "printedName": "isConnected",
+            "kind": "Function",
+            "name": "isInitialized",
+            "printedName": "isInitialized()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5638,37 +5638,15 @@
                 "usr": "s:Sb"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:10OneStepSDK10OSTSDKCoreC11isConnectedSbvp",
-            "mangledName": "$s10OneStepSDK10OSTSDKCoreC11isConnectedSbvp",
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC13isInitializedSbyF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC13isInitializedSbyF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "Final",
               "AccessControl"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OneStepSDK10OSTSDKCoreC11isConnectedSbvg",
-                "mangledName": "$s10OneStepSDK10OSTSDKCoreC11isConnectedSbvg",
-                "moduleName": "OneStepSDK",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -9902,6 +9880,28 @@
             "declKind": "Func",
             "usr": "s:10OneStepSDK16OSTCoreInterfaceP10initialize5appId6apiKey08distinctH020identityVerification13configurationSbSS_S3SSgAA16OSTConfigurationCtYaF",
             "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP10initialize5appId6apiKey08distinctH020identityVerification13configurationSbSS_S3SSgAA16OSTConfigurationCtYaF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTCoreInterface>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OSTCoreInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isInitialized",
+            "printedName": "isInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK16OSTCoreInterfaceP13isInitializedSbyF",
+            "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP13isInitializedSbyF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTCoreInterface>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTCoreInterface>",
@@ -23604,28 +23604,28 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 13820,
+      "offset": 15279,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 13850,
+      "offset": 15309,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 13820,
+      "offset": 15279,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 13850,
+      "offset": 15309,
       "length": 12,
       "value": "\"production\""
     },
@@ -23660,28 +23660,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 494,
+      "offset": 495,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 498,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 503,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 569,
+      "offset": 543,
       "length": 2,
       "value": "10"
     },
@@ -24423,56 +24409,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2526,
+      "offset": 2564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2614,
+      "offset": 2652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2721,
+      "offset": 2759,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2805,
+      "offset": 2843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2905,
+      "offset": 2943,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2938,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
       "offset": 2976,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3018,
+      "offset": 3056,
       "length": 5,
       "value": "false"
     },
@@ -25657,7 +25643,7 @@
       "kind": "IntegerLiteral",
       "offset": 272,
       "length": 1,
-      "value": "0"
+      "value": "1"
     }
   ]
 }

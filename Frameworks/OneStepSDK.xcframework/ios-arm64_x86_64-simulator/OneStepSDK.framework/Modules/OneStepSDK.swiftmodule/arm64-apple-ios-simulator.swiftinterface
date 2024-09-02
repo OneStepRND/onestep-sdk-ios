@@ -161,9 +161,7 @@ extension Foundation.Data {
 }
 @_hasMissingDesignatedInitializers final public class OSTSDKCore : OneStepSDK.OSTCoreInterface {
   public static let shared: OneStepSDK.OSTSDKCore
-  final public var isConnected: Swift.Bool {
-    get
-  }
+  final public func isInitialized() -> Swift.Bool
   #if compiler(>=5.3) && $AsyncAwait
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration) async -> Swift.Bool
   #endif
@@ -330,6 +328,7 @@ public protocol OSTCoreInterface {
   #if compiler(>=5.3) && $AsyncAwait
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration) async -> Swift.Bool
   #endif
+  func isInitialized() -> Swift.Bool
   func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
   #if compiler(>=5.3) && $AsyncAwait
   func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
