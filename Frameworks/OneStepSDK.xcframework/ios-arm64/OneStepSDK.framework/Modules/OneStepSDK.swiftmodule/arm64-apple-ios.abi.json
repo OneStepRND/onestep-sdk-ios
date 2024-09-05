@@ -24353,56 +24353,70 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 743,
       "length": 20,
       "value": "\"OneStepSDKCoreData\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1137,
+      "offset": 780,
       "length": 5,
       "value": "\"mom\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 817,
       "length": 32,
       "value": "\"Failed to find Core Data model\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1318,
+      "offset": 961,
       "length": 32,
       "value": "\"Failed to load Core Data model\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 1934,
+      "offset": 1074,
       "length": 20,
       "value": "\"OneStepSDKCoreData\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1252,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1325,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 2222,
+      "offset": 1641,
       "length": 46,
       "value": "\"Unresolved error \""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 2248,
+      "offset": 1667,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Persistence\/OSTCoreDataPersistentContainer.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 1686,
       "length": 2,
       "value": "\"\""
     },
@@ -25643,7 +25657,7 @@
       "kind": "IntegerLiteral",
       "offset": 272,
       "length": 1,
-      "value": "1"
+      "value": "2"
     }
   ]
 }

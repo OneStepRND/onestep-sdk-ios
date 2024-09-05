@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hry+uzL1pZpwU3wdfoeuDzPPqek=
+		K3AQ3JFrbSAESWLZHglmTo1i29g=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tzP3bdLDYFpywE7WI0utRQKBbAU=
+		sKNB8Hegt3fn8yFZtW1m4uEIFhA=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		f2Jvk3gbXHEi5xHi/wUQ5ewxrDo=
+		RouYNiCsgdMQx3wv9oi8X71CwkA=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tzP3bdLDYFpywE7WI0utRQKBbAU=
+		sKNB8Hegt3fn8yFZtW1m4uEIFhA=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UslWol8/3zNhNu89GCdQEU2bN/k=
+		wSAvF4jYloTkkKPX1uHktZHHuHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7z7/JvL5yQ4Yr+5QdSSrpYVOpIccCaKElAwlrtDNTbc=
+			ogq0n/u9HU3Cq7nzuSVkFW8J4DLvijLhibe9OZnRFtc=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -106,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODm1N5Jj1oJ4LTwbJnSJvxUePKQ+8Tx+rZTP3/nJw6o=
+			7+oZfWrIXGzVVdjEcfTjl0KWoqB9Ox2R3T+Br3UCkhM=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7z7/JvL5yQ4Yr+5QdSSrpYVOpIccCaKElAwlrtDNTbc=
+			ogq0n/u9HU3Cq7nzuSVkFW8J4DLvijLhibe9OZnRFtc=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eZnUXHva0ewb3PmD0GGpXJ546Y2YoexWYCgG6tr8PFQ=
+			PrPIUFW2//Ojo1/NA8EeyT9dT6U91xfLyVlNmgFkgpE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
