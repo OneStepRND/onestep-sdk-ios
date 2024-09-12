@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		37giDvRG+8c0RZ/LVka1X3jNOFU=
+		2LawwQ0+v1iKmE9uLs7xniXJOZw=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		sKNB8Hegt3fn8yFZtW1m4uEIFhA=
+		iqUtor0g2uLwQiJso4TmBhZXEtw=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+dpsPoxjtkZXzOsRB/7bLvwiWZI=
+		d3spIL839peBscipMvWnd9R2KIk=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7ICzbFVu0iW8JGSf9rOZUi7p4Xw=
+		uBLtUU2TNnB670t4+pO6T+98ZIA=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+dpsPoxjtkZXzOsRB/7bLvwiWZI=
+		d3spIL839peBscipMvWnd9R2KIk=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vCkFN1BNHnqgR3vmzYIla+8mmY8=
+		9zZb8hCKPUjjzfTTAZTwuGEl7/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ogq0n/u9HU3Cq7nzuSVkFW8J4DLvijLhibe9OZnRFtc=
+			rJ89LpmDkpIhdcizSQ3BajINfQm9YGqSqTez5CgVBoU=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bRdHZsoclKUcDvtQ6Q9H3elf+agbcNQrmFdJFU8u4lU=
+			kYvfI0l9Fqg4Hsmw+mwYtPh+twruihmAltSBzLwj9/E=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j08h2P3F0LOqPxkcUTzMuMUx9PKPFpCZztcLbmZN6nQ=
+			QmpjFf2RQ0mDCpsOPZP7atEL+cblUuSYzlWgLlK4vVs=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bRdHZsoclKUcDvtQ6Q9H3elf+agbcNQrmFdJFU8u4lU=
+			kYvfI0l9Fqg4Hsmw+mwYtPh+twruihmAltSBzLwj9/E=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f3fvbk6/PihvMgXmbaNCb4ZOyc4MDIzg1EO8w77f6AM=
+			2m4xJnXvIpMCjMP6My6sW5DxLsGr3xsP36tGBjHPEsg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

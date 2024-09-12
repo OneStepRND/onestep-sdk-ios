@@ -16,7 +16,7 @@ The OneStep SDK is a comprehensive solution for integrating advanced motion anal
 
 ## Requirements
 
-- iOS 16 or later
+- iOS 15 or later
 - Xcode 15 or later
 
 ## Installation
