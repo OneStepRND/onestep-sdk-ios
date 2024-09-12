@@ -1,7 +1,7 @@
 
 # OneStepSDK for iOS
 
-[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg)](https://developer.apple.com/documentation/ios-ipados-release-notes)
+[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg)](https://developer.apple.com/documentation/ios-ipados-release-notes)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/OneStepSDK/OneStepSDK/releases)
 
 The OneStep SDK is a comprehensive solution for integrating advanced motion analysis capabilities into your iOS applications. It allows for real-time data collection, analysis, and insightful feedback based on motion data, tailored to your app’s needs.
