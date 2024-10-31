@@ -34,13 +34,18 @@ To start using the OneStep SDK, initialize it in your `AppDelegate` or equivalen
 ```swift
 import OneStepSDK
 
-let connectionResult = await OSTSDKCore.shared.initialize(
+OSTSDKCore.shared.initialize(
     appId: "<YOUR-APP-ID-HERE>",
     apiKey: "<YOUR-API-KEY-HERE>",
-    distinctId: "<A-UNIQUE-ID-FOR-CURRENT-USER-HERE>",
+    distinctId: "<A-UNIQUE-ID-FOR CURRENT-USER-HERE>",
     identityVerification: nil,
-    configuration: OSTConfiguration(enableMonitoringFeature: true)
-)
+    configuration: OSTConfiguration(enableMonitoringFeature: true)){ connectionResult in
+        if connectionResult {
+            self.connected = true
+        } else {
+            self.failedToConnect = true
+        }
+    }
 ```
 
 ### Real-time Motion Recording
