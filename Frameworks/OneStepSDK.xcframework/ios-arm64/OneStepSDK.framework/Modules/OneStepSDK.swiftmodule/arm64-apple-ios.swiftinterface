@@ -44,6 +44,9 @@ extension OneStepSDK.BackgroundSample {
     @objc set
   }
 }
+public protocol OSTAnalyticsHandler {
+  func trackEvent(eventName: Swift.String, properties: [Swift.String : Any])
+}
 public struct OSTUserAttributes {
   public enum Sex : Swift.String {
     case male
@@ -164,6 +167,7 @@ extension Foundation.Data {
   public static let shared: OneStepSDK.OSTSDKCore
   final public func isInitialized() -> Swift.Bool
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
+  final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
   final public func scheduleSyncTasks()
   final public func registerBGTasks()
   final public func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
@@ -175,7 +179,7 @@ extension Foundation.Data {
   final public func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
   final public func readMotionMeasurements(startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil) -> [OneStepSDK.OSTMotionMeasurement]
   #if compiler(>=5.3) && $AsyncAwait
-  final public func sync(runNow: Swift.Bool = true) async -> Swift.Bool
+  final public func sync() async -> Swift.Bool
   #endif
   final public func registerBackgroundMonitoring()
   final public func unregisterBackgroundMonitoring()
@@ -346,7 +350,7 @@ public protocol OSTCoreInterface {
   func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
   func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
   #if compiler(>=5.3) && $AsyncAwait
-  func sync(runNow: Swift.Bool) async -> Swift.Bool
+  func sync() async -> Swift.Bool
   #endif
 }
 public struct BackgroundMonitoringStats {
@@ -396,6 +400,7 @@ public enum OSTMixedType : Swift.Codable {
   case bool(Swift.Bool)
   case any(OneStepSDK.AnyCodable)
   case none
+  public func toString() -> Swift.String
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
