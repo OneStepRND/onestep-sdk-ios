@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OneStepSDK"
-  spec.version      = "1.1.1"
+  spec.version      = "1.1.2"
   spec.summary      = "OneStep iOS SDK"
 
   spec.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "15.0" # Adjust if necessary
 
   spec.source       = { :http => "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/1.1.1/OneStepSDK.xcframework.zip" }
-  spec.vendored_frameworks = "Frameworks/OneStepSDK.xcframework"
+  spec.vendored_frameworks = "OneStepSDK.xcframework"
 
   spec.requires_arc = true
 end
