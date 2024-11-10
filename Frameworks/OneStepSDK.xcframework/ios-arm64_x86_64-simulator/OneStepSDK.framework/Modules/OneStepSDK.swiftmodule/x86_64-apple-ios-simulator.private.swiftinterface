@@ -46,6 +46,8 @@ extension OneStepSDK.BackgroundSample {
 }
 public protocol OSTAnalyticsHandler {
   func trackEvent(eventName: Swift.String, properties: [Swift.String : Any])
+  func setSuperProperties(_ properties: [Swift.String : Any])
+  func setUserProperties(_ properties: [Swift.String : Any])
 }
 public struct OSTUserAttributes {
   public enum Sex : Swift.String {
