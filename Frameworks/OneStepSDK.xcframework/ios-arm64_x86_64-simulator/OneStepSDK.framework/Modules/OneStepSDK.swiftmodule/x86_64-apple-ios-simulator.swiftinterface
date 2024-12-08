@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OneStepSDK
 import AVFoundation
 import BackgroundTasks
@@ -173,16 +173,12 @@ extension Foundation.Data {
   final public func scheduleSyncTasks()
   final public func registerBGTasks()
   final public func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
-  #if compiler(>=5.3) && $AsyncAwait
   final public func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
-  #endif
   final public func disconnect()
   final public func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
   final public func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
   final public func readMotionMeasurements(startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil) -> [OneStepSDK.OSTMotionMeasurement]
-  #if compiler(>=5.3) && $AsyncAwait
   final public func sync() async -> Swift.Bool
-  #endif
   final public func registerBackgroundMonitoring()
   final public func unregisterBackgroundMonitoring()
   final public func isBackgroundMonitoringActive() -> Swift.Bool
@@ -190,12 +186,8 @@ extension Foundation.Data {
   final public func backgroundMonitoringStats() -> OneStepSDK.BackgroundMonitoringStats
   final public func aggregateBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?, window: OneStepSDK.OSTWindow = .day) -> [OneStepSDK.OSTAggregatedBackgroundRecord]
   final public func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
-  #if compiler(>=5.3) && $AsyncAwait
   final public func deleteMotionMesurement(by uuid: Foundation.UUID) async -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   final public func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
-  #endif
   @objc deinit
 }
 public enum OSTWindow {
@@ -222,9 +214,7 @@ public struct BackgroundSampleBL {
     get
   }
   public func start(activityType: OneStepSDK.OSTActivityType?, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
-  #if compiler(>=5.3) && $AsyncAwait
   public func analyze() async -> OneStepSDK.OSTMotionMeasurement?
-  #endif
   public func stop()
   public func reset()
   public func startInAppManualRecording() -> Foundation.UUID?
@@ -256,7 +246,7 @@ public enum OSTAssistiveDevice : Swift.Int, Swift.Codable, Swift.CaseIterable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [OneStepSDK.OSTAssistiveDevice]
   public typealias RawValue = Swift.Int
-  public static var allCases: [OneStepSDK.OSTAssistiveDevice] {
+  nonisolated public static var allCases: [OneStepSDK.OSTAssistiveDevice] {
     get
   }
   public var rawValue: Swift.Int {
@@ -278,7 +268,7 @@ public enum OSTLevelOfAssistance : Swift.Int, Swift.Codable, Swift.CaseIterable 
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [OneStepSDK.OSTLevelOfAssistance]
   public typealias RawValue = Swift.Int
-  public static var allCases: [OneStepSDK.OSTLevelOfAssistance] {
+  nonisolated public static var allCases: [OneStepSDK.OSTLevelOfAssistance] {
     get
   }
   public var rawValue: Swift.Int {
@@ -332,17 +322,11 @@ public protocol OSTCoreInterface {
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   func isInitialized() -> Swift.Bool
   func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
-  #if compiler(>=5.3) && $AsyncAwait
   func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
-  #endif
   func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
   func readMotionMeasurements(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTMotionMeasurement]
-  #if compiler(>=5.3) && $AsyncAwait
   func deleteMotionMesurement(by uuid: Foundation.UUID) async -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
-  #endif
   func registerBackgroundMonitoring()
   func unregisterBackgroundMonitoring()
   func isBackgroundMonitoringActive() -> Swift.Bool
@@ -351,9 +335,7 @@ public protocol OSTCoreInterface {
   func aggregateBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?, window: OneStepSDK.OSTWindow) -> [OneStepSDK.OSTAggregatedBackgroundRecord]
   func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
   func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
-  #if compiler(>=5.3) && $AsyncAwait
   func sync() async -> Swift.Bool
-  #endif
 }
 public struct BackgroundMonitoringStats {
   public var activated: Swift.Bool
@@ -381,9 +363,7 @@ public protocol OSTRecorderProtocol {
   var recorderState: Combine.AnyPublisher<OneStepSDK.OSTRecorderState, Swift.Never> { get }
   var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> { get }
   func start(activityType: OneStepSDK.OSTActivityType?, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
-  #if compiler(>=5.3) && $AsyncAwait
   func analyze() async -> OneStepSDK.OSTMotionMeasurement?
-  #endif
   func stop()
   func reset()
 }
@@ -505,7 +485,7 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OneStepSDK.OSTParamName]
   public typealias RawValue = Swift.String
-  public static var allCases: [OneStepSDK.OSTParamName] {
+  nonisolated public static var allCases: [OneStepSDK.OSTParamName] {
     get
   }
   public var rawValue: Swift.String {
@@ -645,9 +625,7 @@ public protocol OSTMotionDataService {
   func getNorm(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTNorm?
   func isWithinNorm(param: OneStepSDK.OSTParamName, value: Swift.Double) -> Swift.Bool?
   func discreteScore(for param: OneStepSDK.OSTParamName, value: Swift.Double) -> OneStepSDK.OSTDiscreteColor?
-  #if compiler(>=5.3) && $AsyncAwait
   func getInsightsBy(measurementID uuid: Foundation.UUID) async throws -> [OneStepSDK.OSTInsight]
-  #endif
 }
 public struct OSTAggregatedBackgroundRecord {
   public var startTime: Foundation.Date
