@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "OneStepSDK",
+    "printedName": "OneStepSDK",
     "children": [
       {
         "kind": "Import",
@@ -169,6 +169,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -391,6 +407,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2771,6 +2801,22 @@
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           }
         ],
@@ -2781,6 +2827,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2803,6 +2865,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4143,6 +4221,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4874,6 +4966,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5195,6 +5303,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawRepresentable",
@@ -5533,6 +5655,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -5680,6 +5816,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -6478,6 +6628,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "OSTCoreInterface",
             "printedName": "OSTCoreInterface",
             "usr": "s:10OneStepSDK16OSTCoreInterfaceP",
@@ -6669,6 +6833,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6931,6 +7109,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -7435,6 +7629,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "OSTRecorderProtocol",
             "printedName": "OSTRecorderProtocol",
             "usr": "s:10OneStepSDK19OSTRecorderProtocolP",
@@ -7697,6 +7905,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8144,6 +8366,9 @@
             "moduleName": "OneStepSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -8185,6 +8410,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8706,6 +8945,9 @@
             "moduleName": "OneStepSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -8747,6 +8989,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9029,6 +9285,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9263,6 +9533,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9626,6 +9910,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9672,6 +9970,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -10052,6 +10366,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -10708,6 +11038,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11515,6 +11861,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -12260,6 +12622,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -12589,6 +12965,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12715,6 +13107,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13162,6 +13568,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -13279,6 +13699,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -14618,6 +15052,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -15013,6 +15461,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -16274,6 +16736,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -16412,6 +16888,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -16625,6 +17115,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -16875,6 +17379,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17891,6 +18409,9 @@
             "moduleName": "OneStepSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -17932,6 +18453,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -18554,6 +19089,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -18783,6 +19332,22 @@
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -19031,6 +19596,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -19096,6 +19675,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -19118,6 +19713,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -19467,6 +20078,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -19672,6 +20297,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20028,6 +20667,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -20129,7 +20782,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -20741,6 +21410,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -21044,6 +21727,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21428,6 +22127,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -22085,6 +22800,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22491,6 +23220,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -22650,6 +23395,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -23131,6 +23892,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -23360,6 +24135,22 @@
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
             ]
           },
           {
@@ -23608,6 +24399,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -23673,6 +24478,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -23705,6 +24526,22 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -24220,6 +25057,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -24317,12 +25168,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -24365,41 +25210,6 @@
       "offset": 1387,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 334,
-      "length": 6,
-      "value": "\"uuid\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 360,
-      "length": 5,
-      "value": "\"url\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 385,
-      "length": 5,
-      "value": "\"key\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 413,
-      "length": 8,
-      "value": "\"bucket\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 25,
-      "value": "\"upload_file_form_fields\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/S3UploadUrlResponse.swift",
@@ -24507,116 +25317,39 @@
       "value": "128"
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3292,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3320,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3354,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3390,
-      "length": 2,
-      "value": "64"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3426,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3292,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3320,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3354,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3390,
-      "length": 2,
-      "value": "64"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3426,
-      "length": 3,
-      "value": "128"
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
       "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 371,
       "length": 11,
       "value": "\"api_token\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
       "kind": "StringLiteral",
-      "offset": 346,
+      "offset": 408,
       "length": 12,
       "value": "\"agent_uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
       "kind": "StringLiteral",
-      "offset": 386,
+      "offset": 448,
       "length": 14,
       "value": "\"patient_uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
       "kind": "StringLiteral",
-      "offset": 309,
-      "length": 11,
-      "value": "\"api_token\""
+      "offset": 492,
+      "length": 16,
+      "value": "\"workspace_uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
       "kind": "StringLiteral",
-      "offset": 346,
-      "length": 12,
-      "value": "\"agent_uuid\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectedUserResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 386,
-      "length": 14,
-      "value": "\"patient_uuid\""
+      "offset": 538,
+      "length": 10,
+      "value": "\"org_uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTBackgroundRecord.swift",
@@ -24651,7 +25384,7 @@
       "kind": "IntegerLiteral",
       "offset": 585,
       "length": 1,
-      "value": "5"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
@@ -24670,35 +25403,21 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 10564,
+      "offset": 10649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 22951,
+      "offset": 24307,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 22981,
-      "length": 12,
-      "value": "\"production\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
-      "kind": "StringLiteral",
-      "offset": 22951,
-      "length": 7,
-      "value": "\"debug\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
-      "kind": "StringLiteral",
-      "offset": 22981,
+      "offset": 24337,
       "length": 12,
       "value": "\"production\""
     },
@@ -24759,13 +25478,6 @@
       "value": "\"dark_red\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTDiscreteColor.swift",
-      "kind": "StringLiteral",
-      "offset": 192,
-      "length": 10,
-      "value": "\"dark_red\""
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
@@ -24820,230 +25532,6 @@
       "offset": 332,
       "length": 1,
       "value": "7"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 180,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 199,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 217,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 237,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 285,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 307,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 332,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 180,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 199,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 217,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 237,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 285,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 307,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 332,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 428,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 461,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 492,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 523,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 554,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 585,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 614,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 428,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 461,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 492,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 523,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 554,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 585,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 614,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "8"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
@@ -25132,63 +25620,70 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 694,
+      "length": 18,
+      "value": "\"\/config\/features\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
+      "kind": "StringLiteral",
+      "offset": 785,
       "length": 51,
       "value": "\"\/data_collection\/perception\/signed_s3_upload_url\/\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 829,
+      "offset": 887,
       "length": 36,
       "value": "\"\/data_collection\/perception\/inapp\/\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 971,
       "length": 41,
       "value": "\"\/data_collection\/perception\/background\/\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 991,
+      "offset": 1049,
       "length": 15,
       "value": "\"\/motion\/norms\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 1114,
       "length": 18,
       "value": "\"\/motion\/metadata\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1125,
+      "offset": 1183,
       "length": 43,
       "value": "\"\/motion\/measurement_insights_no_retention\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1321,
+      "offset": 1379,
       "length": 23,
       "value": "\"\/data\/background\/list\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1652,
+      "offset": 1710,
       "length": 24,
       "value": "\"\/data\/measurement\/list\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/OSTBackgroundEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 855,
+      "offset": 893,
       "length": 5,
       "value": "false"
     },
@@ -25228,41 +25723,6 @@
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 153,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 175,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 221,
-      "length": 8,
-      "value": "\"DELETE\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
-      "kind": "StringLiteral",
-      "offset": 247,
-      "length": 7,
-      "value": "\"PATCH\""
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
       "offset": 469,
@@ -25333,74 +25793,18 @@
       "value": "\"weight_kg\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 469,
-      "length": 12,
-      "value": "\"first_name\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 506,
-      "length": 11,
-      "value": "\"last_name\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 549,
-      "length": 19,
-      "value": "\"profile_image_url\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 596,
-      "length": 15,
-      "value": "\"date_of_birth\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 633,
-      "length": 8,
-      "value": "\"emr_id\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 669,
-      "length": 14,
-      "value": "\"phone_number\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 705,
-      "length": 7,
-      "value": "\"email\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 732,
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3072,
       "length": 5,
-      "value": "\"sex\""
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 762,
-      "length": 11,
-      "value": "\"height_cm\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 798,
-      "length": 11,
-      "value": "\"weight_kg\""
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15391,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTMultipartRequest.swift",
@@ -25408,34 +25812,6 @@
       "offset": 187,
       "length": 6,
       "value": "\"\r\n\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
-      "kind": "StringLiteral",
-      "offset": 863,
-      "length": 7,
-      "value": "\"Above\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
-      "kind": "StringLiteral",
-      "offset": 888,
-      "length": 7,
-      "value": "\"Below\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
-      "kind": "StringLiteral",
-      "offset": 914,
-      "length": 8,
-      "value": "\"Inside\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
-      "kind": "StringLiteral",
-      "offset": 942,
-      "length": 9,
-      "value": "\"Outside\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
@@ -25711,181 +26087,6 @@
       "value": "\"custom_metadata\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 690,
-      "length": 6,
-      "value": "\"uuid\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 725,
-      "length": 15,
-      "value": "\"perceive_time\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 762,
-      "length": 8,
-      "value": "\"s3_key\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 793,
-      "length": 8,
-      "value": "\"bucket\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 836,
-      "length": 22,
-      "value": "\"retention_expires_at\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 881,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 913,
-      "length": 9,
-      "value": "\"seconds\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 951,
-      "length": 15,
-      "value": "\"activity_name\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 6,
-      "value": "\"note\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1016,
-      "length": 9,
-      "value": "\"geo_lat\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1048,
-      "length": 9,
-      "value": "\"geo_lng\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1083,
-      "length": 11,
-      "value": "\"pedometer\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1115,
-      "length": 6,
-      "value": "\"tags\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1155,
-      "length": 21,
-      "value": "\"level_of_assistance\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1208,
-      "length": 18,
-      "value": "\"assistive_device\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTInAppWalkMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 1257,
-      "length": 17,
-      "value": "\"custom_metadata\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 2994,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3026,
-      "length": 9,
-      "value": "\"seconds\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3057,
-      "length": 7,
-      "value": "\"steps\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3087,
-      "length": 9,
-      "value": "\"geo_lat\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3119,
-      "length": 9,
-      "value": "\"geo_lng\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3149,
-      "length": 6,
-      "value": "\"tags\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3176,
-      "length": 6,
-      "value": "\"note\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3216,
-      "length": 21,
-      "value": "\"level_of_assistance\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "StringLiteral",
-      "offset": 3269,
-      "length": 18,
-      "value": "\"assistive_device\""
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
       "offset": 2994,
@@ -25968,90 +26169,6 @@
       "offset": 3954,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3845,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3899,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3954,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3845,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3899,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3954,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4315,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4335,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4357,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4315,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4335,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4357,
-      "length": 1,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
@@ -26234,202 +26351,6 @@
       "offset": 1236,
       "length": 22,
       "value": "\"velocity_variability\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 168,
-      "length": 9,
-      "value": "\"cadence\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 10,
-      "value": "\"velocity\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 16,
-      "value": "\"double_support\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 290,
-      "length": 8,
-      "value": "\"stance\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 333,
-      "length": 18,
-      "value": "\"stance_asymmetry\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 383,
-      "length": 15,
-      "value": "\"stride_length\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 428,
-      "length": 13,
-      "value": "\"step_length\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 475,
-      "length": 18,
-      "value": "\"step_length_left\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 528,
-      "length": 19,
-      "value": "\"step_length_right\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 581,
-      "length": 18,
-      "value": "\"step_length_diff\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 638,
-      "length": 23,
-      "value": "\"step_length_asymmetry\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 13,
-      "value": "\"consistency\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 733,
-      "length": 11,
-      "value": "\"hip_range\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 773,
-      "length": 12,
-      "value": "\"base_width\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 827,
-      "length": 26,
-      "value": "\"double_support_asymmetry\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 891,
-      "length": 22,
-      "value": "\"single_support_right\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 950,
-      "length": 21,
-      "value": "\"single_support_left\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1002,
-      "length": 14,
-      "value": "\"stance_right\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1046,
-      "length": 13,
-      "value": "\"stance_left\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1088,
-      "length": 12,
-      "value": "\"walk_score\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1128,
-      "length": 10,
-      "value": "\"distance\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1176,
-      "length": 21,
-      "value": "\"cadence_variability\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
-      "kind": "StringLiteral",
-      "offset": 1236,
-      "length": 22,
-      "value": "\"velocity_variability\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 340,
-      "length": 10,
-      "value": "\"org_uuid\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 373,
-      "length": 9,
-      "value": "\"api_key\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 409,
-      "length": 13,
-      "value": "\"distinct_id\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 447,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 495,
-      "length": 38,
-      "value": "\"identity_verification_hmac_hexdigest\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTConnectUserRequest.swift",
@@ -26468,59 +26389,17 @@
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/OSTBackgroundRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 288,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/OSTBackgroundRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 331,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 395,
-      "length": 6,
-      "value": "\"uuid\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 430,
-      "length": 15,
-      "value": "\"perceive_time\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 467,
-      "length": 8,
-      "value": "\"s3_key\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 498,
-      "length": 8,
-      "value": "\"bucket\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 541,
-      "length": 22,
-      "value": "\"retention_expires_at\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 586,
-      "length": 8,
-      "value": "\"locale\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 618,
-      "length": 9,
-      "value": "\"trigger\""
+      "offset": 406,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTBgSampleMetadata.swift",
@@ -26595,56 +26474,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 1044,
+      "offset": 1053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1105,
+      "offset": 1114,
       "length": 24,
       "value": "\"AccelerometerDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
+      "offset": 1189,
       "length": 19,
       "value": "\"RotationDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1259,
       "length": 19,
       "value": "\"ActivityDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1321,
+      "offset": 1330,
       "length": 20,
       "value": "\"AltimeterDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1398,
       "length": 16,
       "value": "\"StepsDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1456,
+      "offset": 1465,
       "length": 19,
       "value": "\"LocationDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/SensorsRecorder\/OSTSensorsReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2286,
+      "offset": 2243,
       "length": 5,
       "value": "false"
     },
@@ -26654,55 +26533,6 @@
       "offset": 1002,
       "length": 11,
       "value": "\"fall_risk\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTMeasurementExtended.swift",
-      "kind": "StringLiteral",
-      "offset": 1002,
-      "length": 11,
-      "value": "\"fall_risk\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 175,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 199,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 229,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 175,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 199,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 229,
-      "length": 1,
-      "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/OSTRecordingTrigger.swift",
@@ -26782,67 +26612,11 @@
       "value": "\"Range of Motion\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
-      "length": 9,
-      "value": "\"General\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 645,
-      "length": 9,
-      "value": "\"Spatial\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 10,
-      "value": "\"Temporal\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 711,
-      "length": 17,
-      "value": "\"Range of Motion\""
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTLoggerSDK.swift",
       "kind": "Dictionary",
       "offset": 466,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTPatientData.swift",
-      "kind": "StringLiteral",
-      "offset": 448,
-      "length": 12,
-      "value": "\"first_name\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTPatientData.swift",
-      "kind": "StringLiteral",
-      "offset": 485,
-      "length": 11,
-      "value": "\"last_name\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTPatientData.swift",
-      "kind": "StringLiteral",
-      "offset": 522,
-      "length": 12,
-      "value": "\"start_time\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTPatientData.swift",
-      "kind": "StringLiteral",
-      "offset": 565,
-      "length": 17,
-      "value": "\"locale_timezone\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/OSTPatientData.swift",
@@ -26936,48 +26710,6 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1134,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1158,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1180,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1134,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1158,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1180,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/SensorChanel.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
@@ -27003,7 +26735,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "2"
+      "value": "5"
     }
   ]
 }

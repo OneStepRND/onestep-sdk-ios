@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O5OEquKXRV5K/5IoTe9wat9rBZk=
+		2ohqhbb9gBnwfZ9ss2RKo5UA3+I=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LHzDDFI8YweWjXT5/lt+mzt2EYA=
+		TJSKWdoxJfD7Z77GZ7nK/MHoL0s=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yI/KltjhFPS8VS9bPlQMNT2nu+I=
+		MBo4YZyyLfZwU2ujC1K9B1AIXl4=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uBLtUU2TNnB670t4+pO6T+98ZIA=
+		cMIMUVFRQ7O4qb7LpT4OPqmveF0=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yI/KltjhFPS8VS9bPlQMNT2nu+I=
+		MBo4YZyyLfZwU2ujC1K9B1AIXl4=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PXPOiQgpwwBNS7hAV5a2QbE62qA=
+		pUo77nJUdjDMUg401OG7BqbHQSU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>OneStepSDKCoreData.mom</key>
 		<data>
-		yNm5BNiXqnGWpFGRLHjw/B0dqyk=
+		jlKijqME0gLOIInkejVPxXTFaoc=
 		</data>
 		<key>ParemetersFallBack.json</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FXPwtSjo2qenJskOnboAe7b8f59XzB8VLy9JlrT8hSo=
+			4qcNxHRZY5j0/3mnHL/qPB+q7ZhvpDr0YNG/BZc+4mY=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hHzSofV+qNufvewmTOO5AK4G93d+LheW1YfcW/RFjXM=
+			BEX5pO9KYXSLFy9E9EIE1JQmaJoIs23p1RY235cxVx0=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QmpjFf2RQ0mDCpsOPZP7atEL+cblUuSYzlWgLlK4vVs=
+			GcUmNlzBIEB1LgEaDmTmJhDfsVY+5+D+HX7GUUq/1xg=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hHzSofV+qNufvewmTOO5AK4G93d+LheW1YfcW/RFjXM=
+			BEX5pO9KYXSLFy9E9EIE1JQmaJoIs23p1RY235cxVx0=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dBLGEN9Ro8liEpg0mHY1DcU+NLSm3lFQQMgoz5OAkY0=
+			NArApVxdixS7i1WkwipyqogqNbuyaHumOr7hXbB7hoI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4v0WcP4/GJbDllSLEzATia/4QO/v3vNrp4+EzqQNQA=
+			Tq5XMuXDVOARSYv6CXu6I4waaqP1Cfaf2R33Gl7HJK4=
 			</data>
 		</dict>
 		<key>ParemetersFallBack.json</key>
