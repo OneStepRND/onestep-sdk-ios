@@ -50,12 +50,20 @@ public protocol OSTAnalyticsHandler {
   func setUserProperties(_ properties: [Swift.String : Any])
 }
 public struct OSTUserAttributes {
-  public enum Sex : Swift.String {
+  public enum Sex : Swift.String, Swift.CaseIterable, Swift.Identifiable {
     case male
     case female
     case other
+    public var id: Swift.String {
+      get
+    }
     public init?(rawValue: Swift.String)
+    public typealias AllCases = [OneStepSDK.OSTUserAttributes.Sex]
+    public typealias ID = Swift.String
     public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [OneStepSDK.OSTUserAttributes.Sex] {
+      get
+    }
     public var rawValue: Swift.String {
       get
     }
@@ -375,6 +383,13 @@ public enum OSTActivityType : Swift.String {
     get
   }
 }
+public protocol OSTMotionDataService {
+  func getParameterMetadata(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTParameterMetadata?
+  func getNorm(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTNorm?
+  func isWithinNorm(param: OneStepSDK.OSTParamName, value: Swift.Double) -> Swift.Bool?
+  func discreteScore(for param: OneStepSDK.OSTParamName, value: Swift.Double) -> OneStepSDK.OSTDiscreteColor?
+  func getInsightsBy(measurementID uuid: Foundation.UUID) async throws -> [OneStepSDK.OSTInsight]
+}
 public enum OSTMixedType : Swift.Codable {
   case string(Swift.String)
   case double(Swift.Double)
@@ -619,13 +634,6 @@ extension OneStepSDK.MotionMeasurement {
 @_inheritsConvenienceInitializers @objc(BackgroundSample) public class BackgroundSample : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
-}
-public protocol OSTMotionDataService {
-  func getParameterMetadata(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTParameterMetadata?
-  func getNorm(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTNorm?
-  func isWithinNorm(param: OneStepSDK.OSTParamName, value: Swift.Double) -> Swift.Bool?
-  func discreteScore(for param: OneStepSDK.OSTParamName, value: Swift.Double) -> OneStepSDK.OSTDiscreteColor?
-  func getInsightsBy(measurementID uuid: Foundation.UUID) async throws -> [OneStepSDK.OSTInsight]
 }
 public struct OSTAggregatedBackgroundRecord {
   public var startTime: Foundation.Date
