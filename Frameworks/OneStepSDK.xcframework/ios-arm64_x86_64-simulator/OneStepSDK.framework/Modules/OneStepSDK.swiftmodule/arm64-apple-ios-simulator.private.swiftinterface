@@ -17,6 +17,7 @@ import Network
 import Swift
 import SwiftUI
 import UIKit
+import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -227,6 +228,7 @@ public struct BackgroundSampleBL {
   public func reset()
   public func startInAppManualRecording() -> Foundation.UUID?
   public func removeMotionMeasurement(withId id: Foundation.UUID)
+  public func triggerBgTask()
   public func getAllBackgroundSamples() -> [OneStepSDK.BackgroundSampleBL]
   public func removeBackgroundSample(withDate date: Foundation.Date)
   @objc deinit

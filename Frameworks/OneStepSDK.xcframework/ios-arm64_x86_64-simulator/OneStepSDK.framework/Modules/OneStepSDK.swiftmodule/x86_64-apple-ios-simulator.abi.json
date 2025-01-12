@@ -205,6 +205,30 @@
         "moduleName": "OneStepSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "OSTUserAttributes",
         "printedName": "OSTUserAttributes",
@@ -4531,6 +4555,30 @@
       },
       {
         "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6065,7 +6113,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -7711,6 +7760,27 @@
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "triggerBgTask",
+            "printedName": "triggerBgTask()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK11OSTRecorderC13triggerBgTaskyyF",
+            "mangledName": "$s10OneStepSDK11OSTRecorderC13triggerBgTaskyyF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -14113,6 +14183,23 @@
             "mangledName": "$sSE"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
       },
       {
         "kind": "Import",
@@ -25357,6 +25444,55 @@
       "value": "30"
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "FloatLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 655,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "FloatLiteral",
+      "offset": 861,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4382,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 4434,
+      "length": 27,
+      "value": "\"MotionActivitySerialQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6376,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/AppLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 6428,
+      "length": 25,
+      "value": "\"DeviceMotionSerialQueue\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTUserAttributes.swift",
       "kind": "Dictionary",
       "offset": 1472,
@@ -25469,6 +25605,27 @@
       "value": "128"
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/TerminationNotifications.swift",
+      "kind": "IntegerLiteral",
+      "offset": 785,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/TerminationNotifications.swift",
+      "kind": "StringLiteral",
+      "offset": 818,
+      "length": 51,
+      "value": "\"OST.TerminationNotifications.LastNotificationDate\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/TerminationNotifications.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 54,
+      "value": "\"OST.TerminationNotifications.PendingNotificationDate\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKConnectedUserResponse.swift",
       "kind": "StringLiteral",
       "offset": 371,
@@ -25527,56 +25684,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 284,
+      "offset": 454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 595,
+      "offset": 619,
       "length": 22,
       "value": "\"co.onestep.syncQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 664,
+      "offset": 688,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 668,
+      "offset": 692,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 716,
+      "offset": 740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 11205,
+      "offset": 12028,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 25901,
+      "offset": 26724,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 25931,
+      "offset": 26754,
       "length": 12,
       "value": "\"production\""
     },
@@ -25751,98 +25908,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 447,
-      "length": 39,
-      "value": "\"https:\/\/dev.app.onestep.co\/api\/sdk\/v1\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 489,
-      "length": 35,
-      "value": "\"https:\/\/app.onestep.co\/api\/sdk\/v1\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 608,
-      "length": 16,
-      "value": "\"\/auth\/connect\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 670,
-      "length": 19,
-      "value": "\"\/patient\/profile\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 757,
-      "length": 16,
-      "value": "\"\/config\/agent\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 813,
-      "length": 18,
-      "value": "\"\/config\/features\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 904,
-      "length": 51,
-      "value": "\"\/data_collection\/perception\/signed_s3_upload_url\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1006,
-      "length": 36,
-      "value": "\"\/data_collection\/perception\/inapp\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1090,
-      "length": 41,
-      "value": "\"\/data_collection\/perception\/background\/\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1168,
-      "length": 15,
-      "value": "\"\/motion\/norms\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1233,
-      "length": 18,
-      "value": "\"\/motion\/metadata\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 43,
-      "value": "\"\/motion\/measurement_insights_no_retention\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
-      "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1761,
       "length": 23,
       "value": "\"\/data\/background\/list\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 2092,
       "length": 24,
       "value": "\"\/data\/measurement\/list\""
     },
@@ -26139,6 +26212,48 @@
       "offset": 416,
       "length": 21,
       "value": "\"yyyy-MM-dd HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 239,
+      "length": 26,
+      "value": "\"application-will-suspend\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 25,
+      "value": "\"application-did-suspend\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 27,
+      "value": "\"application-did-unsuspend\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 32,
+      "value": "\"suspend-status-recorder-failed\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1313,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/AppLogger\/SuspendStatusRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1654,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
@@ -26794,7 +26909,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKLoggerSDK.swift",
       "kind": "Dictionary",
-      "offset": 1077,
+      "offset": 1076,
       "length": 3,
       "value": "[]"
     },
