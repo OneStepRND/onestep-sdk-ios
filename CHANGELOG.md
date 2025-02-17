@@ -1,3 +1,15 @@
+## OneStep iOS SDK 1.2.0-rc
+###### Release Date: 2025-02-13
+
+### ⚠️ SDK interface changes:
+* **HealthKit Capability:** The HealthKit capability must be enabled. It is recommended to request authorization for at least step count to ensure compatibility with OneStep features.
+* **Background Tasks:** To enable background data sync, add the **"Background Fetch"** execution mode and register `"co.onestep.bgsync"` under **BGTaskSchedulerPermittedIdentifiers** in your app’s `Info.plist`.
+
+### 🪄 Enhancements and fixes
+* Data is now synced in the background (under certain constraints), reducing delays caused by waiting for the next app launch.
+* HealthKit Integration: for daily step counter, walking bouts (experimental), and daily mobility parameters.
+* Data sync strategy and background monitoring intensity are now configurable.
+
 ## OneStep iOS SDK 1.1.0
 ###### Release Date: 2024-10-08
 
