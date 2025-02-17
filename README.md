@@ -1,91 +1,140 @@
+# [OneStep](https://www.onestep.co/) Collect SDK for iOS
 
-# OneStepSDK for iOS
+[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/OneStepRND/onestep-uikit-ios-spm)
+[![Languages](https://img.shields.io/badge/language-Swift-orange.svg)](https://github.com/OneStepRND/onestep-uikit-ios-spm)
+[![Version](https://img.shields.io/badge/version-1.2.0.beta-blue.svg)](https://github.com/OneStepSDK/OneStepSDK/releases)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-green.svg)](https://github.com/OneStepRND/onestep-uikit-ios-spm)
+![Commercial License](https://img.shields.io/badge/license-Commercial-green.svg)
 
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg)](https://developer.apple.com/documentation/ios-ipados-release-notes)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/OneStepSDK/OneStepSDK/releases)
+## Table of Contents
+1. [Introduction](#introduction)  
+2. [Features](#features)  
+3. [Requirements](#requirements)  
+4. [Before You Begin](#before-you-begin)  
+5. [Getting Started](#getting-started)  
+6. [Installation](#installation)  
+7. [Permissions & Background Modes](#permissions--background-modes)  
+8. [Documentation](#documentation)  
+9. [Support](#support)
 
-The OneStep SDK is a comprehensive solution for integrating advanced motion analysis capabilities into your iOS applications. It allows for real-time data collection, analysis, and insightful feedback based on motion data, tailored to your app’s needs.
+## Introduction
+The OneStep Collect SDK is a comprehensive solution for integrating advanced motion analysis capabilities into your iOS applications. It allows for real-time data collection, analysis, and insightful feedback based on motion data.
 
 ## Features
 
-- **Real-time Motion Analysis:** Capture and analyze motion data using your device's built-in sensors.
-- **Background Monitoring:** Continuously monitor and analyze motion data, even when the app is in the background.
-- **Customizable UI Components:** Easily integrate OneStep’s pre-built UI components into your app.
-- **Seamless Data Integration:** Sync motion data with cloud services for comprehensive analysis and storage.
-- **Motion Insights:** Leverage metadata, norms, and insights to enhance motion analysis and deliver actionable results.
+### 1. Real-time Motion Analysis
+Capture and analyze motion data using your device's built-in sensors.
+
+### 2. Background Monitoring
+Continuously monitor and analyze motion data, even when the app is in the background.
+
+### 3. OneStep AI Motion Engine
+Leverage metadata, norms, and insights to enhance motion analysis and deliver actionable results.
+
+### 4. Customizable UI Components
+Easily integrate OneStep’s [pre-built UI components](https://github.com/OneStepRND/onestep-uikit-ios-spm) into your app.
+
+### 5. Data Integration
+Sync motion data with cloud services for comprehensive analysis and storage.
+
+### 6. HealthKit Integration
+Pairs Apple’s 24/7 activity tracking with OneStep’s deep gait analysis for a complete view of user mobility.
 
 ## Requirements
+- iOS 16 or later
+- Xcode 16 or later
+- **HealthKit** capability
+- **Background Execution** modes for background monitoring
 
-- iOS 15 or later
-- Xcode 15 or later
+## Before You Begin
 
-## Installation
+### Obtaining Your API Credentials
+You will need the following credentials from OneStep:
+- **App ID** – Your application’s unique identifier  
+- **API Key** – The key associated with your OneStep account  
 
-### Swift Package Manager
-
-Add `https://github.com/OneStepRND/onestep-sdk-ios` as a Swift Package in your Xcode project.
+These can be found in the OneStep back-office under **Developers > Settings**.
 
 ## Getting Started
 
-### Initializing the SDK
+### 1. Explore the Sample App
+To see OneStep Collect in action, check out our sample apps in the GitHub repository:
 
-To start using the OneStep SDK, initialize it in your `AppDelegate` or equivalent entry point of your app:
+- [OneStep UIKit pre-built UI/UX components](https://github.com/OneStepRND/onestep-sdk-ios-samples/tree/main/OneStepUIKitExample)
+- [Background Monitoring](https://github.com/OneStepRND/onestep-sdk-ios-samples/tree/main/BackgroundSampleApp)
+- [Build your own recording flow & Motion Insights](https://github.com/OneStepRND/onestep-sdk-ios-samples/tree/main/OneStepSDK_SampleApp)
+
+### 2. Integrate Your API Key
+In your app’s entry point (e.g., `AppDelegate` or equivalent), initialize the **OneStep SDK** as follows:
 
 ```swift
 import OneStepSDK
+        
+// Replace with your own distinct user ID as needed
+let distinctId = "SOME-UNIQUE-USER-ID"
 
+// Initialize OneStep SDK
 OSTSDKCore.shared.initialize(
     appId: "<YOUR-APP-ID-HERE>",
     apiKey: "<YOUR-API-KEY-HERE>",
-    distinctId: "<A-UNIQUE-ID-FOR CURRENT-USER-HERE>",
-    identityVerification: nil,
-    configuration: OSTConfiguration(enableMonitoringFeature: true)){ connectionResult in
-        if connectionResult {
-            self.connected = true
-        } else {
-            self.failedToConnect = true
-        }
+    distinctId: distinctId,
+    identityVerification: nil, // Implement in production for additional security
+    configuration: OSTConfiguration(enableMonitoringFeature: true)
+) { success in
+    if success {
+        print("SDK initialization succeeded")
+        // opt-in background monitoring - it's your responsability to collect neccassary permissions
+        OSTSDKCore.shared.registerBackgroundMonitoring()
+    } else {
+        print("SDK initialization failed")
     }
+}
+
+// register background tasks for continious background monitoring sync 
+OSTSDKCore.shared.registerBGTasks()
 ```
 
-### Real-time Motion Recording
+### Installation
+OneStep SDK for iOS can be installed through Swift Package Manager:
+```bash
+https://github.com/OneStepRND/onestep-sdk-ios
+``` 
 
-To record motion data:
+### Permissions & Background Modes
+OneStep SDK needs permissions for **Motion & Fitness** and **Location** (Always & When In Use) to record user motion data accurately.
 
-```swift
-let recorder = OSTSDKCore.shared.getRecordingService()
-recorder.start(activityType: .walk)
+```xml
+<key>NSMotionUsageDescription</key>
+<string>Your Motion & Fitness usage description here</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Your location usage description here</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Your location usage description here</string>
 ```
 
-To stop and analyze the recording:
+Enable **Background Fetch** and **Location Updates** under Signing & Capabilities > Background Modes to support background (passive) monitoring.
 
-```swift
-recorder.stop()
-let analysisResult = await recorder.analyze()
+![Screenshot 2025-02-17 at 10 16 34](https://github.com/user-attachments/assets/9bce8cbf-e9fc-4e10-9cc8-5d66f7496e02)
+
+For enhanced background monitoring and daily steps coverage, we highly recommend enabling **HealthKit** in your project:
+
+```xml
+<key>NSHealthUpdateUsageDescription</key>
+<string>Your explanation for why you need to update health data.</string>
+<key>NSHealthShareUsageDescription</key>
+<string>Your explanation for why you need to read health data.</string>
 ```
 
-### Background Monitoring
+![Screenshot 2025-02-17 at 10 16 38](https://github.com/user-attachments/assets/3d5ffbf6-b0a2-4354-91af-fd65e81129c2)
 
-Enable background monitoring:
+## Documentation
 
-```swift
-OSTSDKCore.shared.registerBackgroundMonitoring()
-```
-
-### Customization
-
-The SDK provides several options for customizing the behavior, including data retention policies, user profile management, and more.
-See the full documentation [here](https://www.onestep.co/).
-
-## Example App
-
-An example iOS app demonstrating the integration and usage of the OneStep SDK is available in the [OneStepSDK Sample App repository](https://github.com/OneStepRND/onestep-sdk-ios-samples). This app showcases:
-
-- Real-time motion data recording and analysis
-- Data enrichment with metadata, norms, and insights
-- Backgroud monitoring
-- OneStep UIKit pre-built UI/UX components
+For detailed technical information and guides, please refer to our official documentation in the OneStep back-office.
 
 ## Support
 
-For support, additional information, or to report issues, please contact `shahar@onestep.co`.
+If you have any questions or issues:
+- **Email**: [shahar@onestep.co](mailto:shahar@onestep.co)  
+- Or open an [issue](https://github.com/OneStepRND/onestep-sdk-ios/issues) in this repository.
+
+Happy building with OneStep Collect SDK for iOS!
