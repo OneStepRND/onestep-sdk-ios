@@ -144,6 +144,7 @@ public struct OSTBackgroundRecord {
   public static let shared: OneStepSDK.OSTSDKCore
   final public func isInitialized() -> Swift.Bool
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
+  final public func currentRecordingLimit() -> Swift.Int
   final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
   final public func registerBGTasks()
   final public func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
@@ -153,6 +154,8 @@ public struct OSTBackgroundRecord {
   final public func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
   final public func readMotionMeasurements(startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil) -> [OneStepSDK.OSTMotionMeasurement]
   final public func sync() async -> Swift.Bool
+  final public func versionCode() -> Swift.Int
+  final public func versionName() -> Swift.String
   final public func registerBackgroundMonitoring()
   final public func unregisterBackgroundMonitoring()
   final public func isBackgroundMonitoringActive() -> Swift.Bool
@@ -331,9 +334,9 @@ public class OSTConfiguration : Swift.Codable {
   public var recorderCollectGeoLocation: Swift.Bool
   public var healthKit: Swift.Bool
   public var additionalConfigurations: [Swift.String : OneStepSDK.OSTMixedType]
-  public var syncConfiguration: OneStepSDK.SyncConfiguration
-  public var monitoringIntensity: OneStepSDK.MonitoringIntensity
-  public init(remoteDataRetentionPeriodHours: Swift.Int? = nil, incognitoUserProfile: Swift.Bool = false, sendAnalyticsData: Swift.Bool = true, enableMonitoringFeature: Swift.Bool = false, recorderCollectGeoLocation: Swift.Bool = false, additionalConfigurations: [Swift.String : OneStepSDK.OSTMixedType] = [:], syncConfiguration: OneStepSDK.SyncConfiguration = .enhanced, monitoringIntensity: OneStepSDK.MonitoringIntensity = .enhanced)
+  public var syncConfiguration: OneStepSDK.OSTSyncConfiguration
+  public var monitoringIntensity: OneStepSDK.OSTMonitoringIntensity
+  public init(remoteDataRetentionPeriodHours: Swift.Int? = nil, incognitoUserProfile: Swift.Bool = false, sendAnalyticsData: Swift.Bool = true, enableMonitoringFeature: Swift.Bool = false, recorderCollectGeoLocation: Swift.Bool = false, additionalConfigurations: [Swift.String : OneStepSDK.OSTMixedType] = [:], syncConfiguration: OneStepSDK.OSTSyncConfiguration = .enhanced, monitoringIntensity: OneStepSDK.OSTMonitoringIntensity = .enhanced)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -354,11 +357,11 @@ public enum OSTActivityType : Swift.String {
     get
   }
 }
-public enum SyncConfiguration : Swift.Codable {
+public enum OSTSyncConfiguration : Swift.Codable {
   case enhanced
   case balanced
   case efficient
-  public static func == (a: OneStepSDK.SyncConfiguration, b: OneStepSDK.SyncConfiguration) -> Swift.Bool
+  public static func == (a: OneStepSDK.OSTSyncConfiguration, b: OneStepSDK.OSTSyncConfiguration) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -366,10 +369,10 @@ public enum SyncConfiguration : Swift.Codable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum MonitoringIntensity : Swift.Codable {
+public enum OSTMonitoringIntensity : Swift.Codable {
   case enhanced
   case balanced
-  public static func == (a: OneStepSDK.MonitoringIntensity, b: OneStepSDK.MonitoringIntensity) -> Swift.Bool
+  public static func == (a: OneStepSDK.OSTMonitoringIntensity, b: OneStepSDK.OSTMonitoringIntensity) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
@@ -760,10 +763,10 @@ extension OneStepSDK.OSTHTTPMethod : Swift.RawRepresentable {}
 extension OneStepSDK.OSTActivityType : Swift.Equatable {}
 extension OneStepSDK.OSTActivityType : Swift.Hashable {}
 extension OneStepSDK.OSTActivityType : Swift.RawRepresentable {}
-extension OneStepSDK.SyncConfiguration : Swift.Equatable {}
-extension OneStepSDK.SyncConfiguration : Swift.Hashable {}
-extension OneStepSDK.MonitoringIntensity : Swift.Equatable {}
-extension OneStepSDK.MonitoringIntensity : Swift.Hashable {}
+extension OneStepSDK.OSTSyncConfiguration : Swift.Equatable {}
+extension OneStepSDK.OSTSyncConfiguration : Swift.Hashable {}
+extension OneStepSDK.OSTMonitoringIntensity : Swift.Equatable {}
+extension OneStepSDK.OSTMonitoringIntensity : Swift.Hashable {}
 extension OneStepSDK.OSTResultState : Swift.Equatable {}
 extension OneStepSDK.OSTResultState : Swift.Hashable {}
 extension OneStepSDK.OSTResultState : Swift.RawRepresentable {}

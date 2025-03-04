@@ -5135,6 +5135,29 @@
           },
           {
             "kind": "Function",
+            "name": "currentRecordingLimit",
+            "printedName": "currentRecordingLimit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC21currentRecordingLimitSiyF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC21currentRecordingLimitSiyF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setAnalyticsService",
             "printedName": "setAnalyticsService(_:)",
             "children": [
@@ -5386,6 +5409,50 @@
             "declKind": "Func",
             "usr": "s:10OneStepSDK10OSTSDKCoreC4syncSbyYaF",
             "mangledName": "$s10OneStepSDK10OSTSDKCoreC4syncSbyYaF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "versionCode",
+            "printedName": "versionCode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC11versionCodeSiyF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC11versionCodeSiyF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "versionName",
+            "printedName": "versionName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC11versionNameSSyF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC11versionNameSSyF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "Final",
@@ -11720,14 +11787,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SyncConfiguration",
-                "printedName": "OneStepSDK.SyncConfiguration",
-                "usr": "s:10OneStepSDK17SyncConfigurationO"
+                "name": "OSTSyncConfiguration",
+                "printedName": "OneStepSDK.OSTSyncConfiguration",
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovp",
-            "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovp",
+            "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovp",
+            "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovp",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "HasStorage",
@@ -11742,14 +11809,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SyncConfiguration",
-                    "printedName": "OneStepSDK.SyncConfiguration",
-                    "usr": "s:10OneStepSDK17SyncConfigurationO"
+                    "name": "OSTSyncConfiguration",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration",
+                    "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovg",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovg",
+                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovg",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -11766,14 +11833,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "SyncConfiguration",
-                    "printedName": "OneStepSDK.SyncConfiguration",
-                    "usr": "s:10OneStepSDK17SyncConfigurationO"
+                    "name": "OSTSyncConfiguration",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration",
+                    "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovs",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0Ovs",
+                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovs",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0Ovs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -11790,8 +11857,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0OvM",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA04SyncF0OvM",
+                "usr": "s:10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0OvM",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC17syncConfigurationAA07OSTSyncF0OvM",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11805,14 +11872,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MonitoringIntensity",
-                "printedName": "OneStepSDK.MonitoringIntensity",
-                "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                "name": "OSTMonitoringIntensity",
+                "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovp",
-            "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovp",
+            "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovp",
+            "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovp",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "HasStorage",
@@ -11827,14 +11894,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MonitoringIntensity",
-                    "printedName": "OneStepSDK.MonitoringIntensity",
-                    "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                    "name": "OSTMonitoringIntensity",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                    "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovg",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovg",
+                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovg",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -11851,14 +11918,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "MonitoringIntensity",
-                    "printedName": "OneStepSDK.MonitoringIntensity",
-                    "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                    "name": "OSTMonitoringIntensity",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                    "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovs",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0Ovs",
+                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovs",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0Ovs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -11875,8 +11942,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0OvM",
-                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA010MonitoringF0OvM",
+                "usr": "s:10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0OvM",
+                "mangledName": "$s10OneStepSDK16OSTConfigurationC19monitoringIntensityAA013OSTMonitoringF0OvM",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11960,22 +12027,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "SyncConfiguration",
-                "printedName": "OneStepSDK.SyncConfiguration",
+                "name": "OSTSyncConfiguration",
+                "printedName": "OneStepSDK.OSTSyncConfiguration",
                 "hasDefaultArg": true,
-                "usr": "s:10OneStepSDK17SyncConfigurationO"
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "MonitoringIntensity",
-                "printedName": "OneStepSDK.MonitoringIntensity",
+                "name": "OSTMonitoringIntensity",
+                "printedName": "OneStepSDK.OSTMonitoringIntensity",
                 "hasDefaultArg": true,
-                "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA04SyncY0OAA0P9IntensityOtcfc",
-            "mangledName": "$s10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA04SyncY0OAA0P9IntensityOtcfc",
+            "usr": "s:10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA07OSTSyncY0OAA22OSTMonitoringIntensityOtcfc",
+            "mangledName": "$s10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA07OSTSyncY0OAA22OSTMonitoringIntensityOtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -12586,8 +12653,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SyncConfiguration",
-        "printedName": "SyncConfiguration",
+        "name": "OSTSyncConfiguration",
+        "printedName": "OSTSyncConfiguration",
         "children": [
           {
             "kind": "Var",
@@ -12597,24 +12664,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.SyncConfiguration.Type) -> OneStepSDK.SyncConfiguration",
+                "printedName": "(OneStepSDK.OSTSyncConfiguration.Type) -> OneStepSDK.OSTSyncConfiguration",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SyncConfiguration",
-                    "printedName": "OneStepSDK.SyncConfiguration",
-                    "usr": "s:10OneStepSDK17SyncConfigurationO"
+                    "name": "OSTSyncConfiguration",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration",
+                    "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OneStepSDK.SyncConfiguration.Type",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "SyncConfiguration",
-                        "printedName": "OneStepSDK.SyncConfiguration",
-                        "usr": "s:10OneStepSDK17SyncConfigurationO"
+                        "name": "OSTSyncConfiguration",
+                        "printedName": "OneStepSDK.OSTSyncConfiguration",
+                        "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                       }
                     ]
                   }
@@ -12622,8 +12689,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK17SyncConfigurationO8enhancedyA2CmF",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO8enhancedyA2CmF",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO8enhancedyA2CmF",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO8enhancedyA2CmF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "RawDocComment"
@@ -12637,24 +12704,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.SyncConfiguration.Type) -> OneStepSDK.SyncConfiguration",
+                "printedName": "(OneStepSDK.OSTSyncConfiguration.Type) -> OneStepSDK.OSTSyncConfiguration",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SyncConfiguration",
-                    "printedName": "OneStepSDK.SyncConfiguration",
-                    "usr": "s:10OneStepSDK17SyncConfigurationO"
+                    "name": "OSTSyncConfiguration",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration",
+                    "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OneStepSDK.SyncConfiguration.Type",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "SyncConfiguration",
-                        "printedName": "OneStepSDK.SyncConfiguration",
-                        "usr": "s:10OneStepSDK17SyncConfigurationO"
+                        "name": "OSTSyncConfiguration",
+                        "printedName": "OneStepSDK.OSTSyncConfiguration",
+                        "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                       }
                     ]
                   }
@@ -12662,8 +12729,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK17SyncConfigurationO8balancedyA2CmF",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO8balancedyA2CmF",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO8balancedyA2CmF",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO8balancedyA2CmF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "RawDocComment"
@@ -12677,24 +12744,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.SyncConfiguration.Type) -> OneStepSDK.SyncConfiguration",
+                "printedName": "(OneStepSDK.OSTSyncConfiguration.Type) -> OneStepSDK.OSTSyncConfiguration",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SyncConfiguration",
-                    "printedName": "OneStepSDK.SyncConfiguration",
-                    "usr": "s:10OneStepSDK17SyncConfigurationO"
+                    "name": "OSTSyncConfiguration",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration",
+                    "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OneStepSDK.SyncConfiguration.Type",
+                    "printedName": "OneStepSDK.OSTSyncConfiguration.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "SyncConfiguration",
-                        "printedName": "OneStepSDK.SyncConfiguration",
-                        "usr": "s:10OneStepSDK17SyncConfigurationO"
+                        "name": "OSTSyncConfiguration",
+                        "printedName": "OneStepSDK.OSTSyncConfiguration",
+                        "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
                       }
                     ]
                   }
@@ -12702,8 +12769,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK17SyncConfigurationO9efficientyA2CmF",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO9efficientyA2CmF",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO9efficientyA2CmF",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO9efficientyA2CmF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "RawDocComment"
@@ -12722,20 +12789,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "SyncConfiguration",
-                "printedName": "OneStepSDK.SyncConfiguration",
-                "usr": "s:10OneStepSDK17SyncConfigurationO"
+                "name": "OSTSyncConfiguration",
+                "printedName": "OneStepSDK.OSTSyncConfiguration",
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "SyncConfiguration",
-                "printedName": "OneStepSDK.SyncConfiguration",
-                "usr": "s:10OneStepSDK17SyncConfigurationO"
+                "name": "OSTSyncConfiguration",
+                "printedName": "OneStepSDK.OSTSyncConfiguration",
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK17SyncConfigurationO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO2eeoiySbAC_ACtFZ",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO2eeoiySbAC_ACtFZ",
             "moduleName": "OneStepSDK",
             "static": true,
             "implicit": true,
@@ -12754,8 +12821,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK17SyncConfigurationO9hashValueSivp",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO9hashValueSivp",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO9hashValueSivp",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO9hashValueSivp",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "accessors": [
@@ -12772,8 +12839,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK17SyncConfigurationO9hashValueSivg",
-                "mangledName": "$s10OneStepSDK17SyncConfigurationO9hashValueSivg",
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO9hashValueSivg",
+                "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO9hashValueSivg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12799,8 +12866,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK17SyncConfigurationO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO4hash4intoys6HasherVz_tF",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO4hash4intoys6HasherVz_tF",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "funcSelfKind": "NonMutating"
@@ -12812,9 +12879,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SyncConfiguration",
-                "printedName": "OneStepSDK.SyncConfiguration",
-                "usr": "s:10OneStepSDK17SyncConfigurationO"
+                "name": "OSTSyncConfiguration",
+                "printedName": "OneStepSDK.OSTSyncConfiguration",
+                "usr": "s:10OneStepSDK20OSTSyncConfigurationO"
               },
               {
                 "kind": "TypeNominal",
@@ -12824,8 +12891,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK17SyncConfigurationO4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO4fromACs7Decoder_p_tKcfc",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO4fromACs7Decoder_p_tKcfc",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "throwing": true,
@@ -12849,8 +12916,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK17SyncConfigurationO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10OneStepSDK17SyncConfigurationO6encode2toys7Encoder_p_tKF",
+            "usr": "s:10OneStepSDK20OSTSyncConfigurationO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO6encode2toys7Encoder_p_tKF",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "throwing": true,
@@ -12858,8 +12925,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OneStepSDK17SyncConfigurationO",
-        "mangledName": "$s10OneStepSDK17SyncConfigurationO",
+        "usr": "s:10OneStepSDK20OSTSyncConfigurationO",
+        "mangledName": "$s10OneStepSDK20OSTSyncConfigurationO",
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl",
@@ -12912,8 +12979,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MonitoringIntensity",
-        "printedName": "MonitoringIntensity",
+        "name": "OSTMonitoringIntensity",
+        "printedName": "OSTMonitoringIntensity",
         "children": [
           {
             "kind": "Var",
@@ -12923,24 +12990,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.MonitoringIntensity.Type) -> OneStepSDK.MonitoringIntensity",
+                "printedName": "(OneStepSDK.OSTMonitoringIntensity.Type) -> OneStepSDK.OSTMonitoringIntensity",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MonitoringIntensity",
-                    "printedName": "OneStepSDK.MonitoringIntensity",
-                    "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                    "name": "OSTMonitoringIntensity",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                    "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OneStepSDK.MonitoringIntensity.Type",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MonitoringIntensity",
-                        "printedName": "OneStepSDK.MonitoringIntensity",
-                        "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                        "name": "OSTMonitoringIntensity",
+                        "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                        "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                       }
                     ]
                   }
@@ -12948,8 +13015,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO8enhancedyA2CmF",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO8enhancedyA2CmF",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO8enhancedyA2CmF",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO8enhancedyA2CmF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "RawDocComment"
@@ -12963,24 +13030,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.MonitoringIntensity.Type) -> OneStepSDK.MonitoringIntensity",
+                "printedName": "(OneStepSDK.OSTMonitoringIntensity.Type) -> OneStepSDK.OSTMonitoringIntensity",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MonitoringIntensity",
-                    "printedName": "OneStepSDK.MonitoringIntensity",
-                    "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                    "name": "OSTMonitoringIntensity",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                    "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OneStepSDK.MonitoringIntensity.Type",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MonitoringIntensity",
-                        "printedName": "OneStepSDK.MonitoringIntensity",
-                        "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                        "name": "OSTMonitoringIntensity",
+                        "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                        "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
                       }
                     ]
                   }
@@ -12988,8 +13055,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO8balancedyA2CmF",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO8balancedyA2CmF",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO8balancedyA2CmF",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO8balancedyA2CmF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "RawDocComment"
@@ -13008,20 +13075,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MonitoringIntensity",
-                "printedName": "OneStepSDK.MonitoringIntensity",
-                "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                "name": "OSTMonitoringIntensity",
+                "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
               },
               {
                 "kind": "TypeNominal",
-                "name": "MonitoringIntensity",
-                "printedName": "OneStepSDK.MonitoringIntensity",
-                "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                "name": "OSTMonitoringIntensity",
+                "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO2eeoiySbAC_ACtFZ",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO2eeoiySbAC_ACtFZ",
             "moduleName": "OneStepSDK",
             "static": true,
             "implicit": true,
@@ -13040,8 +13107,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO9hashValueSivp",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO9hashValueSivp",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO9hashValueSivp",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO9hashValueSivp",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "accessors": [
@@ -13058,8 +13125,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK19MonitoringIntensityO9hashValueSivg",
-                "mangledName": "$s10OneStepSDK19MonitoringIntensityO9hashValueSivg",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO9hashValueSivg",
+                "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO9hashValueSivg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13085,8 +13152,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO4hash4intoys6HasherVz_tF",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO4hash4intoys6HasherVz_tF",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "funcSelfKind": "NonMutating"
@@ -13098,9 +13165,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MonitoringIntensity",
-                "printedName": "OneStepSDK.MonitoringIntensity",
-                "usr": "s:10OneStepSDK19MonitoringIntensityO"
+                "name": "OSTMonitoringIntensity",
+                "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
               },
               {
                 "kind": "TypeNominal",
@@ -13110,8 +13177,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO4fromACs7Decoder_p_tKcfc",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO4fromACs7Decoder_p_tKcfc",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "throwing": true,
@@ -13135,8 +13202,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19MonitoringIntensityO6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10OneStepSDK19MonitoringIntensityO6encode2toys7Encoder_p_tKF",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO6encode2toys7Encoder_p_tKF",
             "moduleName": "OneStepSDK",
             "implicit": true,
             "throwing": true,
@@ -13144,8 +13211,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OneStepSDK19MonitoringIntensityO",
-        "mangledName": "$s10OneStepSDK19MonitoringIntensityO",
+        "usr": "s:10OneStepSDK22OSTMonitoringIntensityO",
+        "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO",
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "AccessControl",
@@ -26740,14 +26807,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 26218,
+      "offset": 26940,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 26248,
+      "offset": 26970,
       "length": 12,
       "value": "\"production\""
     },
@@ -27251,35 +27318,35 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3295,
+      "offset": 3301,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3328,
+      "offset": 3334,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3366,
+      "offset": 3372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3408,
+      "offset": 3414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "Dictionary",
-      "offset": 3466,
+      "offset": 3472,
       "length": 3,
       "value": "[]"
     },
@@ -28077,65 +28144,37 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2223,
+      "offset": 1722,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2251,
+      "offset": 1750,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2285,
+      "offset": 1784,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2321,
+      "offset": 1820,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2357,
+      "offset": 1856,
       "length": 3,
       "value": "128"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2392,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2435,
-      "length": 3,
-      "value": "512"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2476,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2521,
-      "length": 4,
-      "value": "2048"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
@@ -28205,7 +28244,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
