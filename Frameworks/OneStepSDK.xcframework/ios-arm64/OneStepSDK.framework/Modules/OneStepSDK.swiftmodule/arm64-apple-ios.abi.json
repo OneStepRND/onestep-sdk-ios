@@ -26861,13 +26861,6 @@
       "value": "10"
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/WalkingBouts\/HealthKitBoutsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 354,
-      "length": 23,
-      "value": "\"LastWalkBoutFetchTime\""
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/BackgroundAggregator.swift",
       "kind": "IntegerLiteral",
       "offset": 200,
@@ -27129,7 +27122,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15529,
+      "offset": 15646,
       "length": 5,
       "value": "false"
     },
@@ -28046,28 +28039,28 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/AppLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 4889,
+      "offset": 4864,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/AppLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4941,
+      "offset": 4916,
       "length": 27,
       "value": "\"MotionActivitySerialQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/AppLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 6883,
+      "offset": 6858,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/AppLogger.swift",
       "kind": "StringLiteral",
-      "offset": 6935,
+      "offset": 6910,
       "length": 25,
       "value": "\"DeviceMotionSerialQueue\""
     },
@@ -28077,48 +28070,6 @@
       "offset": 782,
       "length": 2,
       "value": "60"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/TerminationNotifications.swift",
-      "kind": "StringLiteral",
-      "offset": 815,
-      "length": 51,
-      "value": "\"OST.TerminationNotifications.LastNotificationDate\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/AppLogger\/TerminationNotifications.swift",
-      "kind": "StringLiteral",
-      "offset": 900,
-      "length": 54,
-      "value": "\"OST.TerminationNotifications.PendingNotificationDate\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
-      "length": 9,
-      "value": "\"General\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 645,
-      "length": 9,
-      "value": "\"Spatial\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 675,
-      "length": 10,
-      "value": "\"Temporal\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/ParamMetadataDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 711,
-      "length": 17,
-      "value": "\"Range of Motion\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKLogger.swift",
@@ -28244,7 +28195,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "1"
+      "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
