@@ -9367,6 +9367,66 @@
           },
           {
             "kind": "Var",
+            "name": "imperialUnits",
+            "printedName": "imperialUnits",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK20OSTParameterMetadataV13imperialUnitsSSSgvp",
+            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV13imperialUnitsSSSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK20OSTParameterMetadataV13imperialUnitsSSSgvg",
+                "mangledName": "$s10OneStepSDK20OSTParameterMetadataV13imperialUnitsSSSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "category",
             "printedName": "category",
             "children": [
@@ -9516,7 +9576,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(displayName:units:category:roundDigits:sortKey:)",
+            "printedName": "init(displayName:units:imperialUnits:category:roundDigits:sortKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9560,6 +9620,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "usr": "s:Si"
@@ -9572,8 +9646,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK20OSTParameterMetadataV11displayName5units8category11roundDigits7sortKeyACSS_SSSgAIS2itcfc",
-            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11displayName5units8category11roundDigits7sortKeyACSS_SSSgAIS2itcfc",
+            "usr": "s:10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKeyACSS_SSSgA2JS2itcfc",
+            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKeyACSS_SSSgA2JS2itcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -12515,6 +12589,117 @@
             "declKind": "EnumElement",
             "usr": "s:10OneStepSDK15OSTActivityTypeO4walkyA2CmF",
             "mangledName": "$s10OneStepSDK15OSTActivityTypeO4walkyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sts",
+            "printedName": "sts",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO3stsyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO3stsyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "tug",
+            "printedName": "tug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO3tugyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO3tugyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "romKneeFlexionPassive",
+            "printedName": "romKneeFlexionPassive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO21romKneeFlexionPassiveyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO21romKneeFlexionPassiveyA2CmF",
             "moduleName": "OneStepSDK"
           },
           {
@@ -28195,7 +28380,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "2"
+      "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",

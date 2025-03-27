@@ -292,10 +292,11 @@ public struct OSTNetworkClient {
 public struct OSTParameterMetadata {
   public let displayName: Swift.String
   public let units: Swift.String?
+  public let imperialUnits: Swift.String?
   public let category: Swift.String?
   public let roundDigits: Swift.Int
   public let sortKey: Swift.Int
-  public init(displayName: Swift.String, units: Swift.String?, category: Swift.String?, roundDigits: Swift.Int, sortKey: Swift.Int)
+  public init(displayName: Swift.String, units: Swift.String?, imperialUnits: Swift.String?, category: Swift.String?, roundDigits: Swift.Int, sortKey: Swift.Int)
 }
 public protocol OSTCoreInterface {
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
@@ -351,6 +352,9 @@ public protocol OSTRecorderProtocol {
 }
 public enum OSTActivityType : Swift.String {
   case walk
+  case sts
+  case tug
+  case romKneeFlexionPassive
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
