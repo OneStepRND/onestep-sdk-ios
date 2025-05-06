@@ -22,23 +22,6 @@
         "moduleName": "OneStepSDK"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OneStepSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreMotion",
-        "printedName": "CoreMotion",
-        "declKind": "Import",
-        "moduleName": "OneStepSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "OSTUserAttributes",
         "printedName": "OSTUserAttributes",
@@ -442,6 +425,13 @@
                 ],
                 "usr": "s:s12IdentifiableP",
                 "mangledName": "$ss12IdentifiableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -2828,6 +2818,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2866,6 +2863,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3620,6 +3624,109 @@
           },
           {
             "kind": "Var",
+            "name": "parameter_arrays",
+            "printedName": "parameter_arrays",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(py)parameter_arrays",
+            "mangledName": "$s10OneStepSDK17MotionMeasurementC16parameter_arrays10Foundation4DataVSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)parameter_arrays",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC16parameter_arrays10Foundation4DataVSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)setParameter_arrays:",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC16parameter_arrays10Foundation4DataVSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sensorsData",
             "printedName": "sensorsData",
             "children": [
@@ -4177,6 +4284,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)setType:",
                 "mangledName": "$s10OneStepSDK17MotionMeasurementC4typeSSvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "audio",
+            "printedName": "audio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(py)audio",
+            "mangledName": "$s10OneStepSDK17MotionMeasurementC5audio10Foundation4DataVSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)audio",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC5audio10Foundation4DataVSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)setAudio:",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC5audio10Foundation4DataVSgvs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -4933,6 +5143,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -5467,13 +5684,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "OSTBackgroundRegistrationResult",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResult",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK10OSTSDKCoreC28registerBackgroundMonitoringyyF",
-            "mangledName": "$s10OneStepSDK10OSTSDKCoreC28registerBackgroundMonitoringyyF",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC28registerBackgroundMonitoringAA31OSTBackgroundRegistrationResultVyF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC28registerBackgroundMonitoringAA31OSTBackgroundRegistrationResultVyF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "Final",
@@ -5999,6 +6217,565 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OSTBackgroundRegistrationResult",
+        "printedName": "OSTBackgroundRegistrationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSTBackgroundRegistrationResultCode",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV4codeAA0deF4CodeOvp",
+            "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV4codeAA0deF4CodeOvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV4codeAA0deF4CodeOvg",
+                "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV4codeAA0deF4CodeOvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV7messageSSvp",
+            "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV7messageSSvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV7messageSSvg",
+                "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV7messageSSvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(code:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSTBackgroundRegistrationResult",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResult",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OSTBackgroundRegistrationResultCode",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV4code7messageAcA0deF4CodeO_SStcfc",
+            "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV4code7messageAcA0deF4CodeO_SStcfc",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "isSuccess",
+            "printedName": "isSuccess",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV9isSuccessSbvp",
+            "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV9isSuccessSbvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV9isSuccessSbvg",
+                "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV9isSuccessSbvg",
+                "moduleName": "OneStepSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV",
+        "mangledName": "$s10OneStepSDK31OSTBackgroundRegistrationResultV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OSTBackgroundRegistrationResultCode",
+        "printedName": "OSTBackgroundRegistrationResultCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO7successyA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO7successyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noPermission",
+            "printedName": "noPermission",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO12noPermissionyA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO12noPermissionyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sdkNotInitialized",
+            "printedName": "sdkNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO17sdkNotInitializedyA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO17sdkNotInitializedyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "alreadyActivated",
+            "printedName": "alreadyActivated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO16alreadyActivatedyA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO16alreadyActivatedyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "featureNotEnabled",
+            "printedName": "featureNotEnabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO17featureNotEnabledyA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO17featureNotEnabledyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unKnownError",
+            "printedName": "unKnownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTBackgroundRegistrationResultCode.Type) -> OneStepSDK.OSTBackgroundRegistrationResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTBackgroundRegistrationResultCode",
+                        "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO12unKnownErroryA2CmF",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO12unKnownErroryA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTBackgroundRegistrationResultCode",
+                    "printedName": "OneStepSDK.OSTBackgroundRegistrationResultCode",
+                    "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueSivp",
+            "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueSivp",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueSivg",
+                "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO8rawValueSivg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10OneStepSDK35OSTBackgroundRegistrationResultCodeO",
+        "mangledName": "$s10OneStepSDK35OSTBackgroundRegistrationResultCodeO",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -6307,6 +7084,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -6542,17 +7326,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "OneStepSDK.OSTActivityType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTActivityType",
-                    "printedName": "OneStepSDK.OSTActivityType",
-                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "OSTActivityType",
+                "printedName": "OneStepSDK.OSTActivityType",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -6612,8 +7388,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0OSg_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
-            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0OSg_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
+            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
+            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl",
@@ -6684,35 +7460,6 @@
             "declKind": "Func",
             "usr": "s:10OneStepSDK11OSTRecorderC5resetyyF",
             "mangledName": "$s10OneStepSDK11OSTRecorderC5resetyyF",
-            "moduleName": "OneStepSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startInAppManualRecording",
-            "printedName": "startInAppManualRecording()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.UUID?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10OneStepSDK11OSTRecorderC25startInAppManualRecording10Foundation4UUIDVSgyF",
-            "mangledName": "$s10OneStepSDK11OSTRecorderC25startInAppManualRecording10Foundation4UUIDVSgyF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -7168,6 +7915,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -7717,6 +8471,13 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8296,6 +9057,13 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8546,6 +9314,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8796,6 +9571,13 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -8841,358 +9623,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "OSTHTTPMethod",
-        "printedName": "OSTHTTPMethod",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "get",
-            "printedName": "get",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OneStepSDK.OSTHTTPMethod.Type) -> OneStepSDK.OSTHTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OneStepSDK.OSTHTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTHTTPMethod",
-                        "printedName": "OneStepSDK.OSTHTTPMethod",
-                        "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO3getyA2CmF",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO3getyA2CmF",
-            "moduleName": "OneStepSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "post",
-            "printedName": "post",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OneStepSDK.OSTHTTPMethod.Type) -> OneStepSDK.OSTHTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OneStepSDK.OSTHTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTHTTPMethod",
-                        "printedName": "OneStepSDK.OSTHTTPMethod",
-                        "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO4postyA2CmF",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO4postyA2CmF",
-            "moduleName": "OneStepSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "put",
-            "printedName": "put",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OneStepSDK.OSTHTTPMethod.Type) -> OneStepSDK.OSTHTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OneStepSDK.OSTHTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTHTTPMethod",
-                        "printedName": "OneStepSDK.OSTHTTPMethod",
-                        "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO3putyA2CmF",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO3putyA2CmF",
-            "moduleName": "OneStepSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "delete",
-            "printedName": "delete",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OneStepSDK.OSTHTTPMethod.Type) -> OneStepSDK.OSTHTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OneStepSDK.OSTHTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTHTTPMethod",
-                        "printedName": "OneStepSDK.OSTHTTPMethod",
-                        "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO6deleteyA2CmF",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO6deleteyA2CmF",
-            "moduleName": "OneStepSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "patch",
-            "printedName": "patch",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(OneStepSDK.OSTHTTPMethod.Type) -> OneStepSDK.OSTHTTPMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "OneStepSDK.OSTHTTPMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTHTTPMethod",
-                        "printedName": "OneStepSDK.OSTHTTPMethod",
-                        "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO5patchyA2CmF",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO5patchyA2CmF",
-            "moduleName": "OneStepSDK"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "OneStepSDK.OSTHTTPMethod?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTHTTPMethod",
-                    "printedName": "OneStepSDK.OSTHTTPMethod",
-                    "usr": "s:10OneStepSDK13OSTHTTPMethodO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO8rawValueACSgSS_tcfc",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO8rawValueACSgSS_tcfc",
-            "moduleName": "OneStepSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10OneStepSDK13OSTHTTPMethodO8rawValueSSvp",
-            "mangledName": "$s10OneStepSDK13OSTHTTPMethodO8rawValueSSvp",
-            "moduleName": "OneStepSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OneStepSDK13OSTHTTPMethodO8rawValueSSvg",
-                "mangledName": "$s10OneStepSDK13OSTHTTPMethodO8rawValueSSvg",
-                "moduleName": "OneStepSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10OneStepSDK13OSTHTTPMethodO",
-        "mangledName": "$s10OneStepSDK13OSTHTTPMethodO",
-        "moduleName": "OneStepSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OSTNetworkClient",
-        "printedName": "OSTNetworkClient",
-        "declKind": "Struct",
-        "usr": "s:10OneStepSDK16OSTNetworkClientV",
-        "mangledName": "$s10OneStepSDK16OSTNetworkClientV",
-        "moduleName": "OneStepSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -9218,6 +9648,157 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKNetworkService",
+        "printedName": "SDKNetworkService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioData",
+            "printedName": "audioData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvpZ",
+            "mangledName": "$s10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvpZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvgZ",
+                "mangledName": "$s10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvgZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvsZ",
+                "mangledName": "$s10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvsZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvMZ",
+                "mangledName": "$s10OneStepSDK17SDKNetworkServiceV9audioData10Foundation0G0VSgvMZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK17SDKNetworkServiceV",
+        "mangledName": "$s10OneStepSDK17SDKNetworkServiceV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -9574,9 +10155,69 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isMainParam",
+            "printedName": "isMainParam",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK20OSTParameterMetadataV11isMainParamSbSgvp",
+            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11isMainParamSbSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK20OSTParameterMetadataV11isMainParamSbSgvg",
+                "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11isMainParamSbSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(displayName:units:imperialUnits:category:roundDigits:sortKey:)",
+            "printedName": "init(displayName:units:imperialUnits:category:roundDigits:sortKey:isMainParam:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9643,11 +10284,26 @@
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKeyACSS_SSSgA2JS2itcfc",
-            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKeyACSS_SSSgA2JS2itcfc",
+            "usr": "s:10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKey11isMainParamACSS_SSSgA2KS2iSbSgtcfc",
+            "mangledName": "$s10OneStepSDK20OSTParameterMetadataV11displayName5units13imperialUnits8category11roundDigits7sortKey11isMainParamACSS_SSSgA2KS2iSbSgtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -9676,6 +10332,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -10040,13 +10703,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "OSTBackgroundRegistrationResult",
+                "printedName": "OneStepSDK.OSTBackgroundRegistrationResult",
+                "usr": "s:10OneStepSDK31OSTBackgroundRegistrationResultV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK16OSTCoreInterfaceP28registerBackgroundMonitoringyyF",
-            "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP28registerBackgroundMonitoringyyF",
+            "usr": "s:10OneStepSDK16OSTCoreInterfaceP28registerBackgroundMonitoringAA31OSTBackgroundRegistrationResultVyF",
+            "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP28registerBackgroundMonitoringAA31OSTBackgroundRegistrationResultVyF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTCoreInterface>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTCoreInterface>",
@@ -10444,8 +11108,8 @@
           },
           {
             "kind": "Var",
-            "name": "hasPermissions",
-            "printedName": "hasPermissions",
+            "name": "hasInAppPermissions",
+            "printedName": "hasInAppPermissions",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10455,8 +11119,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvp",
-            "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvp",
+            "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvp",
+            "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvp",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "HasStorage",
@@ -10477,8 +11141,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvg",
-                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvg",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvg",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -10501,8 +11165,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvs",
-                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvs",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvs",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -10519,8 +11183,93 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvM",
-                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV14hasPermissionsSbvM",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvM",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV19hasInAppPermissionsSbvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasBackgroundPermissions",
+            "printedName": "hasBackgroundPermissions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvp",
+            "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvg",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvs",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvM",
+                "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV03hasD11PermissionsSbvM",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11057,13 +11806,19 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(activated:hasPermissions:hasPendingData:lastUploadSync:lastResultSync:lastSampleCollected:lastAnalyzedRecord:)",
+            "printedName": "init(activated:hasInAppPermissions:hasBackgroundPermissions:hasPendingData:lastUploadSync:lastResultSync:lastSampleCollected:lastAnalyzedRecord:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "BackgroundMonitoringStats",
                 "printedName": "OneStepSDK.BackgroundMonitoringStats",
                 "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -11141,8 +11896,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV9activated14hasPermissions0H11PendingData14lastUploadSync0l6ResultN00L15SampleCollected0L14AnalyzedRecordACSb_S2b10Foundation4DateVSgA3Ntcfc",
-            "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV9activated14hasPermissions0H11PendingData14lastUploadSync0l6ResultN00L15SampleCollected0L14AnalyzedRecordACSb_S2b10Foundation4DateVSgA3Ntcfc",
+            "usr": "s:10OneStepSDK25BackgroundMonitoringStatsV9activated19hasInAppPermissions0hdK00H11PendingData14lastUploadSync0n6ResultP00N15SampleCollected0N14AnalyzedRecordACSb_S3b10Foundation4DateVSgA3Otcfc",
+            "mangledName": "$s10OneStepSDK25BackgroundMonitoringStatsV9activated19hasInAppPermissions0hdK00H11PendingData14lastUploadSync0n6ResultP00N15SampleCollected0N14AnalyzedRecordACSb_S3b10Foundation4DateVSgA3Otcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -11171,6 +11926,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -12027,7 +12789,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteDataRetentionPeriodHours:incognitoUserProfile:sendAnalyticsData:enableMonitoringFeature:recorderCollectGeoLocation:additionalConfigurations:syncConfiguration:monitoringIntensity:)",
+            "printedName": "init(remoteDataRetentionPeriodHours:incognitoUserProfile:sendAnalyticsData:enableMonitoringFeature:recorderCollectGeoLocation:additionalConfigurations:healthKit:syncConfiguration:monitoringIntensity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12101,6 +12863,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "OSTSyncConfiguration",
                 "printedName": "OneStepSDK.OSTSyncConfiguration",
                 "hasDefaultArg": true,
@@ -12115,8 +12884,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA07OSTSyncY0OAA22OSTMonitoringIntensityOtcfc",
-            "mangledName": "$s10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGAA07OSTSyncY0OAA22OSTMonitoringIntensityOtcfc",
+            "usr": "s:10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations9healthKit17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGSbAA20OSTSyncConfigurationOAA22OSTMonitoringIntensityOtcfc",
+            "mangledName": "$s10OneStepSDK16OSTConfigurationC30remoteDataRetentionPeriodHours20incognitoUserProfile013sendAnalyticsF023enableMonitoringFeature26recorderCollectGeoLocation24additionalConfigurations9healthKit17syncConfiguration19monitoringIntensityACSiSg_S4bSDySSAA12OSTMixedTypeOGSbAA20OSTSyncConfigurationOAA22OSTMonitoringIntensityOtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -12373,17 +13142,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "OneStepSDK.OSTActivityType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTActivityType",
-                    "printedName": "OneStepSDK.OSTActivityType",
-                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "OSTActivityType",
+                "printedName": "OneStepSDK.OSTActivityType",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -12443,8 +13204,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0OSg_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
-            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0OSg_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
+            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
+            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTRecorderProtocol>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTRecorderProtocol>",
@@ -12703,6 +13464,43 @@
             "moduleName": "OneStepSDK"
           },
           {
+            "kind": "Var",
+            "name": "dualTaskWalkSubtract",
+            "printedName": "dualTaskWalkSubtract",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO20dualTaskWalkSubtractyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO20dualTaskWalkSubtractyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -12732,8 +13530,90 @@
             "usr": "s:10OneStepSDK15OSTActivityTypeO8rawValueACSgSS_tcfc",
             "mangledName": "$s10OneStepSDK15OSTActivityTypeO8rawValueACSgSS_tcfc",
             "moduleName": "OneStepSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO5titleSSvp",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO5titleSSvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO5titleSSvg",
+                "mangledName": "$s10OneStepSDK15OSTActivityTypeO5titleSSvg",
+                "moduleName": "OneStepSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO2idSSvp",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO2idSSvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO2idSSvg",
+                "mangledName": "$s10OneStepSDK15OSTActivityTypeO2idSSvg",
+                "moduleName": "OneStepSDK",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -12769,6 +13649,66 @@
                 "usr": "s:10OneStepSDK15OSTActivityTypeO8rawValueSSvg",
                 "mangledName": "$s10OneStepSDK15OSTActivityTypeO8rawValueSSvg",
                 "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.OSTActivityType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO8allCasesSayACGvpZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.OSTActivityType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s10OneStepSDK15OSTActivityTypeO8allCasesSayACGvgZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -12833,6 +13773,65 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.OSTActivityType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -13159,6 +14158,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -13393,6 +14399,66 @@
             "implicit": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.OSTMonitoringIntensity]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTMonitoringIntensity",
+                    "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                    "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK22OSTMonitoringIntensityO8allCasesSayACGvpZ",
+            "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO8allCasesSayACGvpZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.OSTMonitoringIntensity]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTMonitoringIntensity",
+                        "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                        "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK22OSTMonitoringIntensityO8allCasesSayACGvgZ",
+                "mangledName": "$s10OneStepSDK22OSTMonitoringIntensityO8allCasesSayACGvgZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -13445,6 +14511,36 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.OSTMonitoringIntensity]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTMonitoringIntensity",
+                        "printedName": "OneStepSDK.OSTMonitoringIntensity",
+                        "usr": "s:10OneStepSDK22OSTMonitoringIntensityO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -14810,9 +15906,185 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "parameter_arrays",
+            "printedName": "parameter_arrays",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : [Swift.Double]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.Double]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvp",
+            "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : [Swift.Double]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : [Swift.Double]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.Double]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvg",
+                "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : [Swift.Double]]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : [Swift.Double]]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.Double]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Double",
+                                "printedName": "Swift.Double",
+                                "usr": "s:Sd"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvs",
+                "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvM",
+                "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV16parameter_arraysSDySSSaySdGGSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:status:error:result_state:timestamp:type:metadata:parameters:custom_metadata:)",
+            "printedName": "init(id:status:error:result_state:timestamp:type:metadata:parameters:custom_metadata:parameter_arrays:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14946,11 +16218,48 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : [Swift.Double]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : [Swift.Double]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK20OSTMotionMeasurementV2id6status5error12result_state9timestamp4type8metadata10parameters07custom_M0AC10Foundation4UUIDV_AA0dE6StatusOAA19OSTMeasurementErrorVSgSiSgAM4DateVSSAA0S8MetadataVSgSDySSSdGSgSDySSAA12OSTMixedTypeOGSgtcfc",
-            "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV2id6status5error12result_state9timestamp4type8metadata10parameters07custom_M0AC10Foundation4UUIDV_AA0dE6StatusOAA19OSTMeasurementErrorVSgSiSgAM4DateVSSAA0S8MetadataVSgSDySSSdGSgSDySSAA12OSTMixedTypeOGSgtcfc",
+            "usr": "s:10OneStepSDK20OSTMotionMeasurementV2id6status5error12result_state9timestamp4type8metadata10parameters07custom_M016parameter_arraysAC10Foundation4UUIDV_AA0dE6StatusOAA19OSTMeasurementErrorVSgSiSgAN4DateVSSAA0U8MetadataVSgSDySSSdGSgSDySSAA12OSTMixedTypeOGSgSDySSSaySdGGSgtcfc",
+            "mangledName": "$s10OneStepSDK20OSTMotionMeasurementV2id6status5error12result_state9timestamp4type8metadata10parameters07custom_M016parameter_arraysAC10Foundation4UUIDV_AA0dE6StatusOAA19OSTMeasurementErrorVSgSiSgAN4DateVSSAA0U8MetadataVSgSDySSSdGSgSDySSAA12OSTMixedTypeOGSgSDySSSaySdGGSgtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -15170,6 +16479,13 @@
             ],
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -15559,6 +16875,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -16832,6 +18155,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -16843,7 +18173,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(note:tags:assistiveDevice:levelOfAssistance:)",
+            "printedName": "init(note:tags:assistiveDevice:levelOfAssistance:properties:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16914,11 +18244,40 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : OneStepSDK.OSTMixedType]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTMixedType",
+                        "printedName": "OneStepSDK.OSTMixedType",
+                        "usr": "s:10OneStepSDK12OSTMixedTypeO"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistanceACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgtcfc",
-            "mangledName": "$s10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistanceACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgtcfc",
+            "usr": "s:10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10propertiesACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgtcfc",
+            "mangledName": "$s10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10propertiesACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -16979,6 +18338,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -17249,6 +18615,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -17513,6 +18886,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -18603,8 +19983,32 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
       },
       {
         "kind": "Import",
@@ -19127,6 +20531,13 @@
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -19360,6 +20771,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -19678,6 +21096,13 @@
                 ],
                 "usr": "s:s12IdentifiableP",
                 "mangledName": "$ss12IdentifiableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -19703,6 +21128,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -19741,6 +21173,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -20109,6 +21548,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -20366,6 +21812,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -20734,6 +22187,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -22090,6 +23550,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -22649,6 +24116,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -22671,20 +24145,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Any?",
+                "printedName": "(any Swift.Sendable)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "Sendable",
+                    "printedName": "any Swift.Sendable",
+                    "usr": "s:s8SendableP"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK10AnyCodableVyACypSgcfc",
-            "mangledName": "$s10OneStepSDK10AnyCodableVyACypSgcfc",
+            "usr": "s:10OneStepSDK10AnyCodableVyACs8Sendable_pSgcfc",
+            "mangledName": "$s10OneStepSDK10AnyCodableVyACs8Sendable_pSgcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -22782,6 +24257,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -24594,66 +26076,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "units",
-            "printedName": "units",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10OneStepSDK7OSTNormV5unitsSSSgvp",
-            "mangledName": "$s10OneStepSDK7OSTNormV5unitsSSSgvp",
-            "moduleName": "OneStepSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OneStepSDK7OSTNormV5unitsSSSgvg",
-                "mangledName": "$s10OneStepSDK7OSTNormV5unitsSSSgvg",
-                "moduleName": "OneStepSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "segments",
             "printedName": "segments",
             "children": [
@@ -24803,27 +26225,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(units:segments:lowLimit:highLimit:)",
+            "printedName": "init(segments:lowLimit:highLimit:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "OSTNorm",
                 "printedName": "OneStepSDK.OSTNorm",
                 "usr": "s:10OneStepSDK7OSTNormV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -24853,8 +26261,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK7OSTNormV5units8segments8lowLimit04highH0ACSSSg_SayAA11NormSegmentVGS2dtcfc",
-            "mangledName": "$s10OneStepSDK7OSTNormV5units8segments8lowLimit04highH0ACSSSg_SayAA11NormSegmentVGS2dtcfc",
+            "usr": "s:10OneStepSDK7OSTNormV8segments8lowLimit04highG0ACSayAA11NormSegmentVG_S2dtcfc",
+            "mangledName": "$s10OneStepSDK7OSTNormV8segments8lowLimit04highG0ACSayAA11NormSegmentVG_S2dtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -24883,6 +26291,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -25058,6 +26473,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -25565,6 +26987,13 @@
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -25798,6 +27227,13 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           },
@@ -26116,6 +27552,13 @@
                 ],
                 "usr": "s:s12IdentifiableP",
                 "mangledName": "$ss12IdentifiableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -26141,6 +27584,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -26179,6 +27629,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -26822,23 +28279,9 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/SDKWalkDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 180,
-      "length": 2,
-      "value": "35"
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/SDKWalkDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 312,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTUserAttributes.swift",
       "kind": "Dictionary",
-      "offset": 1472,
+      "offset": 1492,
       "length": 3,
       "value": "[]"
     },
@@ -26880,35 +28323,35 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 1008,
+      "offset": 1018,
       "length": 23,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 1087,
+      "offset": 1097,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 1165,
+      "offset": 1175,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1701,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 2084,
+      "offset": 2094,
       "length": 19,
       "value": "\"Can't parse date!\""
     },
@@ -26950,7 +28393,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTBackgroundRecord.swift",
       "kind": "Dictionary",
-      "offset": 232,
+      "offset": 243,
       "length": 3,
       "value": "[]"
     },
@@ -26991,17 +28434,66 @@
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1319,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 26940,
+      "offset": 27699,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 26970,
+      "offset": 27729,
       "length": 12,
       "value": "\"production\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28562,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28588,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28619,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28649,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28680,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28706,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/SDKRecordingAPIObject.swift",
@@ -27034,14 +28526,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 495,
+      "offset": 555,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 543,
+      "offset": 603,
       "length": 2,
       "value": "10"
     },
@@ -27055,119 +28547,119 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTDiscreteColor.swift",
       "kind": "StringLiteral",
-      "offset": 192,
+      "offset": 202,
       "length": 10,
       "value": "\"dark_red\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 180,
+      "offset": 190,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 199,
+      "offset": 209,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 217,
+      "offset": 227,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 237,
+      "offset": 247,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 265,
+      "offset": 275,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 285,
+      "offset": 295,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 307,
+      "offset": 317,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 332,
+      "offset": 342,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 428,
+      "offset": 449,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 461,
+      "offset": 482,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 492,
+      "offset": 513,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 523,
+      "offset": 544,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 575,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 585,
+      "offset": 606,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
+      "offset": 635,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/Enums.swift",
       "kind": "IntegerLiteral",
-      "offset": 634,
+      "offset": 655,
       "length": 1,
       "value": "8"
     },
@@ -27188,40 +28680,54 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/SDKBackgroundEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 893,
+      "offset": 831,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/SDKBackgroundEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1028,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/SDKBackgroundEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1106,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkClient.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkClient.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkClient.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkClient.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/OSTNetworkClient.swift",
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkClient.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 7,
@@ -27300,14 +28806,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 3072,
+      "offset": 3138,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15646,
+      "offset": 17001,
       "length": 5,
       "value": "false"
     },
@@ -27366,6 +28872,13 @@
       "offset": 621,
       "length": 13,
       "value": "\"duration_ms\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParameterMetadata.swift",
+      "kind": "BooleanLiteral",
+      "offset": 537,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/NormsDto.swift",
@@ -27454,79 +28967,86 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2623,
+      "offset": 2831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2711,
+      "offset": 2919,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2818,
+      "offset": 3026,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2902,
+      "offset": 3110,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2975,
+      "offset": 3183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "Dictionary",
-      "offset": 3084,
+      "offset": 3292,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3301,
+      "offset": 3509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3334,
+      "offset": 3542,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3372,
+      "offset": 3580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3414,
+      "offset": 3622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "Dictionary",
-      "offset": 3472,
+      "offset": 3680,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3703,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/HealthKit\/HKModels.swift",
@@ -27559,380 +29079,394 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 732,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 725,
+      "offset": 767,
       "length": 15,
       "value": "\"perceive_time\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 762,
+      "offset": 804,
       "length": 8,
       "value": "\"s3_key\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 835,
       "length": 8,
       "value": "\"bucket\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 836,
+      "offset": 878,
       "length": 22,
       "value": "\"retention_expires_at\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 881,
+      "offset": 923,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 913,
+      "offset": 955,
       "length": 9,
       "value": "\"seconds\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 951,
+      "offset": 993,
       "length": 15,
       "value": "\"activity_name\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 1029,
       "length": 6,
       "value": "\"note\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1058,
       "length": 9,
       "value": "\"geo_lat\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1048,
+      "offset": 1090,
       "length": 9,
       "value": "\"geo_lng\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1083,
+      "offset": 1125,
       "length": 11,
       "value": "\"pedometer\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1157,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1197,
       "length": 21,
       "value": "\"level_of_assistance\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1250,
       "length": 18,
       "value": "\"assistive_device\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1257,
+      "offset": 1299,
       "length": 17,
       "value": "\"custom_metadata\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 1343,
+      "length": 14,
+      "value": "\"s3_key_audio\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 2994,
+      "offset": 3223,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3026,
+      "offset": 3255,
       "length": 9,
       "value": "\"seconds\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3057,
+      "offset": 3286,
       "length": 7,
       "value": "\"steps\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3087,
+      "offset": 3316,
       "length": 9,
       "value": "\"geo_lat\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3119,
+      "offset": 3348,
       "length": 9,
       "value": "\"geo_lng\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3149,
+      "offset": 3378,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3176,
+      "offset": 3405,
       "length": 6,
       "value": "\"note\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3445,
       "length": 21,
       "value": "\"level_of_assistance\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3498,
       "length": 18,
       "value": "\"assistive_device\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3845,
+      "offset": 4218,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3899,
+      "offset": 4272,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 3954,
+      "offset": 4327,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4315,
+      "offset": 4698,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4335,
+      "offset": 4718,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4357,
+      "offset": 4740,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 168,
+      "offset": 178,
       "length": 9,
       "value": "\"cadence\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 205,
+      "offset": 215,
       "length": 10,
       "value": "\"velocity\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 248,
+      "offset": 258,
       "length": 16,
       "value": "\"double_support\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 290,
+      "offset": 300,
       "length": 8,
       "value": "\"stance\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 333,
+      "offset": 343,
       "length": 18,
       "value": "\"stance_asymmetry\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 393,
       "length": 15,
       "value": "\"stride_length\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 438,
       "length": 13,
       "value": "\"step_length\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 475,
+      "offset": 485,
       "length": 18,
       "value": "\"step_length_left\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 528,
+      "offset": 538,
       "length": 19,
       "value": "\"step_length_right\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 581,
+      "offset": 591,
       "length": 18,
       "value": "\"step_length_diff\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 648,
       "length": 23,
       "value": "\"step_length_asymmetry\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 692,
+      "offset": 702,
       "length": 13,
       "value": "\"consistency\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 733,
+      "offset": 743,
       "length": 11,
       "value": "\"hip_range\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 783,
       "length": 12,
       "value": "\"base_width\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 837,
       "length": 26,
       "value": "\"double_support_asymmetry\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 901,
       "length": 22,
       "value": "\"single_support_right\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 950,
+      "offset": 960,
       "length": 21,
       "value": "\"single_support_left\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1012,
       "length": 14,
       "value": "\"stance_right\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1056,
       "length": 13,
       "value": "\"stance_left\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1088,
+      "offset": 1098,
       "length": 12,
       "value": "\"walk_score\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 1138,
       "length": 10,
       "value": "\"distance\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1186,
       "length": 21,
       "value": "\"cadence_variability\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
+      "offset": 1246,
       "length": 22,
       "value": "\"velocity_variability\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/SDKAudioRecorderManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 269,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKConnectUserRequest.swift",
@@ -28035,7 +29569,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKMeasurementExtended.swift",
       "kind": "StringLiteral",
-      "offset": 1002,
+      "offset": 1032,
       "length": 11,
       "value": "\"fall_risk\""
     },
@@ -28280,35 +29814,35 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1722,
+      "offset": 1698,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1750,
+      "offset": 1726,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1784,
+      "offset": 1760,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1820,
+      "offset": 1796,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKPermissionsUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1856,
+      "offset": 1832,
       "length": 3,
       "value": "128"
     },
@@ -28336,28 +29870,35 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 592,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 627,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
       "kind": "Dictionary",
-      "offset": 693,
+      "offset": 697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 748,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
       "kind": "Dictionary",
-      "offset": 899,
+      "offset": 903,
       "length": 3,
       "value": "[]"
     },
@@ -28373,14 +29914,14 @@
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 1,
-      "value": "2"
+      "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDeviceUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "3"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
@@ -28434,21 +29975,21 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1134,
+      "offset": 1268,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1158,
+      "offset": 1292,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/MotionMeasurementDTO.swift",
       "kind": "IntegerLiteral",
-      "offset": 1180,
+      "offset": 1314,
       "length": 1,
       "value": "2"
     },

@@ -14,23 +14,23 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		a5WAoThnCEYwCV/7bizuUP+a5FI=
+		AEvP6R8U6gheVVI6c8KOjLWJFws=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WDLbYJd3Jjs2T+EXciy0mDYto6U=
+		6aJZTohUuYni8ZajpmOI5syGFuc=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/9RmQgvcxR8whA54758WJvSnQsw=
+		//e3luht+nWjIPEfxveA9JX5vqY=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WDLbYJd3Jjs2T+EXciy0mDYto6U=
+		6aJZTohUuYni8ZajpmOI5syGFuc=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Jm38M8B1Y4/hteqvfRppWE/NE04=
+		w+Jm6Nb5/LUM8SKhOl+cyK9pf98=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>OneStepSDKCoreData.mom</key>
 		<data>
-		TpAx7ftPwHN4RrgTi5qa3inOzvQ=
+		nJ7r6Cp8i2TJrQ/Th0QPzt57oKs=
 		</data>
 		<key>ParemetersFallBack.json</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Js9ReLEtAVHHrRPs+SeF/8/aPrGK1uJXa/6EQFJmDH0=
+			KpWC0+I+YkthQba0grkemW+elA7zkpvqYeAB80dq07I=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61qkXIAvAWwRCpntnhti2lopI3rE4/dB6SOSwG1VcHk=
+			638942pNE/tm8Dy2mAcOUcv38dLVojtMXBq1rHO1nM4=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gMZ7IX/Y2t1sXHya6agLROq93KjXJujtepVOgSIIRp0=
+			gklZkd6UJpWJbBvBZwt5e0fNJ/QeAJRmZB3bK/csj2g=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61qkXIAvAWwRCpntnhti2lopI3rE4/dB6SOSwG1VcHk=
+			638942pNE/tm8Dy2mAcOUcv38dLVojtMXBq1rHO1nM4=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DlCkyG6T2ru6aFfw9DwwPAHYnNepyACMsp+VjxN9WAA=
+			pJndc/7ktHKoykLZE3yQ2zkNwxPMwd5aPcF2glvcJy0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DUdv8KlKZQgCVZry/xniQ1MFgPLUbp57nWb2JvzEn2U=
+			nlACFD5qIa69LsLL0gfFpsbyTlTHMKW31fBmRFHU0CY=
 			</data>
 		</dict>
 		<key>ParemetersFallBack.json</key>
