@@ -29049,6 +29049,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
+      "kind": "StringLiteral",
+      "offset": 4975,
+      "length": 26,
+      "value": "\"rom_knee_flexion_passive\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
+      "kind": "StringLiteral",
+      "offset": 5034,
+      "length": 25,
+      "value": "\"dual_task_walk_subtract\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/HealthKit\/HKModels.swift",
       "kind": "StringLiteral",
       "offset": 165,
