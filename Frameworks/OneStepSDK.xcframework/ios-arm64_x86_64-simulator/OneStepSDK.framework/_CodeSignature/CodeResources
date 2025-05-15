@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		URKuDVqpwM1WExW5SZeMfLxLgiE=
+		OrZcCSuUkhRj+Gg+qyF2KMyaIJk=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		P/BQJfSQE1MxmzXm/2tCZ04v15E=
+		nkWVdJNtFeTPuqVGxV+Qn5ah35M=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		URKuDVqpwM1WExW5SZeMfLxLgiE=
+		OrZcCSuUkhRj+Gg+qyF2KMyaIJk=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		beK++6mbE//Gp8jfdv0hEweOJDE=
+		jxEXa9kLXcUzZAIuh0PymkZahRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kmhxW8P8IwkS23uQ5Q6HzT7fTh4ExZ3khGW+uUbKark=
+			d27mrQfIY+J6wx6OTBorqonqSlD5U2Mn2N5tCUI6rLY=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -106,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z6+Qn7q7XnuH7UQPPuoIyV4KlJoCO+ArCuCt5oRbPyQ=
+			5SyyonBgcUvuISlto8U8u4+xU5CA9aJy6wSRdxXVVAc=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kmhxW8P8IwkS23uQ5Q6HzT7fTh4ExZ3khGW+uUbKark=
+			d27mrQfIY+J6wx6OTBorqonqSlD5U2Mn2N5tCUI6rLY=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmtGwA4rCJc7PMzVbuw/h+0ZYhs2rBSOUegaOMXhqI0=
+			gvqM+2BgGuuBagIbsImdZ+EH7eDb7iSo4ah/ogvbRYM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
