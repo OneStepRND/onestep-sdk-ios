@@ -305,7 +305,8 @@ public struct OSTParameterMetadata : Swift.Sendable {
   public let roundDigits: Swift.Int
   public let sortKey: Swift.Int
   public let isMainParam: Swift.Bool?
-  public init(displayName: Swift.String, units: Swift.String?, imperialUnits: Swift.String?, category: Swift.String?, roundDigits: Swift.Int, sortKey: Swift.Int, isMainParam: Swift.Bool? = false)
+  public let activity: Swift.String
+  public init(displayName: Swift.String, units: Swift.String?, imperialUnits: Swift.String?, category: Swift.String?, roundDigits: Swift.Int, sortKey: Swift.Int, isMainParam: Swift.Bool? = false, activity: Swift.String = "")
 }
 public protocol OSTCoreInterface {
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
@@ -365,6 +366,7 @@ public enum OSTActivityType : Swift.String, Swift.Sendable, Swift.CaseIterable, 
   case sts
   case tug
   case romKneeFlexionPassive
+  case romKneeExtension
   case dualTaskWalkSubtract
   public init?(rawValue: Swift.String)
   public var title: Swift.String {
@@ -416,6 +418,7 @@ public protocol OSTMotionDataService {
   func isWithinNorm(param: OneStepSDK.OSTParamName, value: Swift.Double) -> Swift.Bool?
   func discreteScore(for param: OneStepSDK.OSTParamName, value: Swift.Double) -> OneStepSDK.OSTDiscreteColor?
   func getInsightsBy(measurementID uuid: Foundation.UUID) async throws -> [OneStepSDK.OSTInsight]
+  func getMainParameter(for measurement: OneStepSDK.OSTActivityType) -> (paramName: OneStepSDK.OSTParamName, metadata: OneStepSDK.OSTParameterMetadata)?
 }
 @_hasMissingDesignatedInitializers public class HealthKitManager {
   public static func checkPermissionsWereAsked(for identifier: HealthKit.HKQuantityTypeIdentifier) async -> Swift.Bool
@@ -514,6 +517,27 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable, Swift.Sendable {
   case walkingDistance
   case walkingCadenceVariability
   case walkingVelocityVariability
+  case tugDurationSeconds
+  case tugForwardSeconds
+  case tugBackwardSeconds
+  case tugSittingSeconds
+  case tugStandingSeconds
+  case tugTurningSeconds
+  case tugTurningToChairSeconds
+  case tugDistanceMeters
+  case stsRepetitionCount
+  case stsRepetitionTime
+  case stsRepetitionVar
+  case stsFatigue
+  case stsAngle
+  case rangeOfMotionAngle
+  case hipExtRangeOfMotionAngle
+  case hipFlexRangeOfMotionAngle
+  case hipAbdRangeOfMotionAngle
+  case hipAddRangeOfMotionAngle
+  case kneeFlexRangeOfMotionAngle
+  case kneeExtRangeOfMotionAngle
+  case kneeFlexPassiveRangeOfMotionAngle
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OneStepSDK.OSTParamName]
   public typealias RawValue = Swift.String
@@ -567,7 +591,7 @@ public struct OSTJSONEncoderClient : Swift.Sendable {
 public struct OSTInsight : Swift.Decodable, Swift.Sendable {
   public let paramName: Swift.String?
   public let rank: Swift.Double
-  public let intent: OneStepSDK.OSTIntentType
+  public let intent: OneStepSDK.OSTIntentType?
   public let insightType: OneStepSDK.OSTInsightType
   public let textMarkdown: Swift.String
   public init(paramName: Swift.String?, rank: Swift.Double, intent: OneStepSDK.OSTIntentType, insightType: OneStepSDK.OSTInsightType, textMarkdown: Swift.String)
