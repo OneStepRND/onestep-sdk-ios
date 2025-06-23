@@ -368,6 +368,8 @@ public enum OSTActivityType : Swift.String, Swift.Sendable, Swift.CaseIterable, 
   case romKneeFlexionPassive
   case romKneeExtension
   case dualTaskWalkSubtract
+  case sixMinWalk
+  case stairs
   public init?(rawValue: Swift.String)
   public var title: Swift.String {
     get
@@ -538,6 +540,7 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable, Swift.Sendable {
   case kneeFlexRangeOfMotionAngle
   case kneeExtRangeOfMotionAngle
   case kneeFlexPassiveRangeOfMotionAngle
+  case sixMinWalkDistance
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OneStepSDK.OSTParamName]
   public typealias RawValue = Swift.String

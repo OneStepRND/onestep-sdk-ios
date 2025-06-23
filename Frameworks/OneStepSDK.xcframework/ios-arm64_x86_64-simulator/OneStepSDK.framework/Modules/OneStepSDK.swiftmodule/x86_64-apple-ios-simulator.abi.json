@@ -13589,6 +13589,80 @@
             "moduleName": "OneStepSDK"
           },
           {
+            "kind": "Var",
+            "name": "sixMinWalk",
+            "printedName": "sixMinWalk",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO10sixMinWalkyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO10sixMinWalkyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "stairs",
+            "printedName": "stairs",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTActivityType.Type) -> OneStepSDK.OSTActivityType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTActivityType",
+                    "printedName": "OneStepSDK.OSTActivityType",
+                    "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTActivityType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTActivityType",
+                        "printedName": "OneStepSDK.OSTActivityType",
+                        "usr": "s:10OneStepSDK15OSTActivityTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK15OSTActivityTypeO6stairsyA2CmF",
+            "mangledName": "$s10OneStepSDK15OSTActivityTypeO6stairsyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -20677,6 +20751,43 @@
             "declKind": "EnumElement",
             "usr": "s:10OneStepSDK12OSTParamNameO33kneeFlexPassiveRangeOfMotionAngleyA2CmF",
             "mangledName": "$s10OneStepSDK12OSTParamNameO33kneeFlexPassiveRangeOfMotionAngleyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sixMinWalkDistance",
+            "printedName": "sixMinWalkDistance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTParamName.Type) -> OneStepSDK.OSTParamName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTParamName",
+                    "printedName": "OneStepSDK.OSTParamName",
+                    "usr": "s:10OneStepSDK12OSTParamNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTParamName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTParamName",
+                        "printedName": "OneStepSDK.OSTParamName",
+                        "usr": "s:10OneStepSDK12OSTParamNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK12OSTParamNameO18sixMinWalkDistanceyA2CmF",
+            "mangledName": "$s10OneStepSDK12OSTParamNameO18sixMinWalkDistanceyA2CmF",
             "moduleName": "OneStepSDK"
           },
           {
@@ -30017,6 +30128,13 @@
       "value": "\"dual_task_walk_subtract\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
+      "kind": "StringLiteral",
+      "offset": 5125,
+      "length": 17,
+      "value": "\"walk_6_min_test\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/HealthKit\/HKModels.swift",
       "kind": "StringLiteral",
       "offset": 165,
@@ -30577,6 +30695,13 @@
       "value": "\"knee_flex_passive_range_of_motion_angle\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
+      "kind": "StringLiteral",
+      "offset": 3252,
+      "length": 33,
+      "value": "\"six_minute_walk_distance_meters\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/SDKAudioRecorderManager.swift",
       "kind": "BooleanLiteral",
       "offset": 269,
@@ -31036,7 +31161,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "3"
+      "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
