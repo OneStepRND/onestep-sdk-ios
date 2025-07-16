@@ -160,6 +160,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   final public func unregisterBackgroundMonitoring()
   final public func isBackgroundMonitoringActive() -> Swift.Bool
   final public func testBackgroundRecording()
+  final public func inAppPermissionsRequired() -> Swift.Bool
   final public func backgroundMonitoringStats() -> OneStepSDK.BackgroundMonitoringStats
   final public func aggregateBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?, window: OneStepSDK.OSTWindow = .day) -> [OneStepSDK.OSTAggregatedBackgroundRecord]
   final public func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
