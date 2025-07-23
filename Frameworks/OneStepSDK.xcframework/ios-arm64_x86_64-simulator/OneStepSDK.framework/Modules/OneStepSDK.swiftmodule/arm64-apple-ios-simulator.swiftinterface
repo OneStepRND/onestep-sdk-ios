@@ -262,9 +262,6 @@ public enum OSTLevelOfAssistance : Swift.Int, Swift.Codable, Swift.CaseIterable,
   case maximumAssistence
   case totalAssistence
   case unable
-  public var title: Swift.String {
-    get
-  }
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [OneStepSDK.OSTLevelOfAssistance]
   public typealias RawValue = Swift.Int
@@ -372,9 +369,6 @@ public enum OSTActivityType : Swift.String, Swift.Sendable, Swift.CaseIterable, 
   case sixMinWalk
   case stairs
   public init?(rawValue: Swift.String)
-  public var title: Swift.String {
-    get
-  }
   public var id: Swift.String {
     get
   }

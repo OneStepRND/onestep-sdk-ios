@@ -8805,46 +8805,6 @@
             "moduleName": "OneStepSDK"
           },
           {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10OneStepSDK20OSTLevelOfAssistanceO5titleSSvp",
-            "mangledName": "$s10OneStepSDK20OSTLevelOfAssistanceO5titleSSvp",
-            "moduleName": "OneStepSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OneStepSDK20OSTLevelOfAssistanceO5titleSSvg",
-                "mangledName": "$s10OneStepSDK20OSTLevelOfAssistanceO5titleSSvg",
-                "moduleName": "OneStepSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -13718,46 +13678,6 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10OneStepSDK15OSTActivityTypeO5titleSSvp",
-            "mangledName": "$s10OneStepSDK15OSTActivityTypeO5titleSSvp",
-            "moduleName": "OneStepSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OneStepSDK15OSTActivityTypeO5titleSSvg",
-                "mangledName": "$s10OneStepSDK15OSTActivityTypeO5titleSSvg",
-                "moduleName": "OneStepSDK",
-                "accessorKind": "get"
-              }
-            ]
           },
           {
             "kind": "Var",
