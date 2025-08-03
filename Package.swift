@@ -11,8 +11,7 @@ let package = Package(
             targets: ["OneStepSDKiOS", "OneStepSDK"])
     ],
     targets: [
-        .target(
-            name: "OneStepSDKiOS"),
+        .target(name: "OneStepSDKiOS"),
         .binaryTarget(name: "OneStepSDK", path: "Frameworks/OneStepSDK.xcframework"),
     ]
 )

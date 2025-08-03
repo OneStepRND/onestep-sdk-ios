@@ -82,8 +82,8 @@ public struct OSTUserAttributes : Swift.Sendable {
   public var mainSurgeryDate: Foundation.Date?
   public var mainSurgeryType: OneStepSDK.OSTSurgeryType?
   public var mainSurgerySide: OneStepSDK.OSTSurgerySide?
-  public var customAttributes: [Swift.String : Swift.String]
-  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, profileImageUrl: Swift.String? = nil, dateOfBirth: Foundation.Date? = nil, emrId: Swift.String? = nil, phoneNumber: Swift.String? = nil, email: Swift.String? = nil, sex: OneStepSDK.OSTUserAttributes.Sex? = nil, heightCm: Swift.Int? = nil, weightKg: Swift.Int? = nil, age: Swift.Int? = nil, mainSurgeryDate: Foundation.Date? = nil, mainSurgeryType: OneStepSDK.OSTSurgeryType? = nil, mainSurgerySide: OneStepSDK.OSTSurgerySide? = nil, customAttributes: [Swift.String : Swift.String] = [:])
+  public var customAttributes: [Swift.String : OneStepSDK.OSTMixedType]
+  public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, profileImageUrl: Swift.String? = nil, dateOfBirth: Foundation.Date? = nil, emrId: Swift.String? = nil, phoneNumber: Swift.String? = nil, email: Swift.String? = nil, sex: OneStepSDK.OSTUserAttributes.Sex? = nil, heightCm: Swift.Int? = nil, weightKg: Swift.Int? = nil, age: Swift.Int? = nil, mainSurgeryDate: Foundation.Date? = nil, mainSurgeryType: OneStepSDK.OSTSurgeryType? = nil, mainSurgerySide: OneStepSDK.OSTSurgerySide? = nil, customAttributes: [Swift.String : OneStepSDK.OSTMixedType] = [:])
   public class Builder {
     public init()
     public func withFirstName(_ name: Swift.String) -> OneStepSDK.OSTUserAttributes.Builder
@@ -99,7 +99,7 @@ public struct OSTUserAttributes : Swift.Sendable {
     public func withAge(_ age: Swift.Int) -> OneStepSDK.OSTUserAttributes.Builder
     public func build() -> OneStepSDK.OSTUserAttributes
     public func withMainSurgery(date: Foundation.Date, type: OneStepSDK.OSTSurgeryType, side: OneStepSDK.OSTSurgerySide) -> OneStepSDK.OSTUserAttributes.Builder
-    public func withCustomAttribute(key: Swift.String, value: Swift.String) -> OneStepSDK.OSTUserAttributes.Builder
+    public func withCustomAttribute(key: Swift.String, value: OneStepSDK.OSTMixedType) -> OneStepSDK.OSTUserAttributes.Builder
     @objc deinit
   }
 }

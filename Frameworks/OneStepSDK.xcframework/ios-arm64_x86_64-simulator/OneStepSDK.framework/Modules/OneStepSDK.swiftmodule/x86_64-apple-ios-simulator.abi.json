@@ -1983,7 +1983,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1993,17 +1993,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "OSTMixedType",
+                    "printedName": "OneStepSDK.OSTMixedType",
+                    "usr": "s:10OneStepSDK12OSTMixedTypeO"
                   }
                 ],
                 "usr": "s:SD"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvp",
-            "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvp",
+            "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvp",
+            "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvp",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "HasStorage",
@@ -2019,7 +2019,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
+                    "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2029,17 +2029,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "OSTMixedType",
+                        "printedName": "OneStepSDK.OSTMixedType",
+                        "usr": "s:10OneStepSDK12OSTMixedTypeO"
                       }
                     ],
                     "usr": "s:SD"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvg",
-                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvg",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvg",
+                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2057,7 +2057,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
+                    "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2067,17 +2067,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "OSTMixedType",
+                        "printedName": "OneStepSDK.OSTMixedType",
+                        "usr": "s:10OneStepSDK12OSTMixedTypeO"
                       }
                     ],
                     "usr": "s:SD"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvs",
-                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvs",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvs",
+                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -2094,8 +2094,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvM",
-                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDyS2SGvM",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvM",
+                "mangledName": "$s10OneStepSDK17OSTUserAttributesV06customE0SDySSAA12OSTMixedTypeOGvM",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2326,7 +2326,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2336,9 +2336,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "OSTMixedType",
+                    "printedName": "OneStepSDK.OSTMixedType",
+                    "usr": "s:10OneStepSDK12OSTMixedTypeO"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -2346,8 +2346,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK17OSTUserAttributesV9firstName04lastG015profileImageUrl11dateOfBirth5emrId11phoneNumber5email3sex8heightCm8weightKg3age15mainSurgeryDate0Z11SurgeryType0Z11SurgerySide06customE0ACSSSg_A2S10Foundation4DateVSgA3sC3SexOSgSiSgA_A_AwA14OSTSurgeryTypeOSgAA14OSTSurgerySideOSgSDyS2SGtcfc",
-            "mangledName": "$s10OneStepSDK17OSTUserAttributesV9firstName04lastG015profileImageUrl11dateOfBirth5emrId11phoneNumber5email3sex8heightCm8weightKg3age15mainSurgeryDate0Z11SurgeryType0Z11SurgerySide06customE0ACSSSg_A2S10Foundation4DateVSgA3sC3SexOSgSiSgA_A_AwA14OSTSurgeryTypeOSgAA14OSTSurgerySideOSgSDyS2SGtcfc",
+            "usr": "s:10OneStepSDK17OSTUserAttributesV9firstName04lastG015profileImageUrl11dateOfBirth5emrId11phoneNumber5email3sex8heightCm8weightKg3age15mainSurgeryDate0Z11SurgeryType0Z11SurgerySide06customE0ACSSSg_A2S10Foundation4DateVSgA3sC3SexOSgSiSgA_A_AwA14OSTSurgeryTypeOSgAA14OSTSurgerySideOSgSDySSAA12OSTMixedTypeOGtcfc",
+            "mangledName": "$s10OneStepSDK17OSTUserAttributesV9firstName04lastG015profileImageUrl11dateOfBirth5emrId11phoneNumber5email3sex8heightCm8weightKg3age15mainSurgeryDate0Z11SurgeryType0Z11SurgerySide06customE0ACSSSg_A2S10Foundation4DateVSgA3sC3SexOSgSiSgA_A_AwA14OSTSurgeryTypeOSgAA14OSTSurgerySideOSgSDySSAA12OSTMixedTypeOGtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -2756,14 +2756,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "OSTMixedType",
+                    "printedName": "OneStepSDK.OSTMixedType",
+                    "usr": "s:10OneStepSDK12OSTMixedTypeO"
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:10OneStepSDK17OSTUserAttributesV7BuilderC19withCustomAttribute3key5valueAESS_SStF",
-                "mangledName": "$s10OneStepSDK17OSTUserAttributesV7BuilderC19withCustomAttribute3key5valueAESS_SStF",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV7BuilderC19withCustomAttribute3key5valueAESS_AA12OSTMixedTypeOtF",
+                "mangledName": "$s10OneStepSDK17OSTUserAttributesV7BuilderC19withCustomAttribute3key5valueAESS_AA12OSTMixedTypeOtF",
                 "moduleName": "OneStepSDK",
                 "declAttributes": [
                   "AccessControl"
@@ -29267,7 +29267,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTUserAttributes.swift",
       "kind": "Dictionary",
-      "offset": 1492,
+      "offset": 1504,
       "length": 3,
       "value": "[]"
     },
@@ -29729,72 +29729,79 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 469,
+      "offset": 515,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 506,
+      "offset": 552,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 549,
+      "offset": 595,
       "length": 19,
       "value": "\"profile_image_url\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 642,
       "length": 15,
       "value": "\"date_of_birth\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 679,
       "length": 8,
       "value": "\"emr_id\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 715,
       "length": 14,
       "value": "\"phone_number\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 705,
+      "offset": 751,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 732,
+      "offset": 778,
       "length": 5,
       "value": "\"sex\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 762,
+      "offset": 808,
       "length": 11,
       "value": "\"height_cm\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
       "kind": "StringLiteral",
-      "offset": 798,
+      "offset": 844,
       "length": 11,
       "value": "\"weight_kg\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/PatientProfileDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 886,
+      "length": 17,
+      "value": "\"custom_metadata\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
@@ -31102,8 +31109,8 @@
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDeviceUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
-      "length": 1,
-      "value": "9"
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
