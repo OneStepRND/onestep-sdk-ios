@@ -142,7 +142,9 @@ public struct OSTBackgroundRecord : Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers final public class OSTSDKCore : OneStepSDK.OSTCoreInterface {
   public static let shared: OneStepSDK.OSTSDKCore
+  final public var minStepsForAnalysis: Swift.Int
   final public func isInitialized() -> Swift.Bool
+  final public func initialize(userToken: Swift.String, patientUUID: Swift.String, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   final public func currentRecordingLimit() -> Swift.Int
   final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
@@ -207,6 +209,9 @@ public struct BackgroundSampleBL : Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers public class OSTRecorder : OneStepSDK.OSTRecorderProtocol {
   public static let shared: OneStepSDK.OSTRecorder
+  public var stepsCount: Combine.AnyPublisher<Swift.Int, Swift.Never> {
+    get
+  }
   public var recorderState: Combine.AnyPublisher<OneStepSDK.OSTRecorderState, Swift.Never> {
     get
   }
