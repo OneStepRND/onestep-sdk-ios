@@ -10,8 +10,14 @@ let package = Package(
             name: "OneStepSDKiOS",
             targets: ["OneStepSDKiOS", "OneStepSDK"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/lynixliu/SwiftAvroCore", from: "0.0.0")
+    ],
     targets: [
-        .target(name: "OneStepSDKiOS"),
+        .target(
+            name: "OneStepSDKiOS",
+            dependencies: ["OneStepSDK", .product(name: "SwiftAvroCore", package: "SwiftAvroCore")]
+        ),
         .binaryTarget(name: "OneStepSDK", path: "Frameworks/OneStepSDK.xcframework"),
     ]
 )
