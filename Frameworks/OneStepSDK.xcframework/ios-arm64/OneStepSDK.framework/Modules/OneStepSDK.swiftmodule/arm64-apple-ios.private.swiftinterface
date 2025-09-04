@@ -140,9 +140,19 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   public var locale: Swift.String?
   public init(timestamp: Foundation.Date, parameters: [OneStepSDK.OSTParamName : Swift.Double], steps: Swift.Int, seconds: Swift.Int, locale: Swift.String? = nil)
 }
+public struct SDKDataPoint : Swift.Codable, Swift.Sendable {
+  public let t: Swift.Int
+  public var x: Swift.Int?
+  public var y: Swift.Int?
+  public var z: Swift.Int?
+  public var w: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers final public class OSTSDKCore : OneStepSDK.OSTCoreInterface {
   public static let shared: OneStepSDK.OSTSDKCore
   final public var minStepsForAnalysis: Swift.Int
+  public static var customDataEncoder: ((OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String))?
   final public func isInitialized() -> Swift.Bool
   final public func initialize(userToken: Swift.String, patientUUID: Swift.String, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
@@ -679,6 +689,14 @@ extension OneStepSDK.MotionMeasurement {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var encodedData: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var encodingFormat: Swift.String? {
+    @objc get
+    @objc set
+  }
 }
 @_hasMissingDesignatedInitializers public class OSTEnvironment {
   @objc deinit
@@ -692,6 +710,31 @@ public struct OSTAggregatedBackgroundRecord : Swift.Sendable {
   public var endTime: Foundation.Date
   public var parameters: [OneStepSDK.OSTParamName : Swift.Double]
   public init(startTime: Foundation.Date, endTime: Foundation.Date, parameters: [OneStepSDK.OSTParamName : Swift.Double])
+}
+public struct SDKSensorData : Swift.Codable, Swift.Sendable {
+  public var accelerationData: [OneStepSDK.SDKDataPoint]
+  public var activityData: [OneStepSDK.SDKDataPoint]
+  public var altimeterData: [OneStepSDK.SDKDataPoint]
+  public var rotationData: [OneStepSDK.SDKDataPoint]
+  public var stepsData: [OneStepSDK.SDKDataPoint]
+  public var locationData: [OneStepSDK.SDKLocationPoint]
+  public var startTimeEpoch: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SDKLocationPoint : Swift.Codable, Swift.Sendable {
+  public let timeStamp: Swift.Int
+  public let long: Swift.Double
+  public let lat: Swift.Double
+  public let alt: Swift.Double
+  public let speed: Swift.Double
+  public let locAcc: Swift.Double
+  public let verticalAcc: Swift.Double
+  public let speedAcc: Swift.Double
+  public let course: Swift.Double
+  public let courseAcc: Swift.Double
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum OSTMixedType : Swift.Codable, Swift.Sendable {
   case string(Swift.String)

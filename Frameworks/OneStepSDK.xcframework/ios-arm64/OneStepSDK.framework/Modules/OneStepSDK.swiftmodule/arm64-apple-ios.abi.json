@@ -4397,6 +4397,212 @@
                 "accessorKind": "set"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "encodedData",
+            "printedName": "encodedData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(py)encodedData",
+            "mangledName": "$s10OneStepSDK17MotionMeasurementC11encodedData10Foundation0G0VSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)encodedData",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC11encodedData10Foundation0G0VSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)setEncodedData:",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC11encodedData10Foundation0G0VSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "encodingFormat",
+            "printedName": "encodingFormat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(py)encodingFormat",
+            "mangledName": "$s10OneStepSDK17MotionMeasurementC14encodingFormatSSSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)encodingFormat",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC14encodingFormatSSSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@OneStepSDK@objc(cs)MotionMeasurement(im)setEncodingFormat:",
+                "mangledName": "$s10OneStepSDK17MotionMeasurementC14encodingFormatSSSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -5164,6 +5370,592 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SDKDataPoint",
+        "printedName": "SDKDataPoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "t",
+            "printedName": "t",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK12SDKDataPointV1tSivp",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV1tSivp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1tSivg",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1tSivg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "x",
+            "printedName": "x",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK12SDKDataPointV1xSiSgvp",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV1xSiSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1xSiSgvg",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1xSiSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1xSiSgvs",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1xSiSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1xSiSgvM",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1xSiSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "y",
+            "printedName": "y",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK12SDKDataPointV1ySiSgvp",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV1ySiSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1ySiSgvg",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1ySiSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1ySiSgvs",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1ySiSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1ySiSgvM",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1ySiSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "z",
+            "printedName": "z",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK12SDKDataPointV1zSiSgvp",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV1zSiSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1zSiSgvg",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1zSiSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1zSiSgvs",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1zSiSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1zSiSgvM",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1zSiSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "w",
+            "printedName": "w",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK12SDKDataPointV1wSiSgvp",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV1wSiSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1wSiSgvg",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1wSiSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1wSiSgvs",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1wSiSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK12SDKDataPointV1wSiSgvM",
+                "mangledName": "$s10OneStepSDK12SDKDataPointV1wSiSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SDKDataPoint",
+                "printedName": "OneStepSDK.SDKDataPoint",
+                "usr": "s:10OneStepSDK12SDKDataPointV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK12SDKDataPointV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK12SDKDataPointV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OneStepSDK12SDKDataPointV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK12SDKDataPointV",
+        "mangledName": "$s10OneStepSDK12SDKDataPointV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5339,6 +6131,209 @@
                 "usr": "s:10OneStepSDK10OSTSDKCoreC19minStepsForAnalysisSivM",
                 "mangledName": "$s10OneStepSDK10OSTSDKCoreC19minStepsForAnalysisSivM",
                 "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customDataEncoder",
+            "printedName": "customDataEncoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String))?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(data: Foundation.Data, format: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKSensorData",
+                        "printedName": "OneStepSDK.SDKSensorData",
+                        "usr": "s:10OneStepSDK13SDKSensorDataV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvpZ",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvpZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String))?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(data: Foundation.Data, format: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SDKSensorData",
+                            "printedName": "OneStepSDK.SDKSensorData",
+                            "usr": "s:10OneStepSDK13SDKSensorDataV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvgZ",
+                "mangledName": "$s10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvgZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String))?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(OneStepSDK.SDKSensorData) throws -> (data: Foundation.Data, format: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(data: Foundation.Data, format: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SDKSensorData",
+                            "printedName": "OneStepSDK.SDKSensorData",
+                            "usr": "s:10OneStepSDK13SDKSensorDataV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvsZ",
+                "mangledName": "$s10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvsZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvMZ",
+                "mangledName": "$s10OneStepSDK10OSTSDKCoreC17customDataEncoder10Foundation0F0V4data_SS6formattAA09SDKSensorF0VKcSgvMZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
                 "implicit": true,
                 "declAttributes": [
                   "Final"
@@ -24826,6 +25821,847 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "SDKSensorData",
+        "printedName": "SDKSensorData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accelerationData",
+            "printedName": "accelerationData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKDataPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKDataPoint",
+                    "printedName": "OneStepSDK.SDKDataPoint",
+                    "usr": "s:10OneStepSDK12SDKDataPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV012accelerationE0SayAA12SDKDataPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityData",
+            "printedName": "activityData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKDataPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKDataPoint",
+                    "printedName": "OneStepSDK.SDKDataPoint",
+                    "usr": "s:10OneStepSDK12SDKDataPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08activityE0SayAA12SDKDataPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "altimeterData",
+            "printedName": "altimeterData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKDataPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKDataPoint",
+                    "printedName": "OneStepSDK.SDKDataPoint",
+                    "usr": "s:10OneStepSDK12SDKDataPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV09altimeterE0SayAA12SDKDataPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotationData",
+            "printedName": "rotationData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKDataPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKDataPoint",
+                    "printedName": "OneStepSDK.SDKDataPoint",
+                    "usr": "s:10OneStepSDK12SDKDataPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08rotationE0SayAA12SDKDataPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stepsData",
+            "printedName": "stepsData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKDataPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKDataPoint",
+                    "printedName": "OneStepSDK.SDKDataPoint",
+                    "usr": "s:10OneStepSDK12SDKDataPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKDataPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKDataPoint",
+                        "printedName": "OneStepSDK.SDKDataPoint",
+                        "usr": "s:10OneStepSDK12SDKDataPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV05stepsE0SayAA12SDKDataPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locationData",
+            "printedName": "locationData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OneStepSDK.SDKLocationPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLocationPoint",
+                    "printedName": "OneStepSDK.SDKLocationPoint",
+                    "usr": "s:10OneStepSDK16SDKLocationPointV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKLocationPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLocationPoint",
+                        "printedName": "OneStepSDK.SDKLocationPoint",
+                        "usr": "s:10OneStepSDK16SDKLocationPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.SDKLocationPoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLocationPoint",
+                        "printedName": "OneStepSDK.SDKLocationPoint",
+                        "usr": "s:10OneStepSDK16SDKLocationPointV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV08locationE0SayAA16SDKLocationPointVGvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startTimeEpoch",
+            "printedName": "startTimeEpoch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK13SDKSensorDataV14startTimeEpochSivp",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV14startTimeEpochSivp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV14startTimeEpochSivg",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV14startTimeEpochSivg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV14startTimeEpochSivs",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV14startTimeEpochSivs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK13SDKSensorDataV14startTimeEpochSivM",
+                "mangledName": "$s10OneStepSDK13SDKSensorDataV14startTimeEpochSivM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SDKSensorData",
+                "printedName": "OneStepSDK.SDKSensorData",
+                "usr": "s:10OneStepSDK13SDKSensorDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK13SDKSensorDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK13SDKSensorDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OneStepSDK13SDKSensorDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK13SDKSensorDataV",
+        "mangledName": "$s10OneStepSDK13SDKSensorDataV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -24833,6 +26669,548 @@
         "moduleName": "OneStepSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKLocationPoint",
+        "printedName": "SDKLocationPoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timeStamp",
+            "printedName": "timeStamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV9timeStampSivp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV9timeStampSivp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV9timeStampSivg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV9timeStampSivg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "long",
+            "printedName": "long",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV4longSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV4longSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV4longSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV4longSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lat",
+            "printedName": "lat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV3latSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV3latSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV3latSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV3latSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alt",
+            "printedName": "alt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV3altSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV3altSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV3altSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV3altSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "speed",
+            "printedName": "speed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV5speedSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV5speedSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV5speedSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV5speedSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locAcc",
+            "printedName": "locAcc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV6locAccSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV6locAccSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV6locAccSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV6locAccSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verticalAcc",
+            "printedName": "verticalAcc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV11verticalAccSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV11verticalAccSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV11verticalAccSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV11verticalAccSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "speedAcc",
+            "printedName": "speedAcc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV8speedAccSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV8speedAccSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV8speedAccSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV8speedAccSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "course",
+            "printedName": "course",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV6courseSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV6courseSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV6courseSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV6courseSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "courseAcc",
+            "printedName": "courseAcc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16SDKLocationPointV9courseAccSdvp",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV9courseAccSdvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16SDKLocationPointV9courseAccSdvg",
+                "mangledName": "$s10OneStepSDK16SDKLocationPointV9courseAccSdvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SDKLocationPoint",
+                "printedName": "OneStepSDK.SDKLocationPoint",
+                "usr": "s:10OneStepSDK16SDKLocationPointV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK16SDKLocationPointV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK16SDKLocationPointV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OneStepSDK16SDKLocationPointV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OneStepSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK16SDKLocationPointV",
+        "mangledName": "$s10OneStepSDK16SDKLocationPointV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -29670,63 +32048,63 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1616,
+      "offset": 1769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 31243,
+      "offset": 31396,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 31273,
+      "offset": 31426,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32106,
+      "offset": 32259,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32132,
+      "offset": 32285,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32163,
+      "offset": 32316,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32193,
+      "offset": 32346,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32224,
+      "offset": 32377,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32250,
+      "offset": 32403,
       "length": 1,
       "value": "5"
     },
