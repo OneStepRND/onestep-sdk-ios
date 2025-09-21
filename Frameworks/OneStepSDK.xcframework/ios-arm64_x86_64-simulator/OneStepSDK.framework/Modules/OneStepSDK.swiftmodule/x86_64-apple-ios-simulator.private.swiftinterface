@@ -14,6 +14,7 @@ import Foundation/*.Data*/
 import HealthKit
 import Network
 @_exported import OneStepSDK
+import Security
 import Swift
 import SwiftUI
 import UIKit
@@ -101,6 +102,51 @@ public struct OSTUserAttributes : Swift.Sendable {
     public func withMainSurgery(date: Foundation.Date, type: OneStepSDK.OSTSurgeryType, side: OneStepSDK.OSTSurgerySide) -> OneStepSDK.OSTUserAttributes.Builder
     public func withCustomAttribute(key: Swift.String, value: OneStepSDK.OSTMixedType) -> OneStepSDK.OSTUserAttributes.Builder
     @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class OSTKeychainManager {
+  public enum KeychainKey : Swift.String, Swift.CaseIterable {
+    case authToken
+    case userId
+    case deviceId
+    case customerDistinctId
+    case profileEmail
+    case profilePhone
+    case profileEmrID
+    case ddApiKey
+    case hmacSecretKey
+    case clinicianToken
+    case clinicianPatientUUID
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [OneStepSDK.OSTKeychainManager.KeychainKey]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [OneStepSDK.OSTKeychainManager.KeychainKey] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum KeychainError : Swift.Error {
+    case itemNotFound
+    case unexpectedData
+    case unhandledError(status: Darwin.OSStatus)
+    case invalidData
+  }
+  public static func store(_ value: Swift.String, for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
+  public static func store(_ data: Foundation.Data, for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
+  public static func getString(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws -> Swift.String?
+  public static func getData(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws -> Foundation.Data?
+  public static func delete(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
+  public static func exists(_ key: OneStepSDK.OSTKeychainManager.KeychainKey) -> Swift.Bool
+  public static func clearAll()
+  public static func migrateFromUserDefaults()
+  public static func testBackgroundAccess()
+  @objc deinit
+}
+extension OneStepSDK.OSTKeychainManager.KeychainError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
   }
 }
 public struct OSTJSONDecoderClient : Swift.Sendable {
@@ -218,7 +264,7 @@ public struct BackgroundSampleBL : Swift.Sendable {
   public var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> {
     get
   }
-  public func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
+  public func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool = false)
   public func analyze() async -> OneStepSDK.OSTMotionMeasurement?
   public func stop()
   public func reset()
@@ -359,7 +405,7 @@ public class OSTConfiguration : Swift.Codable {
 public protocol OSTRecorderProtocol {
   var recorderState: Combine.AnyPublisher<OneStepSDK.OSTRecorderState, Swift.Never> { get }
   var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> { get }
-  func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
+  func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool)
   func analyze() async -> OneStepSDK.OSTMotionMeasurement?
   func stop()
   func reset()
@@ -805,6 +851,9 @@ public struct OSTAuthTokenManager : Swift.Sendable {
 extension OneStepSDK.OSTUserAttributes.Sex : Swift.Equatable {}
 extension OneStepSDK.OSTUserAttributes.Sex : Swift.Hashable {}
 extension OneStepSDK.OSTUserAttributes.Sex : Swift.RawRepresentable {}
+extension OneStepSDK.OSTKeychainManager.KeychainKey : Swift.Equatable {}
+extension OneStepSDK.OSTKeychainManager.KeychainKey : Swift.Hashable {}
+extension OneStepSDK.OSTKeychainManager.KeychainKey : Swift.RawRepresentable {}
 extension OneStepSDK.OSTWindow : Swift.Equatable {}
 extension OneStepSDK.OSTWindow : Swift.Hashable {}
 extension OneStepSDK.OSTBackgroundRegistrationResultCode : Swift.Equatable {}

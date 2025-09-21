@@ -2830,6 +2830,1260 @@
       },
       {
         "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OSTKeychainManager",
+        "printedName": "OSTKeychainManager",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "KeychainKey",
+            "printedName": "KeychainKey",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "authToken",
+                "printedName": "authToken",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO9authTokenyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO9authTokenyA2EmF",
+                "moduleName": "OneStepSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "userId",
+                "printedName": "userId",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO6userIdyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO6userIdyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "deviceId",
+                "printedName": "deviceId",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8deviceIdyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8deviceIdyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "customerDistinctId",
+                "printedName": "customerDistinctId",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO18customerDistinctIdyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO18customerDistinctIdyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "profileEmail",
+                "printedName": "profileEmail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profileEmailyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profileEmailyA2EmF",
+                "moduleName": "OneStepSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "profilePhone",
+                "printedName": "profilePhone",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profilePhoneyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profilePhoneyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "profileEmrID",
+                "printedName": "profileEmrID",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profileEmrIDyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO12profileEmrIDyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "ddApiKey",
+                "printedName": "ddApiKey",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO05ddApiG0yA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO05ddApiG0yA2EmF",
+                "moduleName": "OneStepSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "hmacSecretKey",
+                "printedName": "hmacSecretKey",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO010hmacSecretG0yA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO010hmacSecretG0yA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "clinicianToken",
+                "printedName": "clinicianToken",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO14clinicianTokenyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO14clinicianTokenyA2EmF",
+                "moduleName": "OneStepSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clinicianPatientUUID",
+                "printedName": "clinicianPatientUUID",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainKey.Type) -> OneStepSDK.OSTKeychainManager.KeychainKey",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO20clinicianPatientUUIDyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO20clinicianPatientUUIDyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueAESgSS_tcfc",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueAESgSS_tcfc",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueSSvp",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueSSvp",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueSSvg",
+                    "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8rawValueSSvg",
+                    "moduleName": "OneStepSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OneStepSDK.OSTKeychainManager.KeychainKey]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainKey",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8allCasesSayAEGvpZ",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8allCasesSayAEGvpZ",
+                "moduleName": "OneStepSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[OneStepSDK.OSTKeychainManager.KeychainKey]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8allCasesSayAEGvgZ",
+                    "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO8allCasesSayAEGvgZ",
+                    "moduleName": "OneStepSDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC11KeychainKeyO",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[OneStepSDK.OSTKeychainManager.KeychainKey]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainKey",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "KeychainError",
+            "printedName": "KeychainError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "itemNotFound",
+                "printedName": "itemNotFound",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainError.Type) -> OneStepSDK.OSTKeychainManager.KeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainError",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO12itemNotFoundyA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO12itemNotFoundyA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "unexpectedData",
+                "printedName": "unexpectedData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainError.Type) -> OneStepSDK.OSTKeychainManager.KeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainError",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO14unexpectedDatayA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO14unexpectedDatayA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "unhandledError",
+                "printedName": "unhandledError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainError.Type) -> (Swift.Int32) -> OneStepSDK.OSTKeychainManager.KeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int32) -> OneStepSDK.OSTKeychainManager.KeychainError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainError",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(status: Swift.Int32)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int32",
+                                "printedName": "Swift.Int32",
+                                "usr": "s:s5Int32V"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainError",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO09unhandledG0yAEs5Int32V_tcAEmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO09unhandledG0yAEs5Int32V_tcAEmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidData",
+                "printedName": "invalidData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OneStepSDK.OSTKeychainManager.KeychainError.Type) -> OneStepSDK.OSTKeychainManager.KeychainError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KeychainError",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                        "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OneStepSDK.OSTKeychainManager.KeychainError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KeychainError",
+                            "printedName": "OneStepSDK.OSTKeychainManager.KeychainError",
+                            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO11invalidDatayA2EmF",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO11invalidDatayA2EmF",
+                "moduleName": "OneStepSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO16errorDescriptionSSSgvp",
+                "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO16errorDescriptionSSSgvp",
+                "moduleName": "OneStepSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO16errorDescriptionSSSgvg",
+                    "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO16errorDescriptionSSSgvg",
+                    "moduleName": "OneStepSDK",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC13KeychainErrorO",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC13KeychainErrorO",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "store",
+            "printedName": "store(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC5store_3forySS_AC11KeychainKeyOtKFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC5store_3forySS_AC11KeychainKeyOtKFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "store",
+            "printedName": "store(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC5store_3fory10Foundation4DataV_AC11KeychainKeyOtKFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC5store_3fory10Foundation4DataV_AC11KeychainKeyOtKFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getString",
+            "printedName": "getString(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC9getString3forSSSgAC11KeychainKeyO_tKFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC9getString3forSSSgAC11KeychainKeyO_tKFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC7getData3for10Foundation0G0VSgAC11KeychainKeyO_tKFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC7getData3for10Foundation0G0VSgAC11KeychainKeyO_tKFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC6delete3foryAC11KeychainKeyO_tKFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC6delete3foryAC11KeychainKeyO_tKFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "exists",
+            "printedName": "exists(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KeychainKey",
+                "printedName": "OneStepSDK.OSTKeychainManager.KeychainKey",
+                "usr": "s:10OneStepSDK18OSTKeychainManagerC11KeychainKeyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC6existsySbAC11KeychainKeyOFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC6existsySbAC11KeychainKeyOFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAll",
+            "printedName": "clearAll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC8clearAllyyFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC8clearAllyyFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "migrateFromUserDefaults",
+            "printedName": "migrateFromUserDefaults()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC23migrateFromUserDefaultsyyFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC23migrateFromUserDefaultsyyFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "testBackgroundAccess",
+            "printedName": "testBackgroundAccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK18OSTKeychainManagerC20testBackgroundAccessyyFZ",
+            "mangledName": "$s10OneStepSDK18OSTKeychainManagerC20testBackgroundAccessyyFZ",
+            "moduleName": "OneStepSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OneStepSDK18OSTKeychainManagerC",
+        "mangledName": "$s10OneStepSDK18OSTKeychainManagerC",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7560,7 +8814,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:)",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7628,11 +8882,18 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
-            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
+            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedModeyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbtF",
+            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedModeyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbtF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl",
@@ -13387,7 +14648,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:)",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13455,11 +14716,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
-            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
+            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
+            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTRecorderProtocol>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTRecorderProtocol>",
@@ -29528,6 +30795,104 @@
       "value": "\"upload_file_form_fields\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 22,
+      "value": "\"com.onestep.sdk.auth\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 25,
+      "value": "\"com.onestep.sdk.profile\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 25,
+      "value": "\"com.onestep.sdk.apikeys\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1162,
+      "length": 12,
+      "value": "\"auth_token\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1197,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1231,
+      "length": 11,
+      "value": "\"device_id\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1277,
+      "length": 22,
+      "value": "\"customer_distinct_id\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1405,
+      "length": 15,
+      "value": "\"profile_email\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1449,
+      "length": 15,
+      "value": "\"profile_phone\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1493,
+      "length": 16,
+      "value": "\"profile_emr_id\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1617,
+      "length": 12,
+      "value": "\"dd_api_key\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 17,
+      "value": "\"hmac_secret_key\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1769,
+      "length": 17,
+      "value": "\"clinician_token\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/OSTKeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1823,
+      "length": 24,
+      "value": "\"clinician_patient_uuid\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
       "offset": 1018,
@@ -29677,56 +31042,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 31243,
+      "offset": 32124,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 31273,
+      "offset": 32154,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32106,
+      "offset": 32987,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32132,
+      "offset": 33013,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32163,
+      "offset": 33044,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32193,
+      "offset": 33074,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32224,
+      "offset": 33105,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 32250,
+      "offset": 33131,
       "length": 1,
       "value": "5"
     },
@@ -29778,6 +31143,13 @@
       "offset": 1083,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2107,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Backgrounding\/BackgroundAggregator.swift",
@@ -30307,28 +31679,28 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4975,
+      "offset": 5010,
       "length": 26,
       "value": "\"rom_knee_flexion_passive\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5030,
+      "offset": 5065,
       "length": 14,
       "value": "\"rom_knee_ext\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5077,
+      "offset": 5112,
       "length": 25,
       "value": "\"dual_task_walk_subtract\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5125,
+      "offset": 5160,
       "length": 17,
       "value": "\"walk_6_min_test\""
     },
@@ -31049,84 +32421,133 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Configuration\/OSTEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 627,
+      "offset": 959,
       "length": 29,
       "value": "\"DD API key not set in plist\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Configuration\/OSTEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1260,
+      "length": 50,
+      "value": "\"Failed to store DD API key in keychain: \""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Configuration\/OSTEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 1309,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "FloatLiteral",
-      "offset": 530,
+      "offset": 651,
       "length": 8,
       "value": "-9.80665"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "FloatLiteral",
-      "offset": 572,
+      "offset": 693,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 684,
+      "offset": 805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 1291,
+      "offset": 1736,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1352,
+      "offset": 1844,
       "length": 24,
       "value": "\"AccelerometerDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1919,
       "length": 19,
       "value": "\"RotationDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1497,
+      "offset": 1997,
+      "length": 27,
+      "value": "\"RawAccelerometerDataQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "StringLiteral",
+      "offset": 2074,
+      "length": 18,
+      "value": "\"RawGyroDataQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "StringLiteral",
+      "offset": 2147,
+      "length": 23,
+      "value": "\"MagnetometerDataQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "StringLiteral",
+      "offset": 2221,
       "length": 19,
       "value": "\"ActivityDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1568,
-      "length": 20,
-      "value": "\"AltimeterDataQueue\""
-    },
-    {
-      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
-      "kind": "StringLiteral",
-      "offset": 1636,
+      "offset": 2288,
       "length": 16,
       "value": "\"StepsDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "StringLiteral",
-      "offset": 1703,
+      "offset": 2355,
       "length": 19,
       "value": "\"LocationDataQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "StringLiteral",
+      "offset": 2468,
+      "length": 20,
+      "value": "\"AltimeterDataQueue\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2481,
+      "offset": 2665,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3347,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/SensorsRecorder\/SDKSensorsReader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3375,
       "length": 5,
       "value": "false"
     },
@@ -31220,6 +32641,13 @@
       "offset": 782,
       "length": 2,
       "value": "60"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/RecorderModels\/SDKSensorData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 817,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKLogger.swift",
@@ -31352,7 +32780,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
