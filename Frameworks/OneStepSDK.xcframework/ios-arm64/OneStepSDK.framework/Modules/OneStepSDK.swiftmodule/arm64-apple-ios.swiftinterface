@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OneStepSDK
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OneStepSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import BackgroundTasks
 import Combine
@@ -25,30 +26,40 @@ import _SwiftConcurrencyShims
 import zlib
 extension OneStepSDK.BackgroundSample {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<OneStepSDK.BackgroundSample>
-  @objc @NSManaged dynamic public var createdAt: Foundation.Date? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var createdAt: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var endDate: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isUploaded: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var isUploaded: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var sensorsData: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var sensorsData: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var userId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var uuid: Foundation.UUID? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var uuid: Foundation.UUID? {
     @objc get
     @objc set
   }
+  #endif
 }
 public struct OSTUserAttributes : Swift.Sendable {
   public enum Sex : Swift.String, Swift.CaseIterable, Swift.Identifiable, Swift.Sendable {
@@ -58,7 +69,9 @@ public struct OSTUserAttributes : Swift.Sendable {
     public var id: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias AllCases = [OneStepSDK.OSTUserAttributes.Sex]
     public typealias ID = Swift.String
     public typealias RawValue = Swift.String
@@ -84,7 +97,9 @@ public struct OSTUserAttributes : Swift.Sendable {
   public var mainSurgeryType: OneStepSDK.OSTSurgeryType?
   public var mainSurgerySide: OneStepSDK.OSTSurgerySide?
   public var customAttributes: [Swift.String : OneStepSDK.OSTMixedType]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(firstName: Swift.String? = nil, lastName: Swift.String? = nil, profileImageUrl: Swift.String? = nil, dateOfBirth: Foundation.Date? = nil, emrId: Swift.String? = nil, phoneNumber: Swift.String? = nil, email: Swift.String? = nil, sex: OneStepSDK.OSTUserAttributes.Sex? = nil, heightCm: Swift.Int? = nil, weightKg: Swift.Int? = nil, age: Swift.Int? = nil, mainSurgeryDate: Foundation.Date? = nil, mainSurgeryType: OneStepSDK.OSTSurgeryType? = nil, mainSurgerySide: OneStepSDK.OSTSurgerySide? = nil, customAttributes: [Swift.String : OneStepSDK.OSTMixedType] = [:])
+  #endif
   public class Builder {
     public init()
     public func withFirstName(_ name: Swift.String) -> OneStepSDK.OSTUserAttributes.Builder
@@ -117,7 +132,9 @@ public struct OSTUserAttributes : Swift.Sendable {
     case hmacSecretKey
     case clinicianToken
     case clinicianPatientUUID
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias AllCases = [OneStepSDK.OSTKeychainManager.KeychainKey]
     public typealias RawValue = Swift.String
     nonisolated public static var allCases: [OneStepSDK.OSTKeychainManager.KeychainKey] {
@@ -135,8 +152,12 @@ public struct OSTUserAttributes : Swift.Sendable {
   }
   public static func store(_ value: Swift.String, for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
   public static func store(_ data: Foundation.Data, for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getString(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getData(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws -> Foundation.Data?
+  #endif
   public static func delete(for key: OneStepSDK.OSTKeychainManager.KeychainKey) throws
   public static func exists(_ key: OneStepSDK.OSTKeychainManager.KeychainKey) -> Swift.Bool
   public static func clearAll()
@@ -145,38 +166,48 @@ public struct OSTUserAttributes : Swift.Sendable {
   @objc deinit
 }
 extension OneStepSDK.OSTKeychainManager.KeychainError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public struct OSTJSONDecoderClient : Swift.Sendable {
 }
-@_inheritsConvenienceInitializers @objc(MotionMeasurement) public class MotionMeasurement : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(MotionMeasurement) nonisolated public class MotionMeasurement : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 extension OneStepSDK.BackgroundWalk {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<OneStepSDK.BackgroundWalk>
-  @objc @NSManaged dynamic public var parameters: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var parameters: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var timestamp: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var steps: Swift.Int16 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var steps: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var seconds: Swift.Int16 {
+  @objc @NSManaged nonisolated dynamic public var seconds: Swift.Int16 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var locale: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var locale: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 public struct OSTBackgroundRecord : Swift.Sendable {
   public var timestamp: Foundation.Date
@@ -184,14 +215,18 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   public var steps: Swift.Int
   public var seconds: Swift.Int
   public var locale: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(timestamp: Foundation.Date, parameters: [OneStepSDK.OSTParamName : Swift.Double], steps: Swift.Int, seconds: Swift.Int, locale: Swift.String? = nil)
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class OSTSDKCore : OneStepSDK.OSTCoreInterface {
   public static let shared: OneStepSDK.OSTSDKCore
   final public var minStepsForAnalysis: Swift.Int
   final public func isInitialized() -> Swift.Bool
   final public func initialize(userToken: Swift.String, patientUUID: Swift.String, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
+  #endif
   final public func currentRecordingLimit() -> Swift.Int
   final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
   final public func registerBGTasks()
@@ -199,8 +234,12 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   final public func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
   final public func disconnect()
   final public func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func readMotionMeasurements(startTime: Foundation.Date? = nil, endTime: Foundation.Date? = nil) -> [OneStepSDK.OSTMotionMeasurement]
+  #endif
   final public func sync() async -> Swift.Bool
   final public func versionCode() -> Swift.Int
   final public func versionName() -> Swift.String
@@ -210,8 +249,12 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   final public func testBackgroundRecording()
   final public func inAppPermissionsRequired() -> Swift.Bool
   final public func backgroundMonitoringStats() -> OneStepSDK.BackgroundMonitoringStats
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func aggregateBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?, window: OneStepSDK.OSTWindow = .day) -> [OneStepSDK.OSTAggregatedBackgroundRecord]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
+  #endif
   final public func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   final public func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
   @objc deinit
@@ -240,7 +283,9 @@ public enum OSTBackgroundRegistrationResultCode : Swift.Int {
   case alreadyActivated
   case featureNotEnabled
   case unKnownError
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -264,8 +309,12 @@ public struct BackgroundSampleBL : Swift.Sendable {
   public var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func analyze() async -> OneStepSDK.OSTMotionMeasurement?
+  #endif
   public func stop()
   public func reset()
   public func removeMotionMeasurement(withId id: Foundation.UUID)
@@ -279,7 +328,9 @@ public enum OSTDiscreteColor : Swift.String, Swift.Sendable {
   case yellow
   case red
   case darkRed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -294,7 +345,9 @@ public enum OSTAssistiveDevice : Swift.Int, Swift.Codable, Swift.CaseIterable, S
   case walker
   case rollator
   case wheelChaire
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [OneStepSDK.OSTAssistiveDevice]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [OneStepSDK.OSTAssistiveDevice] {
@@ -313,7 +366,9 @@ public enum OSTLevelOfAssistance : Swift.Int, Swift.Codable, Swift.CaseIterable,
   case maximumAssistence
   case totalAssistence
   case unable
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [OneStepSDK.OSTLevelOfAssistance]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [OneStepSDK.OSTLevelOfAssistance] {
@@ -327,7 +382,9 @@ public enum OSTSurgeryType : Swift.String, Swift.Sendable {
   case thr
   case tkr
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -337,7 +394,9 @@ public enum OSTSurgerySide : Swift.String, Swift.Sendable {
   case left
   case right
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -355,15 +414,23 @@ public struct OSTParameterMetadata : Swift.Sendable {
   public let sortKey: Swift.Int
   public let isMainParam: Swift.Bool?
   public let activity: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(displayName: Swift.String, units: Swift.String?, imperialUnits: Swift.String?, category: Swift.String?, roundDigits: Swift.Int, sortKey: Swift.Int, isMainParam: Swift.Bool? = false, activity: Swift.String = "")
+  #endif
 }
 public protocol OSTCoreInterface {
+  #if compiler(>=5.3) && $NonescapableTypes
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
+  #endif
   func isInitialized() -> Swift.Bool
   func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
   func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
+  #if compiler(>=5.3) && $NonescapableTypes
   func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func readMotionMeasurements(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTMotionMeasurement]
+  #endif
   func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
   func registerBackgroundMonitoring() -> OneStepSDK.OSTBackgroundRegistrationResult
@@ -371,8 +438,12 @@ public protocol OSTCoreInterface {
   func isBackgroundMonitoringActive() -> Swift.Bool
   func testBackgroundRecording()
   func backgroundMonitoringStats() -> OneStepSDK.BackgroundMonitoringStats
+  #if compiler(>=5.3) && $NonescapableTypes
   func aggregateBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?, window: OneStepSDK.OSTWindow) -> [OneStepSDK.OSTAggregatedBackgroundRecord]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
+  #endif
   func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
   func sync() async -> Swift.Bool
 }
@@ -385,7 +456,9 @@ public struct BackgroundMonitoringStats : Swift.Sendable {
   public var lastResultSync: Foundation.Date?
   public var lastSampleCollected: Foundation.Date?
   public var lastAnalyzedRecord: Foundation.Date?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(activated: Swift.Bool, hasInAppPermissions: Swift.Bool, hasBackgroundPermissions: Swift.Bool, hasPendingData: Swift.Bool, lastUploadSync: Foundation.Date?, lastResultSync: Foundation.Date?, lastSampleCollected: Foundation.Date?, lastAnalyzedRecord: Foundation.Date?)
+  #endif
 }
 public class OSTConfiguration : Swift.Codable {
   public var remoteDataRetentionPeriodHours: Swift.Int?
@@ -397,7 +470,9 @@ public class OSTConfiguration : Swift.Codable {
   public var additionalConfigurations: [Swift.String : OneStepSDK.OSTMixedType]
   public var syncConfiguration: OneStepSDK.OSTSyncConfiguration
   public var monitoringIntensity: OneStepSDK.OSTMonitoringIntensity
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(remoteDataRetentionPeriodHours: Swift.Int? = nil, incognitoUserProfile: Swift.Bool = false, sendAnalyticsData: Swift.Bool = true, enableMonitoringFeature: Swift.Bool = false, recorderCollectGeoLocation: Swift.Bool = false, additionalConfigurations: [Swift.String : OneStepSDK.OSTMixedType] = [:], healthKit: Swift.Bool = false, syncConfiguration: OneStepSDK.OSTSyncConfiguration = .enhanced, monitoringIntensity: OneStepSDK.OSTMonitoringIntensity = .balanced)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -405,8 +480,12 @@ public class OSTConfiguration : Swift.Codable {
 public protocol OSTRecorderProtocol {
   var recorderState: Combine.AnyPublisher<OneStepSDK.OSTRecorderState, Swift.Never> { get }
   var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func analyze() async -> OneStepSDK.OSTMotionMeasurement?
+  #endif
   func stop()
   func reset()
 }
@@ -419,7 +498,9 @@ public enum OSTActivityType : Swift.String, Swift.Sendable, Swift.CaseIterable, 
   case dualTaskWalkSubtract
   case sixMinWalk
   case stairs
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var id: Swift.String {
     get
   }
@@ -438,8 +519,8 @@ public enum OSTSyncConfiguration : Swift.Codable, Swift.Sendable {
   case balanced
   case efficient
   public static func == (a: OneStepSDK.OSTSyncConfiguration, b: OneStepSDK.OSTSyncConfiguration) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -449,24 +530,34 @@ public enum OSTMonitoringIntensity : Swift.Codable, Swift.CaseIterable {
   case enhanced
   case balanced
   public static func == (a: OneStepSDK.OSTMonitoringIntensity, b: OneStepSDK.OSTMonitoringIntensity) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [OneStepSDK.OSTMonitoringIntensity]
   nonisolated public static var allCases: [OneStepSDK.OSTMonitoringIntensity] {
     get
   }
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol OSTMotionDataService {
+  #if compiler(>=5.3) && $NonescapableTypes
   func getParameterMetadata(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTParameterMetadata?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func getNorm(by param: OneStepSDK.OSTParamName) -> OneStepSDK.OSTNorm?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func isWithinNorm(param: OneStepSDK.OSTParamName, value: Swift.Double) -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func discreteScore(for param: OneStepSDK.OSTParamName, value: Swift.Double) -> OneStepSDK.OSTDiscreteColor?
+  #endif
   func getInsightsBy(measurementID uuid: Foundation.UUID) async throws -> [OneStepSDK.OSTInsight]
+  #if compiler(>=5.3) && $NonescapableTypes
   func getMainParameter(for measurement: OneStepSDK.OSTActivityType) -> (paramName: OneStepSDK.OSTParamName, metadata: OneStepSDK.OSTParameterMetadata)?
+  #endif
 }
 @_hasMissingDesignatedInitializers public class HealthKitManager {
   public static func checkPermissionsWereAsked(for identifier: HealthKit.HKQuantityTypeIdentifier) async -> Swift.Bool
@@ -484,7 +575,9 @@ public struct OSTMotionMeasurement : Swift.Codable, Swift.Identifiable, Swift.Se
   public var parameters: Swift.Dictionary<Swift.String, Swift.Double>?
   public var custom_metadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?
   public var parameter_arrays: [Swift.String : [Swift.Double]]?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Foundation.UUID, status: OneStepSDK.OSTMotionMeasurementStatus, error: OneStepSDK.OSTMeasurementError? = nil, result_state: Swift.Int? = nil, timestamp: Foundation.Date, type: Swift.String, metadata: OneStepSDK.OSTMeasurementMetadata? = nil, parameters: Swift.Dictionary<Swift.String, Swift.Double>? = nil, custom_metadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>? = nil, parameter_arrays: [Swift.String : [Swift.Double]]? = nil)
+  #endif
   public typealias ID = Foundation.UUID
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -513,19 +606,25 @@ public struct OSTMeasurementMetadata : Swift.Codable, Swift.Sendable {
   public var note: Swift.String?
   public var levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?
   public var assistiveDevice: OneStepSDK.OSTAssistiveDevice?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(locale: Swift.String? = nil, seconds: Swift.Int? = nil, steps: Swift.Int? = nil, geoLat: Swift.Double? = nil, geoLng: Swift.Double? = nil, tags: [Swift.String]? = nil, note: Swift.String? = nil, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance? = nil, assistiveDevice: OneStepSDK.OSTAssistiveDevice? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct OSTUserInputMetaData : Swift.Encodable, Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(note: Swift.String?, tags: [Swift.String]?, assistiveDevice: OneStepSDK.OSTAssistiveDevice?, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?, properties: [Swift.String : OneStepSDK.OSTMixedType]? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum OSTResultState : Swift.Int, Swift.Codable, Swift.Sendable {
   case FULL_ANALYSIS
   case PARTIAL_ANALYSIS
   case EMPTY_ANALYSIS
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -535,7 +634,9 @@ public enum OSTMotionMeasurementStatus : Swift.Int, Swift.Codable, Swift.Sendabl
   case NOT_SYNCED
   case SYNCED
   case ANALYZED
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -587,7 +688,9 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable, Swift.Sendable {
   case kneeExtRangeOfMotionAngle
   case kneeFlexPassiveRangeOfMotionAngle
   case sixMinWalkDistance
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [OneStepSDK.OSTParamName]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [OneStepSDK.OSTParamName] {
@@ -627,7 +730,9 @@ public enum OSTRecorderState : Swift.Sendable {
     public var id: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias ID = Swift.String
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -643,12 +748,16 @@ public struct OSTInsight : Swift.Decodable, Swift.Sendable {
   public let intent: OneStepSDK.OSTIntentType?
   public let insightType: OneStepSDK.OSTInsightType
   public let textMarkdown: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(paramName: Swift.String?, rank: Swift.Double, intent: OneStepSDK.OSTIntentType, insightType: OneStepSDK.OSTInsightType, textMarkdown: Swift.String)
+  #endif
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum OSTIntentType : Swift.String, Swift.Decodable, Swift.Sendable {
   case good, bad, neutral
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -657,7 +766,9 @@ public enum OSTIntentType : Swift.String, Swift.Decodable, Swift.Sendable {
 public enum OSTInsightType : Swift.String, Swift.Decodable, Swift.Sendable {
   case trend, comparison, parameter, education, info
   case fallRisk
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -665,72 +776,94 @@ public enum OSTInsightType : Swift.String, Swift.Decodable, Swift.Sendable {
 }
 extension OneStepSDK.MotionMeasurement {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<OneStepSDK.MotionMeasurement>
-  @objc @NSManaged dynamic public var createdAt: Foundation.Date {
+  @objc @NSManaged nonisolated dynamic public var createdAt: Foundation.Date {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var custom_metadata: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var custom_metadata: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var endDate: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var id: Foundation.UUID {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var id: Foundation.UUID {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isUploaded: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isUploaded: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var metadata: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var metadata: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var parameters: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var parameters: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var parameter_arrays: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var parameter_arrays: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var sensorsData: Foundation.Data? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var sensorsData: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var userId: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var status: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var status: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var error: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var error: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var result_state: Foundation.NSNumber? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var result_state: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var audio: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var audio: Foundation.Data? {
     @objc get
     @objc set
   }
+  #endif
 }
 @_hasMissingDesignatedInitializers public class OSTEnvironment {
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(BackgroundSample) public class BackgroundSample : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(BackgroundSample) nonisolated public class BackgroundSample : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 public struct OSTAggregatedBackgroundRecord : Swift.Sendable {
@@ -751,7 +884,9 @@ public enum OSTMixedType : Swift.Codable, Swift.Sendable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct AnyCodable : Swift.Codable, Swift.Sendable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(_ value: (any Swift.Sendable)?)
+  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -793,8 +928,10 @@ public protocol OSTAnalyticsHandler {
   func setSuperProperties(_ properties: [Swift.String : Any])
   func setUserProperties(_ properties: [Swift.String : Any])
 }
-@objc @_inheritsConvenienceInitializers public class BackgroundWalk : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@objc @_inheritsConvenienceInitializers nonisolated public class BackgroundWalk : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 public struct OSTNorm : Swift.Sendable {
@@ -838,7 +975,9 @@ public enum OSTAnalyzerState : Swift.Sendable {
     public var id: Swift.String {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias ID = Swift.String
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
