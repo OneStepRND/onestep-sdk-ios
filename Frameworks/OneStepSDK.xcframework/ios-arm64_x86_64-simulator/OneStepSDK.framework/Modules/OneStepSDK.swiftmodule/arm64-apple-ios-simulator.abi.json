@@ -31418,56 +31418,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 32567,
+      "offset": 34755,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 32597,
+      "offset": 34785,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33430,
+      "offset": 35618,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33456,
+      "offset": 35644,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33487,
+      "offset": 35675,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33517,
+      "offset": 35705,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33548,
+      "offset": 35736,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 33574,
+      "offset": 35762,
       "length": 1,
       "value": "5"
     },
@@ -31656,14 +31656,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2093,
+      "offset": 2213,
       "length": 23,
       "value": "\"\/data\/background\/list\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKEndpoints.swift",
       "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 2544,
       "length": 24,
       "value": "\"\/data\/measurement\/list\""
     },
@@ -31810,7 +31810,14 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 19088,
+      "offset": 19142,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20961,
       "length": 5,
       "value": "false"
     },
@@ -33133,7 +33140,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDDLoggerAPIClient.swift",
       "kind": "Dictionary",
-      "offset": 903,
+      "offset": 1016,
       "length": 3,
       "value": "[]"
     },
@@ -33156,7 +33163,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "1"
+      "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
