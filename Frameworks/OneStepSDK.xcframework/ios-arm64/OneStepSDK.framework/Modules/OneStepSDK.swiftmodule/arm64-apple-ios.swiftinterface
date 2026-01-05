@@ -128,6 +128,8 @@ public struct OSTUserAttributes : Swift.Sendable {
     case profileEmail
     case profilePhone
     case profileEmrID
+    case appId
+    case apiKey
     case ddApiKey
     case hmacSecretKey
     case clinicianToken
@@ -227,6 +229,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   #endif
+  final public func initialize(completion: @escaping (Swift.Bool) -> ())
   final public func currentRecordingLimit() -> Swift.Int
   final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
   final public func registerBGTasks()
@@ -257,6 +260,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   #endif
   final public func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   final public func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
+  final public func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Int) async throws
   @objc deinit
 }
 public enum OSTWindow : Swift.Sendable {
@@ -422,6 +426,7 @@ public protocol OSTCoreInterface {
   #if compiler(>=5.3) && $NonescapableTypes
   func initialize(appId: Swift.String, apiKey: Swift.String, distinctId: Swift.String, identityVerification: Swift.String?, configuration: OneStepSDK.OSTConfiguration, completion: @escaping (Swift.Bool) -> ())
   #endif
+  func initialize(completion: @escaping (Swift.Bool) -> ())
   func isInitialized() -> Swift.Bool
   func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
   func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
@@ -433,6 +438,7 @@ public protocol OSTCoreInterface {
   #endif
   func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
+  func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Int) async throws
   func registerBackgroundMonitoring() -> OneStepSDK.OSTBackgroundRegistrationResult
   func unregisterBackgroundMonitoring()
   func isBackgroundMonitoringActive() -> Swift.Bool
@@ -606,15 +612,16 @@ public struct OSTMeasurementMetadata : Swift.Codable, Swift.Sendable {
   public var note: Swift.String?
   public var levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?
   public var assistiveDevice: OneStepSDK.OSTAssistiveDevice?
+  public var sixMinuteWalkCourseLengthM: Swift.Int?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(locale: Swift.String? = nil, seconds: Swift.Int? = nil, steps: Swift.Int? = nil, geoLat: Swift.Double? = nil, geoLng: Swift.Double? = nil, tags: [Swift.String]? = nil, note: Swift.String? = nil, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance? = nil, assistiveDevice: OneStepSDK.OSTAssistiveDevice? = nil)
+  public init(locale: Swift.String? = nil, seconds: Swift.Int? = nil, steps: Swift.Int? = nil, geoLat: Swift.Double? = nil, geoLng: Swift.Double? = nil, tags: [Swift.String]? = nil, note: Swift.String? = nil, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance? = nil, assistiveDevice: OneStepSDK.OSTAssistiveDevice? = nil, sixMinuteWalkCourseLengthM: Swift.Int? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct OSTUserInputMetaData : Swift.Encodable, Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(note: Swift.String?, tags: [Swift.String]?, assistiveDevice: OneStepSDK.OSTAssistiveDevice?, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?, properties: [Swift.String : OneStepSDK.OSTMixedType]? = nil)
+  public init(note: Swift.String?, tags: [Swift.String]?, assistiveDevice: OneStepSDK.OSTAssistiveDevice?, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?, properties: [Swift.String : OneStepSDK.OSTMixedType]? = nil, sixMinuteWalkCourseLengthM: Swift.Int? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
