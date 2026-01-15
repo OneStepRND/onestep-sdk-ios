@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UgOQlO+2rc1odxbYs2L/LEINH5U=
+		j3e0QKfSH2AsXLwSMr2yZotTWgk=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+83UvjBAgD0nHzNl+OuZotpoNw0=
+		5ik4OlZQfxJ4ZfNhaxygDml4vFE=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		PV+ZjM2Yp5WXlKQfFL/qpLFDmP0=
+		iUM+kRlHKcJdLjyw7cX1x8RLMC8=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		YzZVUeXxu41nrRbohHIvDHkgC84=
+		59bXH2iPipnGpIZR5cR4Vz2BAFE=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		PV+ZjM2Yp5WXlKQfFL/qpLFDmP0=
+		iUM+kRlHKcJdLjyw7cX1x8RLMC8=
 		</data>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sJsaUpMTHPcDQVyIwz8fd1ydZD0=
+		MjE7cVewh8ojsekto8OuU8EuqGQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KbHPDUCwjVyhe+xo2QcQj/oXPMUpdruubgOhqp7KMQ=
+			HbXdSHKPUlEbldTw98jY+ZmPpOhLXkc7tafbsjbQtUY=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nl5wK+Q1HJDnUkifxPAHDOCww7l6bJaBA8kPOsmyCdQ=
+			GpFtbeDrCXycg9llgSjR96etNPs8eQ3ABZAXH0aD0GI=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8/aBHudeq+Gx9A0B/1zMF/w4R4jrpqiUxtDz/IXwGYA=
+			c/+mWsOMzDFwALR8iPRA2E00dqY7ijdwcQmhXJBjok0=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nl5wK+Q1HJDnUkifxPAHDOCww7l6bJaBA8kPOsmyCdQ=
+			GpFtbeDrCXycg9llgSjR96etNPs8eQ3ABZAXH0aD0GI=
 			</data>
 		</dict>
 		<key>Modules/OneStepSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sdFVkWKX5fqrU/3iRGzTj8ELzUp78MySQ218dgezeDI=
+			bB/Ix3mVNfTlJWLLpS1mS+H/PdC2Y5mOCyt58n9OJiI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

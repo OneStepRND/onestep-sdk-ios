@@ -6988,6 +6988,52 @@
           },
           {
             "kind": "Function",
+            "name": "sendAnalyticsEvent",
+            "printedName": "sendAnalyticsEvent(eventName:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC18sendAnalyticsEvent9eventName10propertiesySS_SDySSypGtF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC18sendAnalyticsEvent9eventName10propertiesySS_SDySSypGtF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "registerBGTasks",
             "printedName": "registerBGTasks()",
             "children": [
@@ -7598,14 +7644,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK10OSTSDKCoreC18updateCourseLength4uuid6metersy10Foundation4UUIDV_SitYaKF",
-            "mangledName": "$s10OneStepSDK10OSTSDKCoreC18updateCourseLength4uuid6metersy10Foundation4UUIDV_SitYaKF",
+            "usr": "s:10OneStepSDK10OSTSDKCoreC18updateCourseLength4uuid6metersy10Foundation4UUIDV_SdtYaKF",
+            "mangledName": "$s10OneStepSDK10OSTSDKCoreC18updateCourseLength4uuid6metersy10Foundation4UUIDV_SdtYaKF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "Final",
@@ -12537,14 +12583,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK16OSTCoreInterfaceP18updateCourseLength4uuid6metersy10Foundation4UUIDV_SitYaKF",
-            "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP18updateCourseLength4uuid6metersy10Foundation4UUIDV_SitYaKF",
+            "usr": "s:10OneStepSDK16OSTCoreInterfaceP18updateCourseLength4uuid6metersy10Foundation4UUIDV_SdtYaKF",
+            "mangledName": "$s10OneStepSDK16OSTCoreInterfaceP18updateCourseLength4uuid6metersy10Foundation4UUIDV_SdtYaKF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTCoreInterface>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTCoreInterface>",
@@ -19930,21 +19976,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvp",
-            "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvp",
+            "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvp",
+            "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvp",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -19961,21 +20007,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvg",
-                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvg",
+                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvg",
+                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvg",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -19993,21 +20039,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvs",
-                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvs",
+                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvs",
+                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvs",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -20024,8 +20070,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvM",
-                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSiSgvM",
+                "usr": "s:10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvM",
+                "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV26sixMinuteWalkCourseLengthMSdSgvM",
                 "moduleName": "OneStepSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20189,22 +20235,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK22OSTMeasurementMetadataV6locale7seconds5steps6geoLat0I3Lng4tags4note17levelOfAssistance15assistiveDevice26sixMinuteWalkCourseLengthMACSSSg_SiSgAOSdSgAPSaySSGSgAnA08OSTLeveloP0OSgAA012OSTAssistiveR0OSgAOtcfc",
-            "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV6locale7seconds5steps6geoLat0I3Lng4tags4note17levelOfAssistance15assistiveDevice26sixMinuteWalkCourseLengthMACSSSg_SiSgAOSdSgAPSaySSGSgAnA08OSTLeveloP0OSgAA012OSTAssistiveR0OSgAOtcfc",
+            "usr": "s:10OneStepSDK22OSTMeasurementMetadataV6locale7seconds5steps6geoLat0I3Lng4tags4note17levelOfAssistance15assistiveDevice26sixMinuteWalkCourseLengthMACSSSg_SiSgAOSdSgAPSaySSGSgAnA08OSTLeveloP0OSgAA012OSTAssistiveR0OSgAPtcfc",
+            "mangledName": "$s10OneStepSDK22OSTMeasurementMetadataV6locale7seconds5steps6geoLat0I3Lng4tags4note17levelOfAssistance15assistiveDevice26sixMinuteWalkCourseLengthMACSSSg_SiSgAOSdSgAPSaySSGSgAnA08OSTLeveloP0OSgAA012OSTAssistiveR0OSgAPtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -20427,13 +20472,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -20441,8 +20486,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10properties26sixMinuteWalkCourseLengthMACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgSiSgtcfc",
-            "mangledName": "$s10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10properties26sixMinuteWalkCourseLengthMACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgSiSgtcfc",
+            "usr": "s:10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10properties26sixMinuteWalkCourseLengthMACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgSdSgtcfc",
+            "mangledName": "$s10OneStepSDK20OSTUserInputMetaDataV4note4tags15assistiveDevice17levelOfAssistance10properties26sixMinuteWalkCourseLengthMACSSSg_SaySSGSgAA012OSTAssistiveK0OSgAA08OSTLevelmN0OSgSDySSAA12OSTMixedTypeOGSgSdSgtcfc",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl"
@@ -22763,6 +22808,80 @@
             "declKind": "EnumElement",
             "usr": "s:10OneStepSDK12OSTParamNameO18sixMinWalkDistanceyA2CmF",
             "mangledName": "$s10OneStepSDK12OSTParamNameO18sixMinWalkDistanceyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sixMinuteWalkLaps",
+            "printedName": "sixMinuteWalkLaps",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTParamName.Type) -> OneStepSDK.OSTParamName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTParamName",
+                    "printedName": "OneStepSDK.OSTParamName",
+                    "usr": "s:10OneStepSDK12OSTParamNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTParamName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTParamName",
+                        "printedName": "OneStepSDK.OSTParamName",
+                        "usr": "s:10OneStepSDK12OSTParamNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK12OSTParamNameO17sixMinuteWalkLapsyA2CmF",
+            "mangledName": "$s10OneStepSDK12OSTParamNameO17sixMinuteWalkLapsyA2CmF",
+            "moduleName": "OneStepSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "sixMinuteWalkCourseLengthM",
+            "printedName": "sixMinuteWalkCourseLengthM",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OneStepSDK.OSTParamName.Type) -> OneStepSDK.OSTParamName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTParamName",
+                    "printedName": "OneStepSDK.OSTParamName",
+                    "usr": "s:10OneStepSDK12OSTParamNameO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OneStepSDK.OSTParamName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTParamName",
+                        "printedName": "OneStepSDK.OSTParamName",
+                        "usr": "s:10OneStepSDK12OSTParamNameO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OneStepSDK12OSTParamNameO26sixMinuteWalkCourseLengthMyA2CmF",
+            "mangledName": "$s10OneStepSDK12OSTParamNameO26sixMinuteWalkCourseLengthMyA2CmF",
             "moduleName": "OneStepSDK"
           },
           {
@@ -31792,56 +31911,56 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 38713,
+      "offset": 38714,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 38743,
+      "offset": 38744,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39576,
+      "offset": 39577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39602,
+      "offset": 39603,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39633,
+      "offset": 39634,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39663,
+      "offset": 39664,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39694,
+      "offset": 39695,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 39720,
+      "offset": 39721,
       "length": 1,
       "value": "5"
     },
@@ -31897,7 +32016,7 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2107,
+      "offset": 2111,
       "length": 5,
       "value": "false"
     },
@@ -32177,21 +32296,21 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4068,
+      "offset": 4071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20501,
+      "offset": 20507,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 22320,
+      "offset": 22326,
       "length": 5,
       "value": "false"
     },
@@ -32352,112 +32471,112 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 2943,
+      "offset": 2946,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3031,
+      "offset": 3034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3138,
+      "offset": 3141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3222,
+      "offset": 3225,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3295,
+      "offset": 3298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "Dictionary",
-      "offset": 3404,
+      "offset": 3407,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3621,
+      "offset": 3624,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3654,
+      "offset": 3657,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3692,
+      "offset": 3695,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3734,
+      "offset": 3737,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "Dictionary",
-      "offset": 3792,
+      "offset": 3795,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 3815,
+      "offset": 3818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5114,
+      "offset": 5117,
       "length": 26,
       "value": "\"rom_knee_flexion_passive\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5169,
+      "offset": 5172,
       "length": 14,
       "value": "\"rom_knee_ext\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5216,
+      "offset": 5219,
       "length": 25,
       "value": "\"dual_task_walk_subtract\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 5264,
+      "offset": 5267,
       "length": 17,
       "value": "\"walk_6_min_test\""
     },
@@ -32492,126 +32611,126 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 776,
       "length": 6,
       "value": "\"uuid\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 811,
       "length": 15,
       "value": "\"perceive_time\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 845,
+      "offset": 848,
       "length": 8,
       "value": "\"s3_key\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 876,
+      "offset": 879,
       "length": 8,
       "value": "\"bucket\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 919,
+      "offset": 922,
       "length": 22,
       "value": "\"retention_expires_at\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 967,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 999,
       "length": 9,
       "value": "\"seconds\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1034,
+      "offset": 1037,
       "length": 15,
       "value": "\"activity_name\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
+      "offset": 1073,
       "length": 6,
       "value": "\"note\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1102,
       "length": 9,
       "value": "\"geo_lat\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1134,
       "length": 9,
       "value": "\"geo_lng\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1169,
       "length": 11,
       "value": "\"pedometer\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1198,
+      "offset": 1201,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1238,
+      "offset": 1241,
       "length": 21,
       "value": "\"level_of_assistance\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1291,
+      "offset": 1294,
       "length": 18,
       "value": "\"assistive_device\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1343,
       "length": 17,
       "value": "\"custom_metadata\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 1387,
       "length": 14,
       "value": "\"s3_key_audio\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/NetworkModels\/SDKInAppWalkMetadata.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 1444,
       "length": 33,
       "value": "\"six_minute_walk_course_length_m\""
     },
@@ -32688,42 +32807,42 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4589,
+      "offset": 4595,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4643,
+      "offset": 4649,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 4698,
+      "offset": 4704,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 5069,
+      "offset": 5075,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 5089,
+      "offset": 5095,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Models\/Public\/OSTMotionMeasurement.swift",
       "kind": "IntegerLiteral",
-      "offset": 5111,
+      "offset": 5117,
       "length": 1,
       "value": "2"
     },
@@ -33043,6 +33162,20 @@
       "value": "\"six_minute_walk_distance_meters\""
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
+      "kind": "StringLiteral",
+      "offset": 3315,
+      "length": 22,
+      "value": "\"six_minute_walk_laps\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTParamName.swift",
+      "kind": "StringLiteral",
+      "offset": 3376,
+      "length": 33,
+      "value": "\"six_minute_walk_course_length_m\""
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/SDKAudioRecorderManager.swift",
       "kind": "BooleanLiteral",
       "offset": 269,
@@ -33174,6 +33307,20 @@
       "offset": 229,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkConnectionMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 32,
+      "value": "\"com.onestep.sdk.networkmonitor\""
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkConnectionMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 392,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Configuration\/OSTEnvironment.swift",
@@ -33551,14 +33698,14 @@
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 1,
-      "value": "5"
+      "value": "6"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/SDKDeviceUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "3"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",

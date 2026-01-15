@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OneStepSDK
+// swift-module-flags: -target x86_64-apple-ios16-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OneStepSDK
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import BackgroundTasks
@@ -232,6 +232,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   final public func initialize(completion: @escaping (Swift.Bool) -> ())
   final public func currentRecordingLimit() -> Swift.Int
   final public func setAnalyticsService(_ service: any OneStepSDK.OSTAnalyticsHandler)
+  final public func sendAnalyticsEvent(eventName: Swift.String, properties: [Swift.String : Any])
   final public func registerBGTasks()
   final public func getRecordingService() -> any OneStepSDK.OSTRecorderProtocol
   final public func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
@@ -260,7 +261,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   #endif
   final public func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   final public func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
-  final public func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Int) async throws
+  final public func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Double) async throws
   @objc deinit
 }
 public enum OSTWindow : Swift.Sendable {
@@ -438,7 +439,7 @@ public protocol OSTCoreInterface {
   #endif
   func deleteMotionMeasurement(by uuid: Foundation.UUID) async -> Swift.Bool
   func updateMotionMeasurement(uuid: Foundation.UUID, userInputMetaData: OneStepSDK.OSTUserInputMetaData) async throws
-  func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Int) async throws
+  func updateCourseLength(uuid: Foundation.UUID, meters: Swift.Double) async throws
   func registerBackgroundMonitoring() -> OneStepSDK.OSTBackgroundRegistrationResult
   func unregisterBackgroundMonitoring()
   func isBackgroundMonitoringActive() -> Swift.Bool
@@ -612,16 +613,16 @@ public struct OSTMeasurementMetadata : Swift.Codable, Swift.Sendable {
   public var note: Swift.String?
   public var levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?
   public var assistiveDevice: OneStepSDK.OSTAssistiveDevice?
-  public var sixMinuteWalkCourseLengthM: Swift.Int?
+  public var sixMinuteWalkCourseLengthM: Swift.Double?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(locale: Swift.String? = nil, seconds: Swift.Int? = nil, steps: Swift.Int? = nil, geoLat: Swift.Double? = nil, geoLng: Swift.Double? = nil, tags: [Swift.String]? = nil, note: Swift.String? = nil, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance? = nil, assistiveDevice: OneStepSDK.OSTAssistiveDevice? = nil, sixMinuteWalkCourseLengthM: Swift.Int? = nil)
+  public init(locale: Swift.String? = nil, seconds: Swift.Int? = nil, steps: Swift.Int? = nil, geoLat: Swift.Double? = nil, geoLng: Swift.Double? = nil, tags: [Swift.String]? = nil, note: Swift.String? = nil, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance? = nil, assistiveDevice: OneStepSDK.OSTAssistiveDevice? = nil, sixMinuteWalkCourseLengthM: Swift.Double?)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct OSTUserInputMetaData : Swift.Encodable, Swift.Sendable {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(note: Swift.String?, tags: [Swift.String]?, assistiveDevice: OneStepSDK.OSTAssistiveDevice?, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?, properties: [Swift.String : OneStepSDK.OSTMixedType]? = nil, sixMinuteWalkCourseLengthM: Swift.Int? = nil)
+  public init(note: Swift.String?, tags: [Swift.String]?, assistiveDevice: OneStepSDK.OSTAssistiveDevice?, levelOfAssistance: OneStepSDK.OSTLevelOfAssistance?, properties: [Swift.String : OneStepSDK.OSTMixedType]? = nil, sixMinuteWalkCourseLengthM: Swift.Double? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -695,6 +696,8 @@ public enum OSTParamName : Swift.String, Swift.CaseIterable, Swift.Sendable {
   case kneeExtRangeOfMotionAngle
   case kneeFlexPassiveRangeOfMotionAngle
   case sixMinWalkDistance
+  case sixMinuteWalkLaps
+  case sixMinuteWalkCourseLengthM
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
