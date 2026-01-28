@@ -238,6 +238,7 @@ public struct OSTBackgroundRecord : Swift.Sendable {
   final public func getMotionDataService() async -> any OneStepSDK.OSTMotionDataService
   final public func disconnect()
   final public func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
+  final public func setDeviceToken(token: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   final public func readMotionMeasurementById(uuid: Foundation.UUID) -> OneStepSDK.OSTMotionMeasurement?
   #endif
@@ -452,6 +453,7 @@ public protocol OSTCoreInterface {
   func rawBackgroundRecords(startTime: Foundation.Date?, endTime: Foundation.Date?) -> [OneStepSDK.OSTBackgroundRecord]
   #endif
   func updateUserAttributes(userAttributes: OneStepSDK.OSTUserAttributes)
+  func setDeviceToken(token: Swift.String)
   func sync() async -> Swift.Bool
 }
 public struct BackgroundMonitoringStats : Swift.Sendable {
