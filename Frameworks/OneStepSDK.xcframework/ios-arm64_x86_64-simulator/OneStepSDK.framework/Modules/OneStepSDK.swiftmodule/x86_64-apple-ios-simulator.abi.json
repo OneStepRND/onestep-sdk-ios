@@ -31910,91 +31910,91 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 754,
+      "offset": 758,
       "length": 22,
       "value": "\"co.onestep.syncQueue\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 823,
+      "offset": 827,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 827,
+      "offset": 831,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 875,
+      "offset": 879,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1616,
+      "offset": 1615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 41418,
+      "offset": 41756,
       "length": 7,
       "value": "\"debug\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 41448,
+      "offset": 41786,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42281,
+      "offset": 42619,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42307,
+      "offset": 42645,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42338,
+      "offset": 42676,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42368,
+      "offset": 42706,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42399,
+      "offset": 42737,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTSDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 42425,
+      "offset": 42763,
       "length": 1,
       "value": "5"
     },
@@ -33753,7 +33753,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "2"
+      "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
