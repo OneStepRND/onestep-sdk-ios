@@ -32329,29 +32329,36 @@
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 4109,
+      "offset": 4151,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 20545,
+      "offset": 20587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "BooleanLiteral",
-      "offset": 22364,
+      "offset": 22406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Network\/SDKNetworkService.swift",
       "kind": "StringLiteral",
-      "offset": 32019,
+      "offset": 34340,
       "length": 2,
       "value": "\"\""
     },
@@ -33753,7 +33760,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "3"
+      "value": "4"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
