@@ -1,0 +1,74 @@
+name: Publish Draft Release
+
+on:
+  push:
+    branches:
+      - main
+      # TODO: Remove once workflow is validated on the testing branch
+      - github-actions-workflow
+
+jobs:
+  publish:
+    name: Publish Release
+    runs-on: ubuntu-latest
+    # Only run when the merged commit matches the SDK update pattern
+    # Handles both squash merge ("chore: update SDK to X.Y.Z") and
+    # merge commit ("Merge pull request #XX from .../chore/X.Y.Z")
+    if: >-
+      contains(github.event.head_commit.message, 'chore: update SDK to')
+      || contains(github.event.head_commit.message, 'chore/')
+
+    steps:
+      - name: Extract version from commit message
+        id: version
+        run: |
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+
+          # Try extracting from "chore: update SDK to X.Y.Z" (squash merge or commit body)
+          VERSION=$(echo "$COMMIT_MSG" | grep -oP 'chore: update SDK to \K\S+' | head -1)
+
+          # Fallback: extract from merge commit "Merge pull request #XX from .../chore/X.Y.Z"
+          if [ -z "$VERSION" ]; then
+            VERSION=$(echo "$COMMIT_MSG" | grep -oP 'chore/\K\S+' | head -1)
+          fi
+
+          if [ -z "$VERSION" ]; then
+            echo "Could not extract version from commit message: $COMMIT_MSG"
+            exit 1
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Publishing release: $VERSION"
+
+      - name: Verify draft release exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          # Check that the release exists and is a draft
+          RELEASE_INFO=$(gh release view "$VERSION" --json isDraft,tagName 2>/dev/null || echo "")
+
+          if [ -z "$RELEASE_INFO" ]; then
+            echo "Release $VERSION not found, skipping publish"
+            exit 0
+          fi
+
+          IS_DRAFT=$(echo "$RELEASE_INFO" | jq -r '.isDraft')
+          if [ "$IS_DRAFT" != "true" ]; then
+            echo "Release $VERSION is already published, skipping"
+            exit 0
+          fi
+
+          echo "Draft release $VERSION found, proceeding to publish"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          gh release edit "$VERSION" --draft=false
+
+          echo "Release $VERSION published"
+          echo "URL: https://github.com/${{ github.repository }}/releases/tag/$VERSION"
