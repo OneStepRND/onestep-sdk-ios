@@ -150,13 +150,13 @@ public protocol MotionLab {
   var configuration: OneStepSDK.MotionLabConfig { get }
   func getMeasurements(request: OneStepSDK.TimeRangedDataRequest) throws -> [OneStepSDK.OSTMotionMeasurement]
   #if compiler(>=5.3) && $NonescapableTypes
-  func getMeasurement(id: Foundation.UUID) async throws -> OneStepSDK.OSTMotionMeasurement?
+  func getMeasurement(id: Foundation.UUID) throws -> OneStepSDK.OSTMotionMeasurement?
   #endif
   func deleteMeasurement(id: Foundation.UUID) async throws
   func updateMeasurement(id: Foundation.UUID, userInputMetadata: OneStepSDK.OSTUserInputMetaData) async throws
   func updateCourseLength(id: Foundation.UUID, length: OneStepSDK.OSTLength) async throws
   func reanalyze(measurementId id: Foundation.UUID) async throws
-  func getRecordingLimit() -> Foundation.TimeInterval
+  func getRecordingLimit() -> Swift.Int
   func checkDeviceCapabilities() async -> OneStepSDK.OSTResult<OneStepSDK.DeviceCapabilities>
 }
 public struct DeviceCapabilities : Swift.Sendable {
@@ -450,6 +450,7 @@ final public class OneStep : OneStepSDK.OneStepProtocol {
   final public func inAppPermissionsRequired() -> Swift.Bool
   final public func updateUserAttributes(_ userAttributes: OneStepSDK.OSTUserAttributes)
   final public func sync() async -> Swift.Bool
+  final public func version() -> Swift.String
   @objc deinit
 }
 public struct StepBout : Swift.Codable, Swift.Identifiable, Swift.Sendable {
@@ -1535,6 +1536,7 @@ public typealias DailyBackgroundWalkCoreDataClassSet = Foundation.NSSet
 }
 public struct OSTLength : Swift.Codable, Swift.Sendable {
   public enum Units : Swift.String, Swift.Codable, Swift.Sendable {
+    case cm
     case meters
     case feet
     #if compiler(>=5.3) && $NonescapableTypes
@@ -1869,12 +1871,12 @@ final public class MockMotionLab : OneStepSDK.MotionLab {
   final public func updateConfiguration(_ config: OneStepSDK.MotionLabConfig)
   final public func getMeasurements(request: OneStepSDK.TimeRangedDataRequest) throws -> [OneStepSDK.OSTMotionMeasurement]
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func getMeasurement(id: Foundation.UUID) async throws -> OneStepSDK.OSTMotionMeasurement?
+  final public func getMeasurement(id: Foundation.UUID) throws -> OneStepSDK.OSTMotionMeasurement?
   #endif
   final public func deleteMeasurement(id: Foundation.UUID) async throws
   final public func updateMeasurement(id: Foundation.UUID, userInputMetadata: OneStepSDK.OSTUserInputMetaData) async throws
   final public func reanalyze(measurementId id: Foundation.UUID) async throws
-  final public func getRecordingLimit() -> Foundation.TimeInterval
+  final public func getRecordingLimit() -> Swift.Int
   final public func checkDeviceCapabilities() async -> OneStepSDK.OSTResult<OneStepSDK.DeviceCapabilities>
   final public func addMeasurement(_ measurement: OneStepSDK.OSTMotionMeasurement)
   final public func clearMeasurements()
