@@ -51509,7 +51509,10 @@
         "name": "OneStepIngest",
         "printedName": "OneStepIngest",
         "declKind": "Import",
-        "moduleName": "OneStepSDK"
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -57339,7 +57342,10 @@
         "name": "OneStepIngest",
         "printedName": "OneStepIngest",
         "declKind": "Import",
-        "moduleName": "OneStepSDK"
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -60963,14 +60969,14 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/IngestBridge\/IngestBridge.swift",
       "kind": "StringLiteral",
-      "offset": 105,
+      "offset": 114,
       "length": 19,
       "value": "\"co.onestep.ingest\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Internal\/IngestBridge\/IngestBridge.swift",
       "kind": "StringLiteral",
-      "offset": 136,
+      "offset": 145,
       "length": 8,
       "value": "\"bridge\""
     }
