@@ -23166,7 +23166,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:)",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23234,17 +23234,11 @@
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
-            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
+            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
+            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL0yAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgtF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTRecorderProtocol>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTRecorderProtocol>",
@@ -23609,6 +23603,88 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OSTActivityType",
+                "printedName": "OneStepSDK.OSTActivityType",
+                "usr": "s:10OneStepSDK15OSTActivityTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OneStepSDK.OSTUserInputMetaData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTUserInputMetaData",
+                    "printedName": "OneStepSDK.OSTUserInputMetaData",
+                    "usr": "s:10OneStepSDK20OSTUserInputMetaDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : OneStepSDK.OSTMixedType]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : OneStepSDK.OSTMixedType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTMixedType",
+                        "printedName": "OneStepSDK.OSTMixedType",
+                        "usr": "s:10OneStepSDK12OSTMixedTypeO"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
+            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK0yAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgtF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -58740,21 +58816,21 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/MotionLab\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1155,
+      "offset": 1120,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/MotionLab\/OSTRecorder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1635,
+      "offset": 1600,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/MotionLab\/OSTRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2663,
+      "offset": 3005,
       "length": 5,
       "value": "false"
     },
@@ -60611,7 +60687,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "1"
+      "value": "2"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",

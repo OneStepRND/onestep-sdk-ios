@@ -790,7 +790,7 @@ public protocol OSTRecorderProtocol {
   var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> { get }
   var stepsCount: Combine.AnyPublisher<Swift.Int, Swift.Never> { get }
   #if compiler(>=5.3) && $NonescapableTypes
-  func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool)
+  func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func analyze() async -> OneStepSDK.OSTMotionMeasurement?
@@ -809,6 +809,9 @@ public protocol OSTRecorderProtocol {
   public var analyzerState: Combine.AnyPublisher<OneStepSDK.OSTAnalyzerState, Swift.Never> {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func start(activityType: OneStepSDK.OSTActivityType, duration: Swift.Int?, userInputMetadata: OneStepSDK.OSTUserInputMetaData?, customMetadata: Swift.Dictionary<Swift.String, OneStepSDK.OSTMixedType>?, enhancedMode: Swift.Bool = false)
   #endif
