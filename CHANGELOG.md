@@ -1,3 +1,45 @@
+## OneStep iOS SDK 2.0.3
+###### Release Date: 2026-05-24
+
+### 🪄 New Features
+
+* **Patient administration API** (`PatientAdmin`): new sub-protocol accessed as `OneStep.shared.patientAdmin`, providing patient lifecycle operations for clinician-facing integrations. See `OSTPatientAdmin` for the full surface.
+* **Session expiry handling**: SDK now logs the user out automatically when a backend call returns HTTP 401, surfacing a clean unauthenticated state instead of silently retrying.
+
+### 🛠️ Distribution Changes
+
+* **Product renamed**: `OneStepSDKiOS` → `OneStepSDK`. Update your `.product(name: "OneStepSDKiOS", package: "onestep-sdk-ios")` reference to `.product(name: "OneStepSDK", package: "onestep-sdk-ios")`. The `import OneStepSDK` statement is unchanged.
+* **Framework now downloaded on resolve**: `Package.swift` switched to a URL-based `binaryTarget`. SwiftPM downloads `OneStepSDK.xcframework.zip` from the GitHub Release on first resolve and verifies it via SHA-256 checksum.
+
+---
+
+## OneStep iOS SDK 2.0.2
+###### Release Date: 2026-05-11
+
+### 🔧 API Adjustments
+
+* **Removed `enhancedMode` from the public recording API**: `MotionLab.recorder.startRecording(...)` no longer accepts an `enhancedMode` parameter. Enhanced-mode behavior is now controlled internally based on `MotionLabConfig`. Consumers should remove any `enhancedMode:` arguments from their call sites.
+
+### 📚 Documentation
+
+* Migration guides V1 → V2 published.
+
+---
+
+## OneStep iOS SDK 2.0.1
+###### Release Date: 2026-05-11
+
+### 🐛 Bug Fixes
+
+* **Walking-bout duration truncation**: fixed an integer truncation in HealthKit step-bout ingestion that caused `duration_ms` values to be rounded to whole seconds. Bouts are now reported with full millisecond precision, and instantaneous (zero-duration) samples are skipped.
+* **History tab sync**: cleared the cached last-modified date on identify so the history view re-syncs measurements from the server on first launch after sign-in, instead of showing stale local-only data.
+
+### 🔧 API Adjustments
+
+* `isIdentified` now returns `false` (rather than throwing) when the SDK is not in an identified state, matching the documented contract.
+
+---
+
 ## OneStep iOS SDK 2.0
 ###### Release Date: 2025-04-13
 
