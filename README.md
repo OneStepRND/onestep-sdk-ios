@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/OneStepRND/onestep-sdk-ios)
 [![Languages](https://img.shields.io/badge/language-Swift-orange.svg)](https://github.com/OneStepRND/onestep-sdk-ios)
-[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/OneStepRND/onestep-sdk-ios/releases)
+[![Version](https://img.shields.io/badge/version-2.0.3-blue.svg)](https://github.com/OneStepRND/onestep-sdk-ios/releases)
 [![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-green.svg)](https://github.com/OneStepRND/onestep-sdk-ios)
 ![Commercial License](https://img.shields.io/badge/license-Commercial-green.svg)
 
