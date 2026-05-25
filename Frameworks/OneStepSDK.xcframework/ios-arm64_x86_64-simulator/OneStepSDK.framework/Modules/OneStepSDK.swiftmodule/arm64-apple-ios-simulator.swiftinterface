@@ -407,6 +407,16 @@ public enum OSTResultState : Swift.Int, Swift.Codable, Swift.Sendable {
     get
   }
 }
+@available(iOS 15.0, *)
+final public class MockPatientAdmin : OneStepSDK.OSTPatientAdmin {
+  public init()
+  final public var updateUserAttributesCalled: Swift.Bool
+  final public var lastUserAttributes: OneStepSDK.OSTUserAttributes?
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func updateUserAttributes(_ userAttributes: OneStepSDK.OSTUserAttributes) async -> Swift.Result<Swift.Void, OneStepSDK.OSTError>
+  #endif
+  @objc deinit
+}
 public struct StepBout : Swift.Codable, Swift.Identifiable, Swift.Sendable {
   public let id: Foundation.UUID
   public let startTime: Foundation.Date
@@ -1539,18 +1549,6 @@ extension OneStepSDK.OSTLength {
   public static func fetchDailyAggregatedDataAndUpload() async
   @objc deinit
 }
-public protocol OneStepProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func motionLab() -> Swift.Result<any OneStepSDK.MotionLab, OneStepSDK.OSTError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func monitoring() -> Swift.Result<any OneStepSDK.Monitoring, OneStepSDK.OSTError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func insights() -> Swift.Result<any OneStepSDK.Insights, OneStepSDK.OSTError>
-  #endif
-  func inAppPermissionsRequired() -> Swift.Bool
-}
 @_hasMissingDesignatedInitializers final public class OneStep : OneStepSDK.OneStepProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
@@ -1581,7 +1579,7 @@ public protocol OneStepProtocol : AnyObject {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
-  final public func clearPatient() -> Swift.Result<Swift.Void, OneStepSDK.OSTError>
+  final public func clearPatient() async -> Swift.Result<Swift.Void, OneStepSDK.OSTError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
@@ -1614,6 +1612,7 @@ public protocol OneStepProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func insights() -> Swift.Result<any OneStepSDK.Insights, OneStepSDK.OSTError>
   #endif
+  final public func getPatientAdmin(config: OneStepSDK.PatientAdminConfig = PatientAdminConfig()) -> any OneStepSDK.OSTPatientAdmin
 }
 @_hasMissingDesignatedInitializers final public class OSTPatientScope {
   final public let patientId: OneStepSDK.OSTPatientId
@@ -1627,9 +1626,9 @@ public struct OSTPatientId : Swift.RawRepresentable, Swift.Hashable, Swift.Senda
   public typealias RawValue = Swift.String
 }
 public enum OSTIdentificationState : Swift.Sendable, Swift.Equatable {
-  case unidentified(cause: OneStepSDK.OSTError?)
+  case unidentified
   case identified(OneStepSDK.OSTPatientId)
-  case revoked(OneStepSDK.OSTError)
+  case lost(OneStepSDK.OSTError)
   public static func == (lhs: OneStepSDK.OSTIdentificationState, rhs: OneStepSDK.OSTIdentificationState) -> Swift.Bool
 }
 public typealias DidHandleNotification = Swift.Bool
@@ -1721,6 +1720,15 @@ extension OneStepSDK.MotionMeasurement {
 @_hasMissingDesignatedInitializers public class OSTEnvironment {
   @objc deinit
 }
+@available(iOS 15.0, *)
+public protocol OSTPatientAdmin {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func updateUserAttributes(_ userAttributes: OneStepSDK.OSTUserAttributes) async -> Swift.Result<Swift.Void, OneStepSDK.OSTError>
+  #endif
+}
+public struct PatientAdminConfig {
+  public init()
+}
 @_inheritsConvenienceInitializers @objc(BackgroundSample) nonisolated public class BackgroundSample : CoreData.NSManagedObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -1732,6 +1740,19 @@ public struct OSTEvent : @unchecked Swift.Sendable {
   public let properties: [Swift.String : Any]
   public let timestamp: Foundation.TimeInterval
   public init(name: Swift.String, properties: [Swift.String : Any] = [:], timestamp: Foundation.TimeInterval = Date().timeIntervalSince1970 * 1000)
+}
+public protocol OneStepProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func motionLab() -> Swift.Result<any OneStepSDK.MotionLab, OneStepSDK.OSTError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func monitoring() -> Swift.Result<any OneStepSDK.Monitoring, OneStepSDK.OSTError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func insights() -> Swift.Result<any OneStepSDK.Insights, OneStepSDK.OSTError>
+  #endif
+  func inAppPermissionsRequired() -> Swift.Bool
+  func getPatientAdmin(config: OneStepSDK.PatientAdminConfig) -> any OneStepSDK.OSTPatientAdmin
 }
 public struct OSTDailyAggregatedBackgroundRecord : Swift.Sendable {
   public var date_local: Swift.String
@@ -1924,6 +1945,7 @@ final public class MockMotionLab : OneStepSDK.MotionLab {
 @available(iOS 15.0, *)
 final public class MockOneStep : OneStepSDK.OneStepProtocol {
   final public var inAppPermissionsRequiredValue: Swift.Bool
+  final public func getPatientAdmin(config: OneStepSDK.PatientAdminConfig = PatientAdminConfig()) -> any OneStepSDK.OSTPatientAdmin
   #if compiler(>=5.3) && $NonescapableTypes
   public init(mockMotionLab: (any OneStepSDK.MotionLab)? = nil, mockMonitoring: (any OneStepSDK.Monitoring)? = nil, mockInsights: (any OneStepSDK.Insights)? = nil)
   #endif

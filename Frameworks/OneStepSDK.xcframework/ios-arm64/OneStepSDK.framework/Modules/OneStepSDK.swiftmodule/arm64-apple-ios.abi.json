@@ -12937,6 +12937,341 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "MockPatientAdmin",
+        "printedName": "MockPatientAdmin",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MockPatientAdmin",
+                "printedName": "OneStepSDK.MockPatientAdmin",
+                "usr": "s:10OneStepSDK16MockPatientAdminC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK16MockPatientAdminCACycfc",
+            "mangledName": "$s10OneStepSDK16MockPatientAdminCACycfc",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "updateUserAttributesCalled",
+            "printedName": "updateUserAttributesCalled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvp",
+            "mangledName": "$s10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvg",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvs",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvM",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC26updateUserAttributesCalledSbvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "intro_iOS": "15.0",
+                "declAttributes": [
+                  "Final",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastUserAttributes",
+            "printedName": "lastUserAttributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OneStepSDK.OSTUserAttributes?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTUserAttributes",
+                    "printedName": "OneStepSDK.OSTUserAttributes",
+                    "usr": "s:10OneStepSDK17OSTUserAttributesV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvp",
+            "mangledName": "$s10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvp",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OneStepSDK.OSTUserAttributes?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTUserAttributes",
+                        "printedName": "OneStepSDK.OSTUserAttributes",
+                        "usr": "s:10OneStepSDK17OSTUserAttributesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvg",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvg",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OneStepSDK.OSTUserAttributes?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OSTUserAttributes",
+                        "printedName": "OneStepSDK.OSTUserAttributes",
+                        "usr": "s:10OneStepSDK17OSTUserAttributesV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvs",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvs",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvM",
+                "mangledName": "$s10OneStepSDK16MockPatientAdminC18lastUserAttributesAA07OSTUserI0VSgvM",
+                "moduleName": "OneStepSDK",
+                "implicit": true,
+                "intro_iOS": "15.0",
+                "declAttributes": [
+                  "Final",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "updateUserAttributes",
+            "printedName": "updateUserAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), OneStepSDK.OSTError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTError",
+                    "printedName": "OneStepSDK.OSTError",
+                    "usr": "s:10OneStepSDK8OSTErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OSTUserAttributes",
+                "printedName": "OneStepSDK.OSTUserAttributes",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK16MockPatientAdminC20updateUserAttributesys6ResultOyytAA8OSTErrorOGAA07OSTUserI0VYaF",
+            "mangledName": "$s10OneStepSDK16MockPatientAdminC20updateUserAttributesys6ResultOyytAA8OSTErrorOGAA07OSTUserI0VYaF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OneStepSDK16MockPatientAdminC",
+        "mangledName": "$s10OneStepSDK16MockPatientAdminC",
+        "moduleName": "OneStepSDK",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OSTPatientAdmin",
+            "printedName": "OSTPatientAdmin",
+            "usr": "s:10OneStepSDK15OSTPatientAdminP",
+            "mangledName": "$s10OneStepSDK15OSTPatientAdminP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "StepBout",
         "printedName": "StepBout",
         "children": [
@@ -48363,169 +48698,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "OneStepProtocol",
-        "printedName": "OneStepProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "motionLab",
-            "printedName": "motionLab()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "Swift.Result<any OneStepSDK.MotionLab, OneStepSDK.OSTError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MotionLab",
-                    "printedName": "any OneStepSDK.MotionLab",
-                    "usr": "s:10OneStepSDK9MotionLabP"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTError",
-                    "printedName": "OneStepSDK.OSTError",
-                    "usr": "s:10OneStepSDK8OSTErrorO"
-                  }
-                ],
-                "usr": "s:s6ResultO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10OneStepSDK0aB8ProtocolP9motionLabs6ResultOyAA06MotionF0_pAA8OSTErrorOGyF",
-            "mangledName": "$s10OneStepSDK0aB8ProtocolP9motionLabs6ResultOyAA06MotionF0_pAA8OSTErrorOGyF",
-            "moduleName": "OneStepSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
-            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "monitoring",
-            "printedName": "monitoring()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "Swift.Result<any OneStepSDK.Monitoring, OneStepSDK.OSTError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Monitoring",
-                    "printedName": "any OneStepSDK.Monitoring",
-                    "usr": "s:10OneStepSDK10MonitoringP"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTError",
-                    "printedName": "OneStepSDK.OSTError",
-                    "usr": "s:10OneStepSDK8OSTErrorO"
-                  }
-                ],
-                "usr": "s:s6ResultO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10OneStepSDK0aB8ProtocolP10monitorings6ResultOyAA10Monitoring_pAA8OSTErrorOGyF",
-            "mangledName": "$s10OneStepSDK0aB8ProtocolP10monitorings6ResultOyAA10Monitoring_pAA8OSTErrorOGyF",
-            "moduleName": "OneStepSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
-            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "insights",
-            "printedName": "insights()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "Swift.Result<any OneStepSDK.Insights, OneStepSDK.OSTError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Insights",
-                    "printedName": "any OneStepSDK.Insights",
-                    "usr": "s:10OneStepSDK8InsightsP"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OSTError",
-                    "printedName": "OneStepSDK.OSTError",
-                    "usr": "s:10OneStepSDK8OSTErrorO"
-                  }
-                ],
-                "usr": "s:s6ResultO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10OneStepSDK0aB8ProtocolP8insightss6ResultOyAA8Insights_pAA8OSTErrorOGyF",
-            "mangledName": "$s10OneStepSDK0aB8ProtocolP8insightss6ResultOyAA8Insights_pAA8OSTErrorOGyF",
-            "moduleName": "OneStepSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
-            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "inAppPermissionsRequired",
-            "printedName": "inAppPermissionsRequired()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10OneStepSDK0aB8ProtocolP24inAppPermissionsRequiredSbyF",
-            "mangledName": "$s10OneStepSDK0aB8ProtocolP24inAppPermissionsRequiredSbyF",
-            "moduleName": "OneStepSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
-            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:10OneStepSDK0aB8ProtocolP",
-        "mangledName": "$s10OneStepSDK0aB8ProtocolP",
-        "moduleName": "OneStepSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "OneStep",
         "printedName": "OneStep",
         "children": [
@@ -49071,8 +49243,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK0aB0C12clearPatients6ResultOyytAA8OSTErrorOGyF",
-            "mangledName": "$s10OneStepSDK0aB0C12clearPatients6ResultOyytAA8OSTErrorOGyF",
+            "usr": "s:10OneStepSDK0aB0C12clearPatients6ResultOyytAA8OSTErrorOGyYaF",
+            "mangledName": "$s10OneStepSDK0aB0C12clearPatients6ResultOyytAA8OSTErrorOGyYaF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "Final",
@@ -49515,6 +49687,36 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPatientAdmin",
+            "printedName": "getPatientAdmin(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSTPatientAdmin",
+                "printedName": "any OneStepSDK.OSTPatientAdmin",
+                "usr": "s:10OneStepSDK15OSTPatientAdminP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PatientAdminConfig",
+                "printedName": "OneStepSDK.PatientAdminConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10OneStepSDK18PatientAdminConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB0C15getPatientAdmin6configAA010OSTPatientF0_pAA0eF6ConfigV_tF",
+            "mangledName": "$s10OneStepSDK0aB0C15getPatientAdmin6configAA010OSTPatientF0_pAA0eF6ConfigV_tF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -49893,41 +50095,13 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OneStepSDK.OSTIdentificationState.Type) -> (OneStepSDK.OSTError?) -> OneStepSDK.OSTIdentificationState",
+                "printedName": "(OneStepSDK.OSTIdentificationState.Type) -> OneStepSDK.OSTIdentificationState",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(OneStepSDK.OSTError?) -> OneStepSDK.OSTIdentificationState",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OSTIdentificationState",
-                        "printedName": "OneStepSDK.OSTIdentificationState",
-                        "usr": "s:10OneStepSDK22OSTIdentificationStateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(cause: OneStepSDK.OSTError?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "OneStepSDK.OSTError?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "OSTError",
-                                "printedName": "OneStepSDK.OSTError",
-                                "usr": "s:10OneStepSDK8OSTErrorO"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "OSTIdentificationState",
+                    "printedName": "OneStepSDK.OSTIdentificationState",
+                    "usr": "s:10OneStepSDK22OSTIdentificationStateO"
                   },
                   {
                     "kind": "TypeNominal",
@@ -49946,8 +50120,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK22OSTIdentificationStateO12unidentifiedyAcA8OSTErrorOSg_tcACmF",
-            "mangledName": "$s10OneStepSDK22OSTIdentificationStateO12unidentifiedyAcA8OSTErrorOSg_tcACmF",
+            "usr": "s:10OneStepSDK22OSTIdentificationStateO12unidentifiedyA2CmF",
+            "mangledName": "$s10OneStepSDK22OSTIdentificationStateO12unidentifiedyA2CmF",
             "moduleName": "OneStepSDK"
           },
           {
@@ -50002,8 +50176,8 @@
           },
           {
             "kind": "Var",
-            "name": "revoked",
-            "printedName": "revoked",
+            "name": "lost",
+            "printedName": "lost",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -50046,8 +50220,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OneStepSDK22OSTIdentificationStateO7revokedyAcA8OSTErrorOcACmF",
-            "mangledName": "$s10OneStepSDK22OSTIdentificationStateO7revokedyAcA8OSTErrorOcACmF",
+            "usr": "s:10OneStepSDK22OSTIdentificationStateO4lostyAcA8OSTErrorOcACmF",
+            "mangledName": "$s10OneStepSDK22OSTIdentificationStateO4lostyAcA8OSTErrorOcACmF",
             "moduleName": "OneStepSDK"
           },
           {
@@ -50373,6 +50547,155 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "OneStepSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OSTPatientAdmin",
+        "printedName": "OSTPatientAdmin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "updateUserAttributes",
+            "printedName": "updateUserAttributes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), OneStepSDK.OSTError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTError",
+                    "printedName": "OneStepSDK.OSTError",
+                    "usr": "s:10OneStepSDK8OSTErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OSTUserAttributes",
+                "printedName": "OneStepSDK.OSTUserAttributes",
+                "usr": "s:10OneStepSDK17OSTUserAttributesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK15OSTPatientAdminP20updateUserAttributesys6ResultOyytAA8OSTErrorOGAA07OSTUserH0VYaF",
+            "mangledName": "$s10OneStepSDK15OSTPatientAdminP20updateUserAttributesys6ResultOyytAA8OSTErrorOGAA07OSTUserH0VYaF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTPatientAdmin>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OSTPatientAdmin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OneStepSDK15OSTPatientAdminP",
+        "mangledName": "$s10OneStepSDK15OSTPatientAdminP",
+        "moduleName": "OneStepSDK",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PatientAdminConfig",
+        "printedName": "PatientAdminConfig",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PatientAdminConfig",
+                "printedName": "OneStepSDK.PatientAdminConfig",
+                "usr": "s:10OneStepSDK18PatientAdminConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OneStepSDK18PatientAdminConfigVACycfc",
+            "mangledName": "$s10OneStepSDK18PatientAdminConfigVACycfc",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OneStepSDK18PatientAdminConfigV",
+        "mangledName": "$s10OneStepSDK18PatientAdminConfigV",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -51489,6 +51812,210 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OneStepSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OneStepProtocol",
+        "printedName": "OneStepProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "motionLab",
+            "printedName": "motionLab()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<any OneStepSDK.MotionLab, OneStepSDK.OSTError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MotionLab",
+                    "printedName": "any OneStepSDK.MotionLab",
+                    "usr": "s:10OneStepSDK9MotionLabP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTError",
+                    "printedName": "OneStepSDK.OSTError",
+                    "usr": "s:10OneStepSDK8OSTErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB8ProtocolP9motionLabs6ResultOyAA06MotionF0_pAA8OSTErrorOGyF",
+            "mangledName": "$s10OneStepSDK0aB8ProtocolP9motionLabs6ResultOyAA06MotionF0_pAA8OSTErrorOGyF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "monitoring",
+            "printedName": "monitoring()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<any OneStepSDK.Monitoring, OneStepSDK.OSTError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Monitoring",
+                    "printedName": "any OneStepSDK.Monitoring",
+                    "usr": "s:10OneStepSDK10MonitoringP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTError",
+                    "printedName": "OneStepSDK.OSTError",
+                    "usr": "s:10OneStepSDK8OSTErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB8ProtocolP10monitorings6ResultOyAA10Monitoring_pAA8OSTErrorOGyF",
+            "mangledName": "$s10OneStepSDK0aB8ProtocolP10monitorings6ResultOyAA10Monitoring_pAA8OSTErrorOGyF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insights",
+            "printedName": "insights()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<any OneStepSDK.Insights, OneStepSDK.OSTError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Insights",
+                    "printedName": "any OneStepSDK.Insights",
+                    "usr": "s:10OneStepSDK8InsightsP"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OSTError",
+                    "printedName": "OneStepSDK.OSTError",
+                    "usr": "s:10OneStepSDK8OSTErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB8ProtocolP8insightss6ResultOyAA8Insights_pAA8OSTErrorOGyF",
+            "mangledName": "$s10OneStepSDK0aB8ProtocolP8insightss6ResultOyAA8Insights_pAA8OSTErrorOGyF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inAppPermissionsRequired",
+            "printedName": "inAppPermissionsRequired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB8ProtocolP24inAppPermissionsRequiredSbyF",
+            "mangledName": "$s10OneStepSDK0aB8ProtocolP24inAppPermissionsRequiredSbyF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPatientAdmin",
+            "printedName": "getPatientAdmin(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSTPatientAdmin",
+                "printedName": "any OneStepSDK.OSTPatientAdmin",
+                "usr": "s:10OneStepSDK15OSTPatientAdminP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PatientAdminConfig",
+                "printedName": "OneStepSDK.PatientAdminConfig",
+                "usr": "s:10OneStepSDK18PatientAdminConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK0aB8ProtocolP15getPatientAdmin6configAA010OSTPatientG0_pAA0fG6ConfigV_tF",
+            "mangledName": "$s10OneStepSDK0aB8ProtocolP15getPatientAdmin6configAA010OSTPatientG0_pAA0fG6ConfigV_tF",
+            "moduleName": "OneStepSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OneStepProtocol>",
+            "sugared_genericSig": "<Self where Self : OneStepSDK.OneStepProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OneStepSDK0aB8ProtocolP",
+        "mangledName": "$s10OneStepSDK0aB8ProtocolP",
+        "moduleName": "OneStepSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -56858,6 +57385,36 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "getPatientAdmin",
+            "printedName": "getPatientAdmin(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSTPatientAdmin",
+                "printedName": "any OneStepSDK.OSTPatientAdmin",
+                "usr": "s:10OneStepSDK15OSTPatientAdminP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PatientAdminConfig",
+                "printedName": "OneStepSDK.PatientAdminConfig",
+                "hasDefaultArg": true,
+                "usr": "s:10OneStepSDK18PatientAdminConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OneStepSDK04MockaB0C15getPatientAdmin6configAA010OSTPatientG0_pAA0fG6ConfigV_tF",
+            "mangledName": "$s10OneStepSDK04MockaB0C15getPatientAdmin6configAA010OSTPatientG0_pAA0fG6ConfigV_tF",
+            "moduleName": "OneStepSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(mockMotionLab:mockMonitoring:mockInsights:)",
@@ -58695,6 +59252,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/Testing\/MockPatientAdmin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 767,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/Common\/Models\/OSTUserAttributes.swift",
       "kind": "Dictionary",
       "offset": 1694,
@@ -60062,21 +60626,21 @@
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/OneStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 10175,
+      "offset": 9581,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/OneStep.swift",
       "kind": "BooleanLiteral",
-      "offset": 10235,
+      "offset": 9641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/V2\/OneStep.swift",
       "kind": "Array",
-      "offset": 10299,
+      "offset": 9705,
       "length": 2,
       "value": "[]"
     },
@@ -60687,7 +61251,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "2"
+      "value": "3"
     },
     {
       "filePath": "\/Users\/davidhavkin\/Desktop\/OneStep\/Development\/GitHub\/onestep-sdk-ios-internal\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
