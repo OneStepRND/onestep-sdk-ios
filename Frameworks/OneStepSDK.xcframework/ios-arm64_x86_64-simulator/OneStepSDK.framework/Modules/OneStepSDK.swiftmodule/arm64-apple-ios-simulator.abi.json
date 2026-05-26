@@ -8204,7 +8204,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:)",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:preroll:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8279,11 +8279,18 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedModeyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbtF",
-            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedModeyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbtF",
+            "usr": "s:10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedMode7prerollyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbSitF",
+            "mangledName": "$s10OneStepSDK11OSTRecorderC5start12activityType8duration17userInputMetadata06customK012enhancedMode7prerollyAA011OSTActivityG0O_SiSgAA07OSTUserJ8MetaDataVSgSDySSAA08OSTMixedG0OGSgSbSitF",
             "moduleName": "OneStepSDK",
             "declAttributes": [
               "AccessControl",
@@ -14868,7 +14875,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:)",
+            "printedName": "start(activityType:duration:userInputMetadata:customMetadata:enhancedMode:preroll:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14942,11 +14949,17 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
-            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedModeyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbtF",
+            "usr": "s:10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedMode7prerollyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbSitF",
+            "mangledName": "$s10OneStepSDK19OSTRecorderProtocolP5start12activityType8duration17userInputMetadata06customL012enhancedMode7prerollyAA011OSTActivityH0O_SiSgAA07OSTUserK8MetaDataVSgSDySSAA08OSTMixedH0OGSgSbSitF",
             "moduleName": "OneStepSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : OneStepSDK.OSTRecorderProtocol>",
             "sugared_genericSig": "<Self where Self : OneStepSDK.OSTRecorderProtocol>",
@@ -30959,9 +30972,16 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
       "kind": "BooleanLiteral",
-      "offset": 2060,
+      "offset": 2258,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2280,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/MotionDataService\/Models\/OSTDiscreteColor.swift",
@@ -31526,35 +31546,35 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4304,
       "length": 26,
       "value": "\"rom_knee_flexion_passive\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4330,
+      "offset": 4359,
       "length": 14,
       "value": "\"rom_knee_ext\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4377,
+      "offset": 4406,
       "length": 25,
       "value": "\"dual_task_walk_subtract\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4425,
+      "offset": 4454,
       "length": 17,
       "value": "\"walk_6_min_test\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-ios-internal\/OneStepSDK\/Main\/OSTCoreInterface.swift",
       "kind": "StringLiteral",
-      "offset": 4465,
+      "offset": 4494,
       "length": 17,
       "value": "\"walk_2_min_test\""
     },
