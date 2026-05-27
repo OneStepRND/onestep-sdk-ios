@@ -47,22 +47,26 @@
 
 This is a **major version** with a completely redesigned public API. Migration from SDK 1.7.x is required.
 
-* **Primary entry point changed**: `OSTSDKCore.shared` → `OneStep.shared`
+* **Primary entry point changed**: `OSTSDKCore.shared` (property) → `OneStep.shared()` (static method returning `Result<OneStep, OSTError>`)
 * **Initialization changed**: The combined `initialize(appId:apiKey:distinctId:...) { }` is replaced by:
-  1. `OneStep.shared.initialize(clientToken:configuration:)` — called at app launch
-  2. `await OneStep.shared.identify(_:_:)` or `await OneStep.shared.connectAsUser(_:_:configuration:)` — called after user login
-* **API is now organized into sub-protocols** accessed as properties on `OneStep.shared`:
-  - `motionLab` (`MotionLab`) — supervised/on-demand motion recording and measurement management
-  - `monitoring` (`Monitoring`) — passive background monitoring and step bouts
-  - `insights` (`Insights`) — AI gait analysis, trend analysis, fall risk, and clinical reports
-* **Recording access changed**: `getRecordingService()` → `motionLab.recorder`
-* **Measurement queries changed**: synchronous `readMotionMeasurements(startTime:endTime:)` → `try motionLab.getMeasurements(request:)` / `try await motionLab.getMeasurement(id:)`
+  1. `OneStep.initialize(onAuthLost:configuration:)` — **static**, called at app launch, no credentials
+  2. `await sdk.setPatient(apiKey:customerPatientId:identityVerification:)` — called after user login (Path A); or `await sdk.setPatient(authPatientUuid:)` for Paths B/C
+* **`registerBGTasks()` is now static**: `OneStep.registerBGTasks()` (was an instance method on `OSTSDKCore.shared`)
+* **API is now organized into sub-protocols** accessed as **methods** (not properties) returning `Result`:
+  - `sdk.motionLab() -> Result<MotionLab, OSTError>` — supervised/on-demand motion recording and measurement management
+  - `sdk.monitoring() -> Result<Monitoring, OSTError>` — passive background monitoring and step bouts
+  - `sdk.insights() -> Result<Insights, OSTError>` — AI gait analysis, trend analysis, fall risk, and clinical reports
+* **Recording access changed**: `getRecordingService()` → `try? sdk.motionLab().get()` → `motionLab.recorder`
+* **Measurement queries are synchronous**: `readMotionMeasurements(startTime:endTime:)` → `try motionLab.getMeasurements(request:)`; `readMotionMeasurementById(uuid:)` → `try motionLab.getMeasurement(id:)` (synchronous `throws`, not `async throws`)
 * **Background monitoring changed**: `registerBackgroundMonitoring()` → `monitoring.optIn()` + `monitoring.enable(config:)`; `unregisterBackgroundMonitoring()` → `monitoring.optOut()`
+* **Auth state changed**: `state` / `statePublisher` with `OneStepState` → `authStateValue` / `authStatePublisher` with `OSTIdentificationState` (`.unidentified`, `.identified(OSTPatientId)`, `.lost(OSTError)`)
+* **`logout()` is now async**: returns `Result<Void, OSTError>`
+* **`sync()` is now async**: returns `Result<Void, OSTError>`
 * **Other renames**:
-  - `disconnect()` → `logout()`
-  - `updateUserAttributes(userAttributes:)` → `updateUserAttributes(_:)`
-  - `setDeviceToken(token:)` → `updatePushToken(_:)`
-  - `handlePushNotification(data:)` → `handleNotification(_:)` (now returns `Bool`)
+  - `disconnect()` → `await sdk.logout()`
+  - `updateUserAttributes(userAttributes:)` → `await sdk.getPatientAdmin().updateUserAttributes(_:)` (preferred)
+  - `setDeviceToken(token:)` → `sdk.updatePushToken(_:)`
+  - `handlePushNotification(data:)` → `sdk.handleNotification(_:)` (now returns `Bool`)
   - `deleteMotionMeasurement(by:)` → `await motionLab.deleteMeasurement(id:)`
   - `updateMotionMeasurement(uuid:userInputMetaData:)` → `await motionLab.updateMeasurement(id:userInputMetadata:)`
   - `dailyAggregatedBackgroundWalks(startTime:endTime:)` moved to `monitoring`

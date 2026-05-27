@@ -22,21 +22,25 @@
 ## Introduction
 The OneStep Collect SDK is a comprehensive solution for integrating advanced motion analysis capabilities into your iOS applications. It enables real-time data collection, gait analysis, background passive monitoring, and AI-powered clinical insights.
 
-> **SDK 2.0 is a breaking change** from all prior versions. The primary entry point has changed from `OSTSDKCore` to `OneStep.shared`. See [Migration Guide](#migration-from-sdk-17x) below.
+> **SDK 2.0 is a breaking change** from all prior versions. The primary entry point has changed from `OSTSDKCore` to `OneStep` (initialized via static methods). See [Migration Guide](#migration-from-sdk-17x) below.
 
 ## What's New in SDK 2.0
 
 ### Breaking Changes
-- **New primary class**: `OneStep.shared` replaces `OSTSDKCore.shared`
-- **New initialization**: `initialize(clientToken:configuration:)` + `identify(_:_:)` / `connectAsUser(_:_:configuration:)` replace the old combined `initialize(appId:apiKey:distinctId:...)` flow
-- **New module system**: The SDK surface is now organized into three sub-protocols accessed via `OneStep.shared`:
-  - `motionLab` — supervised/on-demand motion recording
-  - `monitoring` — passive background monitoring
-  - `insights` — gait analysis and clinical data
+- **New entry point**: `OneStep` replaces `OSTSDKCore`. `OneStep.shared` is now a **static method** returning `Result<OneStep, OSTError>` (not a property). The SDK instance must be resolved once and cached.
+- **New initialization**: `OneStep.initialize(onAuthLost:configuration:)` is **static** and replaces the old `initialize(appId:apiKey:distinctId:...)`. Credentials are no longer passed at init time.
+- **New auth**: `await sdk.setPatient(apiKey:customerPatientId:identityVerification:)` (Path A) and `await sdk.setPatient(authPatientUuid:)` (Paths B/C) replace `identify(_:_:)` and `connectAsUser(_:_:)`.
+- **New module system**: The three sub-systems are accessed as **methods** returning `Result`:
+  - `sdk.motionLab() -> Result<MotionLab, OSTError>` — supervised/on-demand motion recording
+  - `sdk.monitoring() -> Result<Monitoring, OSTError>` — passive background monitoring
+  - `sdk.insights() -> Result<Insights, OSTError>` — gait analysis and clinical data
+- **Static `registerBGTasks()`**: `OneStep.registerBGTasks()` is now a static method (was an instance method).
 - **Background monitoring API**: `monitoring.enable(config:)` + `monitoring.optIn()` replace `registerBackgroundMonitoring()`
-- **Recording API**: Accessed via `OneStep.shared.motionLab.recorder` instead of `OSTSDKCore.shared.getRecordingService()`
-- **Async/await throughout**: All data-fetching methods are now `async throws`
-- **Result type**: `OSTResult<T>` wraps success/failure where applicable
+- **Auth state**: `sdk.authStateValue` / `sdk.authStatePublisher` emit `OSTIdentificationState` (`.unidentified`, `.identified(OSTPatientId)`, `.lost(OSTError)`). The old `state`/`statePublisher` with `OneStepState` is removed.
+- **`logout()` is now async**: returns `Result<Void, OSTError>`
+- **`sync()` is now async**: returns `Result<Void, OSTError>`
+- **`getMeasurements` / `getMeasurement` are synchronous** (`throws`, not `async throws`)
+- **User attributes**: Preferred path is `sdk.getPatientAdmin().updateUserAttributes(_:)` (async)
 
 ### New Features
 - `Insights` protocol: trend analysis, fall-risk assessment, clinical report generation
@@ -85,9 +89,7 @@ Pair Apple's 24/7 activity tracking with OneStep's deep gait analysis for comple
 ## Before You Begin
 
 ### Obtaining Your Credentials
-You will need a **client token** from OneStep. This replaces the previous App ID + API Key pair used in SDK 1.x.
-
-Contact your OneStep account manager or visit the OneStep back-office under **Developers > Settings**.
+You will need an **API key** from OneStep. Contact your OneStep account manager or visit the OneStep back-office under **Developers > Settings**.
 
 ---
 
@@ -100,37 +102,62 @@ Contact your OneStep account manager or visit the OneStep back-office under **De
 
 ### 2. Initialize the SDK
 
-In your app's entry point (e.g. `@main` App struct, `AppDelegate`, or `application(_:didFinishLaunchingWithOptions:)`):
+SDK initialization is **static**. Call it at app launch, before any other SDK usage. The SDK instance must then be resolved from `OneStep.shared()` and cached — the recommended pattern is to hold `sdk`, `motionLab`, and `monitoring` as optional properties on your SDK wrapper class.
 
 ```swift
 import OneStepSDK
 
-// Step 1: Initialize with your client token (call once at app launch)
-OneStep.shared.initialize(clientToken: "<YOUR-CLIENT-TOKEN>")
+// AppDelegate / @main App struct
 
-// Step 2: Register background task identifiers (must be called before app finishes launching)
-OneStep.shared.registerBGTasks()
+// Step 1: Register background tasks (must be before app finishes launching)
+OneStep.registerBGTasks()
+
+// Step 2: Boot the SDK (static; safe to call on every launch)
+OneStep.initialize(
+    onAuthLost: { [weak self] error in
+        // Called when the server session is lost — prompt user to log in again
+    },
+    configuration: OSTConfiguration()
+)
+
+// Step 3: Resolve and cache the SDK instance
+guard case .success(let sdk) = OneStep.shared() else { return }
+self.sdk = sdk
 ```
+
+> **Important:** `OneStep.shared()` is a static **method** returning `Result<OneStep, OSTError>`, not a property. Resolve it once, store the result, and `guard let` from the cached reference on all subsequent calls.
 
 ### 3. Identify a User
 
-After the user logs in, identify them so data is attributed correctly:
+After the user logs in, identify them so data is attributed correctly. Check for **silent restore** first — if credentials are already stored in the Keychain from a previous session, `authStateValue` will already be `.identified` and you can skip the `setPatient` call:
 
 ```swift
-// Option A: Simple identify (no server-side identity verification)
-let result = await OneStep.shared.identify("unique-user-id", nil)
+guard case .success(let sdk) = OneStep.shared() else { return }
 
-// Option B: Identify with HMAC identity verification (recommended for production)
-let result = await OneStep.shared.identify("unique-user-id", hmacSignature)
+// Check for silent restore (credentials already in Keychain)
+if case .identified = sdk.authStateValue {
+    // Already identified — resolve module references and continue
+    self.motionLab = try? sdk.motionLab().get()
+    self.monitoring = try? sdk.monitoring().get()
+    return
+}
 
-// Option C: Connect using a JWT (clinician / enterprise flows)
-let result = await OneStep.shared.connectAsUser("unique-user-id", jwtToken)
+// Path A: Customer-managed patient ID (most common)
+let result = await sdk.setPatient(
+    apiKey: "<YOUR-API-KEY>",
+    customerPatientId: "unique-patient-id",
+    identityVerification: hmacSignature   // nil in development
+)
+
+// Path B/C: Existing OneStep patient UUID (clinician / enterprise flows)
+// let result = await sdk.setPatient(authPatientUuid: OSTPatientId(rawValue: "onestep-patient-uuid"))
 
 switch result {
 case .success:
-    print("User identified successfully")
-case .failure(let reason):
-    print("Identification failed: \(reason)")
+    self.motionLab = try? sdk.motionLab().get()
+    self.monitoring = try? sdk.monitoring().get()
+case .failure(let error):
+    print("Identification failed: \(error)")
 }
 ```
 
@@ -139,14 +166,16 @@ case .failure(let reason):
 ```swift
 import OneStepSDK
 
+guard case .success(let monitoring) = sdk.monitoring() else { return }
+
 // Opt the user into passive background monitoring
-OneStep.shared.monitoring.optIn()
+monitoring.optIn()
 
 // Enable monitoring with the default configuration
-OneStep.shared.monitoring.enable(config: .default)
+monitoring.enable(config: .default)
 
 // Or customize:
-OneStep.shared.monitoring.enable(config: MonitoringConfig(
+monitoring.enable(config: MonitoringConfig(
     collectPedometer: true,
     collectMotionData: true,
     minWalkingDuration: 10,
@@ -159,19 +188,19 @@ Observe monitoring state changes reactively:
 
 ```swift
 // Combine
-OneStep.shared.monitoring.statePublisher
+monitoring.statePublisher
     .sink { state in
         switch state {
-        case .active:           print("Monitoring active")
+        case .active:               print("Monitoring active")
         case .blocked(let reasons): print("Blocked: \(reasons)")
-        case .inactive:         print("Inactive")
-        case .error(let err):   print("Error: \(err)")
+        case .inactive:             print("Inactive")
+        case .error(let err):       print("Error: \(err)")
         }
     }
     .store(in: &cancellables)
 
 // Swift Concurrency
-for await state in OneStep.shared.monitoring.stateStream {
+for await state in monitoring.stateStream {
     print("Monitoring state: \(state)")
 }
 ```
@@ -181,7 +210,8 @@ for await state in OneStep.shared.monitoring.stateStream {
 ```swift
 import OneStepSDK
 
-let recorder = OneStep.shared.motionLab.recorder
+guard case .success(let motionLab) = sdk.motionLab() else { return }
+let recorder = motionLab.recorder
 
 // Start recording a walk
 recorder.start(
@@ -193,8 +223,7 @@ recorder.start(
         assistiveDevice: .none,
         levelOfAssistance: .independent
     ),
-    customMetadata: nil,
-    enhancedMode: false
+    customMetadata: nil
 )
 
 // Observe real-time step count
@@ -214,19 +243,24 @@ if let measurement {
 
 ### 6. Retrieve Measurements
 
+`getMeasurements` and `getMeasurement` are **synchronous** (`throws`, not `async throws`):
+
 ```swift
-let measurements = try OneStep.shared.motionLab.getMeasurements(
+guard case .success(let motionLab) = sdk.motionLab() else { return }
+
+// All measurements (synchronous)
+let measurements = try motionLab.getMeasurements(
     request: TimeRangedDataRequest(startTime: nil, endTime: nil)
 )
 
-// Or fetch a single measurement by ID
-let measurement = try await OneStep.shared.motionLab.getMeasurement(id: someUUID)
+// Single measurement by ID (synchronous)
+let measurement = try motionLab.getMeasurement(id: someUUID)
 ```
 
 ### 7. Fetch Insights and Clinical Data
 
 ```swift
-let insights = OneStep.shared.insights
+guard case .success(let insights) = sdk.insights() else { return }
 
 // Get AI insights for a measurement
 let measurementInsights = try await insights.getInsights(for: measurementId)
@@ -240,6 +274,8 @@ let trend = try await insights.analyzeTrend(
 print("Trend: \(trend.trend), change: \(trend.percentageChange ?? 0)%")
 
 // Fall risk assessment
+guard case .success(let motionLab) = sdk.motionLab() else { return }
+let measurements = try motionLab.getMeasurements(request: TimeRangedDataRequest(startTime: nil, endTime: nil))
 let riskAssessment = try await insights.assessFallRisk(measurements: measurements)
 print("Risk level: \(riskAssessment.riskLevel), score: \(riskAssessment.riskScore)")
 
@@ -254,25 +290,27 @@ print(report.summary)
 ### 8. Query Step Bouts and Daily Summaries
 
 ```swift
+guard case .success(let monitoring) = sdk.monitoring() else { return }
+
 // Step bouts
-let bouts = try await OneStep.shared.monitoring.stepBouts.getBouts(
+let bouts = try await monitoring.stepBouts.getBouts(
     request: TimeRangedDataRequest(startTime: weekAgo, endTime: now)
 )
 
-let stats = try await OneStep.shared.monitoring.stepBouts.getStatistics(
+let stats = try await monitoring.stepBouts.getStatistics(
     startDate: weekAgo,
     endDate: Date()
 )
 print("Total steps: \(stats.totalSteps), bouts: \(stats.boutCount)")
 
 // Daily step counts
-let dailyCounts = try await OneStep.shared.monitoring.stepBouts.getDailyStepCounts(
+let dailyCounts = try await monitoring.stepBouts.getDailyStepCounts(
     startDate: monthAgo,
     endDate: Date()
 )
 
 // Aggregated background records
-let records = await OneStep.shared.monitoring.dailyAggregatedBackgroundWalks(
+let records = await monitoring.dailyAggregatedBackgroundWalks(
     startTime: nil,
     endTime: nil
 )
@@ -287,34 +325,57 @@ func userNotificationCenter(
     didReceive response: UNNotificationResponse,
     withCompletionHandler completionHandler: @escaping () -> Void
 ) {
-    let handled = OneStep.shared.handleNotification(response.notification.request.content.userInfo)
+    if case .success(let sdk) = OneStep.shared() {
+        sdk.handleNotification(response.notification.request.content.userInfo)
+    }
     completionHandler()
 }
 
 // Update push token
 func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
     let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-    OneStep.shared.updatePushToken(token)
+    if case .success(let sdk) = OneStep.shared() {
+        sdk.updatePushToken(token)
+    }
 }
 ```
 
-### 10. Observe SDK State
+### 10. Observe Auth State
 
 ```swift
-// Current state
-print(OneStep.shared.state)
+guard case .success(let sdk) = OneStep.shared() else { return }
 
-// Reactive
-OneStep.shared.statePublisher
+// Current auth state (synchronous)
+switch sdk.authStateValue {
+case .unidentified:
+    print("No user identified")
+case .identified(let patientId):
+    print("Identified as \(patientId.rawValue)")
+case .lost(let error):
+    print("Session lost: \(error)")
+}
+
+// Reactive (Combine)
+sdk.authStatePublisher
     .sink { state in
         switch state {
-        case .uninitialized: break
-        case .ready:         print("SDK ready — waiting for user identification")
-        case .identified(let userId): print("Identified as \(userId)")
-        case .error(let code, let msg): print("Error \(code): \(msg)")
+        case .unidentified:             print("Waiting for identification")
+        case .identified(let patientId): print("Identified: \(patientId.rawValue)")
+        case .lost(let error):          print("Session lost: \(error)")
         }
     }
     .store(in: &cancellables)
+```
+
+### 11. Logout
+
+`logout()` is **async** and returns `Result<Void, OSTError>`. It clears all stored credentials and session data:
+
+```swift
+guard case .success(let sdk) = OneStep.shared() else { return }
+Task {
+    _ = await sdk.logout()
+}
 ```
 
 ---
@@ -323,21 +384,24 @@ OneStep.shared.statePublisher
 
 | SDK 1.7.x | SDK 2.0 |
 |---|---|
-| `OSTSDKCore.shared` | `OneStep.shared` |
-| `initialize(appId:apiKey:distinctId:...) { }` | `initialize(clientToken:)` + `await identify(_:_:)` |
-| `getRecordingService()` | `motionLab.recorder` |
-| `readMotionMeasurements(startTime:endTime:)` | `motionLab.getMeasurements(request:)` |
-| `readMotionMeasurementById(uuid:)` | `await motionLab.getMeasurement(id:)` |
+| `OSTSDKCore.shared` (property) | `OneStep.shared()` (static method → `Result<OneStep, OSTError>`) |
+| `initialize(appId:apiKey:distinctId:...) { }` | `OneStep.initialize(onAuthLost:configuration:)` (static) + `await sdk.setPatient(apiKey:customerPatientId:identityVerification:)` |
+| `OSTSDKCore.shared.registerBGTasks()` | `OneStep.registerBGTasks()` (static) |
+| `getRecordingService()` | `try? sdk.motionLab().get()` → `motionLab.recorder` |
+| `readMotionMeasurements(startTime:endTime:)` | `try motionLab.getMeasurements(request:)` (synchronous) |
+| `readMotionMeasurementById(uuid:)` | `try motionLab.getMeasurement(id:)` (synchronous, not async) |
 | `deleteMotionMeasurement(by:)` | `await motionLab.deleteMeasurement(id:)` |
 | `updateMotionMeasurement(uuid:userInputMetaData:)` | `await motionLab.updateMeasurement(id:userInputMetadata:)` |
-| `registerBackgroundMonitoring()` | `monitoring.optIn()` + `monitoring.enable(config:)` |
+| `registerBackgroundMonitoring()` | `try? sdk.monitoring().get()` → `monitoring.optIn()` + `monitoring.enable(config:)` |
 | `unregisterBackgroundMonitoring()` | `monitoring.optOut()` |
 | `dailyAggregatedBackgroundWalks(startTime:endTime:)` | `await monitoring.dailyAggregatedBackgroundWalks(startTime:endTime:)` |
-| `getMotionDataService()` | `await insights.getMotionDataService()` |
-| `updateUserAttributes(userAttributes:)` | `updateUserAttributes(_:)` |
-| `setDeviceToken(token:)` | `updatePushToken(_:)` |
-| `disconnect()` | `logout()` |
-| `handlePushNotification(data:)` | `handleNotification(_:)` (returns `Bool`) |
+| `getMotionDataService()` | `await insights.getMotionDataService()` (via `sdk.insights().get()`) |
+| `updateUserAttributes(userAttributes:)` | `await sdk.getPatientAdmin().updateUserAttributes(_:)` (async, preferred) |
+| `setDeviceToken(token:)` | `sdk.updatePushToken(_:)` |
+| `disconnect()` | `await sdk.logout()` (async, returns `Result<Void, OSTError>`) |
+| `handlePushNotification(data:)` | `sdk.handleNotification(_:)` (returns `Bool`) |
+| `isInitialized()` | `if case .identified = sdk.authStateValue { … }` |
+| `OSTSDKCore.shared.state` / `statePublisher` | `sdk.authStateValue` / `sdk.authStatePublisher` (`OSTIdentificationState`) |
 
 ---
 
@@ -412,52 +476,84 @@ For HealthKit (daily steps and walking bout coverage):
 ### `OneStep` (Main Entry Point)
 
 ```swift
-@available(iOS 15.0, *)
-public final class OneStep: OneStepProtocol {
-    /// The singleton SDK instance.
-    public static let shared: OneStep
+public final class OneStep {
 
-    /// Initializes the SDK. Call once at app launch before any other SDK calls.
-    /// - Parameters:
-    ///   - clientToken: Your OneStep client token. If nil, the SDK reads from configuration.
-    ///   - configuration: Optional `OSTConfiguration` for advanced settings.
-    public func initialize(clientToken: String? = nil, configuration: OSTConfiguration = OSTConfiguration())
+    // MARK: - Static (call before resolving the instance)
+
+    /// Boots the SDK. Call once at app launch. Returns .failure(.alreadyInitialized) on subsequent calls (safe to ignore).
+    @discardableResult
+    public static func initialize(
+        onAuthLost: @escaping @Sendable (OSTError) -> Void,
+        configuration: OSTConfiguration = OSTConfiguration()
+    ) -> Result<Void, OSTError>
 
     /// Registers background task identifiers. Must be called before the app finishes launching.
-    public func registerBGTasks()
+    public static func registerBGTasks()
 
-    /// Identifies the current user. Call after authentication.
-    /// - Parameters:
-    ///   - userId: A stable, unique identifier for the user.
-    ///   - identityVerification: HMAC signature for server-side verification (nil in development).
-    /// - Returns: `IdentifyResult.success` or `.failure(reason:)`.
-    public func identify(_ userId: String, _ identityVerification: String?) async -> IdentifyResult
+    /// Returns the initialized SDK instance. Returns .failure(.notInitialized) if initialize() was not called.
+    public static func shared() -> Result<OneStep, OSTError>
 
-    /// Connects as a user using a signed JWT (clinician/enterprise flows).
-    /// - Parameters:
-    ///   - userId: A stable, unique identifier for the user.
-    ///   - jwt: A signed JWT from your backend.
-    ///   - configuration: Optional `OSTConfiguration`.
-    /// - Returns: `IdentifyResult.success` or `.failure(reason:)`.
-    public func connectAsUser(_ userId: String, _ jwt: String, configuration: OSTConfiguration = OSTConfiguration()) async -> IdentifyResult
+    // MARK: - Authentication
 
-    /// Logs out the current user and clears session state.
-    public func logout()
+    /// Identifies a patient using a customer-managed ID (Path A).
+    @discardableResult
+    public func setPatient(
+        apiKey: String,
+        customerPatientId: String,
+        identityVerification: String?,
+        userAttributes: (inout OSTUserAttributes) -> Void = { _ in }
+    ) async -> Result<OSTPatientId, OSTError>
 
-    /// The current SDK lifecycle state.
-    public var state: OneStepState { get }
+    /// Identifies a patient using an existing OneStep patient UUID (Paths B/C).
+    @discardableResult
+    public func setPatient(
+        authPatientUuid: OSTPatientId,
+        userAttributes: (inout OSTUserAttributes) -> Void = { _ in }
+    ) async -> Result<Void, OSTError>
 
-    /// Combine publisher that emits `OneStepState` changes.
-    public var statePublisher: AnyPublisher<OneStepState, Never> { get }
+    /// Logs out the current user and clears all stored credentials and session data.
+    @discardableResult
+    public func logout() async -> Result<Void, OSTError>
+
+    // MARK: - Auth State
+
+    /// The current authentication state (synchronous).
+    public var authStateValue: OSTIdentificationState { get }
+
+    /// Combine publisher that emits `OSTIdentificationState` changes.
+    public var authStatePublisher: AnyPublisher<OSTIdentificationState, Never> { get }
 
     /// Combine publisher that emits SDK analytics events.
     public var events: AnyPublisher<OSTEvent, Never> { get }
 
-    /// The active SDK configuration.
-    public var configuration: OSTConfiguration? { get }
+    // MARK: - Sub-Systems (available after identification)
 
-    /// Minimum step count required before a recording is eligible for analysis.
-    public var minStepsForAnalysis: Int
+    /// Returns the motion recording and measurement management module.
+    public func motionLab() -> Result<MotionLab, OSTError>
+
+    /// Returns the passive background monitoring module.
+    public func monitoring() -> Result<Monitoring, OSTError>
+
+    /// Returns the gait analysis, insights, and clinical reporting module.
+    public func insights() -> Result<Insights, OSTError>
+
+    // MARK: - Patient Admin
+
+    /// Returns the patient admin interface for updating user attributes.
+    public func getPatientAdmin() -> OSTPatientAdmin
+
+    // MARK: - Utilities
+
+    /// Registers an APNs push token for SDK-triggered notifications.
+    public func updatePushToken(_ token: String)
+
+    /// Handles an incoming SDK push notification payload. Returns true if handled by the SDK.
+    @discardableResult
+    public func handleNotification(_ userInfo: [AnyHashable: Any]) -> Bool
+
+    /// Triggers a manual data sync to the OneStep cloud.
+    @discardableResult
+    public func sync() async -> Result<Void, OSTError>
 
     /// Returns true if background monitoring is currently running.
     public func isBackgroundMonitoringActive() -> Bool
@@ -465,32 +561,18 @@ public final class OneStep: OneStepProtocol {
     /// Returns true if in-app permissions (motion, location) still need to be requested.
     public func inAppPermissionsRequired() -> Bool
 
-    /// Updates user profile attributes.
-    /// - Parameter userAttributes: The `OSTUserAttributes` to apply.
-    public func updateUserAttributes(_ userAttributes: OSTUserAttributes)
+    /// Provides a Datadog agent UUID for observability (Paths B/C that have one).
+    public func setAgent(agentUuid: String)
+}
+```
 
-    /// Registers an APNs push token for SDK-triggered notifications.
-    /// - Parameter token: The hex-encoded device token string.
-    public func updatePushToken(_ token: String)
+### `OSTPatientAdmin`
 
-    /// Handles an incoming SDK push notification payload.
-    /// - Parameter userInfo: The notification's `userInfo` dictionary.
-    /// - Returns: `true` if the notification was handled by the SDK.
+```swift
+public class OSTPatientAdmin {
+    /// Updates user profile attributes on the OneStep backend.
     @discardableResult
-    public func handleNotification(_ userInfo: [AnyHashable: Any]) -> Bool
-
-    /// Triggers a manual data sync to the OneStep cloud.
-    /// - Returns: `true` if sync completed successfully.
-    public func sync() async -> Bool
-
-    /// The motion recording and measurement management interface.
-    public var motionLab: any MotionLab { get }
-
-    /// The passive background monitoring interface.
-    public var monitoring: any Monitoring { get }
-
-    /// The gait analysis, insights, and clinical reporting interface.
-    public var insights: any Insights { get }
+    public func updateUserAttributes(_ userAttributes: OSTUserAttributes) async -> Result<Void, OSTError>
 }
 ```
 
@@ -498,7 +580,7 @@ public final class OneStep: OneStepProtocol {
 
 ```swift
 public protocol MotionLab {
-    /// The shared recorder used to start, stop, and analyze motion sessions.
+    /// The recorder used to start, stop, and analyze motion sessions.
     var recorder: OSTRecorder { get }
 
     /// Updates the motion recording configuration.
@@ -507,13 +589,11 @@ public protocol MotionLab {
     /// The current motion lab configuration.
     var configuration: MotionLabConfig { get }
 
-    /// Returns all stored measurements matching the time range.
-    /// - Parameter request: Time range filter (nil bounds = unbounded).
-    /// - Throws: `OSTError` on data access failure.
+    /// Returns all stored measurements matching the time range (synchronous).
     func getMeasurements(request: TimeRangedDataRequest) throws -> [OSTMotionMeasurement]
 
-    /// Returns a single measurement by its UUID.
-    func getMeasurement(id: UUID) async throws -> OSTMotionMeasurement?
+    /// Returns a single measurement by its UUID (synchronous).
+    func getMeasurement(id: UUID) throws -> OSTMotionMeasurement?
 
     /// Permanently deletes a measurement.
     func deleteMeasurement(id: UUID) async throws
@@ -549,22 +629,14 @@ public class OSTRecorder: OSTRecorderProtocol {
     public var stepsCount: AnyPublisher<Int, Never> { get }
 
     /// Starts a new motion recording session.
-    /// - Parameters:
-    ///   - activityType: The type of activity to record (`.walk`, `.tug`, `.sts`, etc.).
-    ///   - duration: Fixed duration in seconds, or nil for manual stop.
-    ///   - userInputMetadata: Optional user-provided annotations.
-    ///   - customMetadata: Arbitrary key-value metadata attached to the measurement.
-    ///   - enhancedMode: When true, enables higher-fidelity sensor sampling.
     public func start(
         activityType: OSTActivityType,
         duration: Int?,
         userInputMetadata: OSTUserInputMetaData?,
-        customMetadata: [String: OSTMixedType]?,
-        enhancedMode: Bool
+        customMetadata: [String: OSTMixedType]?
     )
 
     /// Stops recording and submits the session for upload and analysis.
-    /// - Returns: The resulting `OSTMotionMeasurement`, or nil if analysis failed.
     public func analyze() async -> OSTMotionMeasurement?
 
     /// Stops the active recording without submitting for analysis.
@@ -579,43 +651,19 @@ public class OSTRecorder: OSTRecorderProtocol {
 
 ```swift
 public protocol Monitoring {
-    /// The current runtime state of background monitoring.
     var runtimeState: MonitoringRuntimeState { get }
-
-    /// Whether HealthKit data collection is enabled.
     var healthKit: Bool { get set }
-
-    /// Combine publisher of monitoring state changes.
     var statePublisher: AnyPublisher<MonitoringRuntimeState, Never> { get }
-
-    /// AsyncStream of monitoring state changes.
     var stateStream: AsyncStream<MonitoringRuntimeState> { get }
-
-    /// The user's opt-in/opt-out preference.
     var preference: MonitoringPreference { get }
-
-    /// The active monitoring configuration.
     var configuration: MonitoringConfig { get }
-
-    /// Access to step bout data and daily step statistics.
     var stepBouts: any StepBouts { get }
 
-    /// Returns true if all required background permissions have been granted.
     func fullBackgroundPermissions() -> Bool
-
-    /// Opts the user into passive background monitoring.
     func optIn()
-
-    /// Opts the user out of passive background monitoring.
     func optOut()
-
-    /// Activates monitoring with the given configuration.
     func enable(config: MonitoringConfig)
-
-    /// Updates the monitoring configuration at runtime.
     func updateConfiguration(_ config: MonitoringConfig)
-
-    /// Returns aggregated daily background walk records for the given time range.
     func dailyAggregatedBackgroundWalks(startTime: Date?, endTime: Date?) async -> [OSTDailyAggregatedBackgroundRecord]
 }
 ```
@@ -624,38 +672,23 @@ public protocol Monitoring {
 
 ```swift
 public protocol Insights {
-    /// Returns the motion data service for norm lookup and parameter metadata.
     func getMotionDataService() async -> any OSTMotionDataService
-
-    /// Returns AI-generated insights for a single measurement.
-    /// - Throws: `OSTError` if the measurement is not found or network fails.
     func getInsights(for measurementId: UUID) async throws -> [OSTInsight]
-
-    /// Returns AI-generated insights for multiple measurements.
     func getInsights(for measurementIds: [UUID]) async throws -> [UUID: [OSTInsight]]
-
-    /// Analyzes the trend of a gait parameter over a date range.
-    /// - Parameters:
-    ///   - paramName: The parameter to analyze (e.g., `.walkingVelocity`).
-    ///   - startDate: Start of the analysis window.
-    ///   - endDate: End of the analysis window.
-    /// - Returns: A `TrendAnalysis` with direction, significance, and percent change.
     func analyzeTrend(for paramName: OSTParamName, from startDate: Date, to endDate: Date) async throws -> TrendAnalysis
-
-    /// Assesses fall risk from a collection of measurements.
-    /// - Returns: A `FallRiskAssessment` with risk level, score, and recommendations.
     func assessFallRisk(measurements: [OSTMotionMeasurement]) async throws -> FallRiskAssessment
-
-    /// Generates a clinical-grade report for the given measurement IDs.
-    /// - Parameters:
-    ///   - measurementIds: Measurements to include in the report.
-    ///   - includeComparisons: When true, normative comparisons are included.
-    /// - Returns: A `ClinicalReport` with summary, key parameters, and recommendations.
     func generateClinicalReport(measurementIds: [UUID], includeComparisons: Bool) async throws -> ClinicalReport
 }
 ```
 
-### Key Enumerations
+### Key Types
+
+#### `OSTIdentificationState`
+| Case | Description |
+|------|-------------|
+| `.unidentified` | No stored identity (fresh install or after logout) |
+| `.identified(OSTPatientId)` | User identified; all modules available |
+| `.lost(OSTError)` | Session was revoked server-side; re-identify required |
 
 #### `OSTActivityType`
 | Case | Description |
@@ -670,14 +703,6 @@ public protocol Insights {
 | `.romKneeFlexionPassive` | Passive knee flexion ROM |
 | `.romKneeExtension` | Knee extension ROM |
 
-#### `OneStepState`
-| Case | Description |
-|------|-------------|
-| `.uninitialized` | `initialize()` has not been called |
-| `.ready` | Initialized but no user identified |
-| `.identified(userId:)` | User identified; SDK fully operational |
-| `.error(code:message:)` | Initialization or auth failure |
-
 #### `MonitoringRuntimeState`
 | Case | Description |
 |------|-------------|
@@ -685,12 +710,6 @@ public protocol Insights {
 | `.active` | Monitoring running normally |
 | `.blocked(reasons:)` | One or more `MonitoringBlocker` conditions present |
 | `.error(Error)` | An unexpected error occurred |
-
-#### `IdentifyResult`
-| Case | Description |
-|------|-------------|
-| `.success` | User identified successfully |
-| `.failure(reason:)` | See `IdentifyFailureReason` for detail |
 
 ---
 
