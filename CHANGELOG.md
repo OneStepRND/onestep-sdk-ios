@@ -1,3 +1,23 @@
+## OneStep iOS SDK 2.0.5
+###### Release Date: 2026-06-08
+
+### 🪄 New Features
+
+* **`motionLab.fetchMeasurement(id:)`**: fetch a single measurement from the server and upsert it into the local store by UUID.
+* **Multi-patient clinician support**: `withPatient` and `setPatient(authPatientUuid:)` are now public, and `OSTPatientScope` is `Sendable`.
+* **Profile metadata APIs**: `getUserAttributes` and `updateCustomMetadata` are now exposed on the facade and the patient scope.
+* **Clinician self-report APIs**: STS / TUG self-report endpoints, with patient-scoped recorder identity.
+* **Swift 6 strict-concurrency host support**: `@MainActor` setup and a `Sendable` facade — the SDK builds cleanly for hosts using Swift 6 strict concurrency.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Background-sync overhaul**: actor-based sync coordination, a HealthKit step-count wake source, watchdog-stopped background recordings, a single upload path, and cancellation-aware background tasks for more reliable background capture.
+* **Memory & stability fix** for background-sample processing (ported from the 1.6.7 hotfix line).
+* **Bounded in-app foreground data flow**: metadata-only reads and more efficient upserts.
+* **Background recordings capture walks, not arbitrary motion** (walk gate on by default).
+
+---
+
 ## OneStep iOS SDK 2.0.3
 ###### Release Date: 2026-05-24
 
