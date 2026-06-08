@@ -31808,14 +31808,21 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 1701,
+      "offset": 1716,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1779,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Network\/JSONCoders\/Decoder\/OSTJSONDecoderClient.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2172,
       "length": 19,
       "value": "\"Can't parse date!\""
     },
@@ -33768,7 +33775,7 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Internal\/SyncManager\/DefaultSyncManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11304,
+      "offset": 11786,
       "length": 2,
       "value": "10"
     },
@@ -33980,7 +33987,7 @@
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
-      "value": "8"
+      "value": "9"
     },
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Utils\/Gzip\/Data+Gzip.swift",
@@ -33999,7 +34006,7 @@
     {
       "filePath": "\/Users\/golan\/Developer\/onestep-sdk-168\/OneStepSDK\/Utils\/Extensions\/DateExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 1466,
       "length": 21,
       "value": "\"yyyy-MM-dd HH:mm:ss\""
     },
