@@ -1,3 +1,23 @@
+## OneStep iOS SDK 2.0.6
+###### Release Date: 2026-06-11
+
+### 🐛 Bug Fixes & Reliability
+
+* **Recording start/stop hardening**: a new recording now serializes behind the previous stop's cleanup, and stale auto-stop timers are invalidated — preventing a start from racing a still-finishing stop.
+* **Wire datetime format**: server-bound datetimes are emitted as naive UTC (no trailing `Z`), matching backend expectations.
+* **Offline & localization fixes**: quieter offline logging, and correct date formatting on Arabic-locale devices.
+* **Norms with partial surgery context**: `getNorms` now sends surgery context when only the surgery type is known.
+
+### 🔒 Privacy
+
+* **Profile data moved to the Keychain**: patient names are no longer persisted on device, and the remaining personal profile fields are write-only and stored in the Keychain.
+
+### 📚 Documentation
+
+* **Published API documentation**: a DocC documentation site now covers the SDK's public API surface.
+
+---
+
 ## OneStep iOS SDK 2.0.5
 ###### Release Date: 2026-06-08
 
