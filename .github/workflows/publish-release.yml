@@ -41,34 +41,56 @@ jobs:
           echo "Publishing release: $VERSION"
 
       - name: Verify draft release exists
+        id: verify
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          REPO="${{ github.repository }}"
 
-          # Check that the release exists and is a draft
-          RELEASE_INFO=$(gh release view "$VERSION" --json isDraft,tagName 2>/dev/null || echo "")
+          # -R is REQUIRED: this job has no checkout step, so gh cannot infer the
+          # repo from a local clone. Without it every gh call died with
+          # "failed to run git: fatal: not a git repository".
+          INFO=$(gh release view "$VERSION" -R "$REPO" --json isDraft,databaseId 2>/dev/null || echo "")
 
-          if [ -z "$RELEASE_INFO" ]; then
-            echo "Release $VERSION not found, skipping publish"
+          if [ -z "$INFO" ]; then
+            echo "Release $VERSION not found — nothing to publish."
+            echo "should_publish=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          IS_DRAFT=$(echo "$RELEASE_INFO" | jq -r '.isDraft')
+          IS_DRAFT=$(echo "$INFO" | jq -r '.isDraft')
           if [ "$IS_DRAFT" != "true" ]; then
-            echo "Release $VERSION is already published, skipping"
+            echo "Release $VERSION is already published — nothing to do."
+            echo "should_publish=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          echo "Draft release $VERSION found, proceeding to publish"
+          echo "Draft release $VERSION found — will publish."
+          echo "release_id=$(echo "$INFO" | jq -r '.databaseId')" >> "$GITHUB_OUTPUT"
+          echo "should_publish=true" >> "$GITHUB_OUTPUT"
 
       - name: Publish release
+        # Gated on the verify step: previously the "already published / not found"
+        # branches only echoed + exit 0, so this step ran unconditionally anyway.
+        if: steps.verify.outputs.should_publish == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          REPO="${{ github.repository }}"
+          ID="${{ steps.verify.outputs.release_id }}"
 
-          gh release edit "$VERSION" --draft=false
+          # Pre-releases (X.Y.Z-rcN) must stay prerelease=true; finals are full releases.
+          if [[ "$VERSION" == *-* ]]; then PRE=true; else PRE=false; fi
 
-          echo "Release $VERSION published"
-          echo "URL: https://github.com/${{ github.repository }}/releases/tag/$VERSION"
+          # Publish BY ID and pin the tag to the triggering (bump) commit. Using
+          # `gh release edit <tag> --target` half-applies flags; the API PATCH is
+          # the reliable path and creates the tag at the right commit.
+          gh api -X PATCH "repos/$REPO/releases/$ID" \
+            -F draft=false \
+            -F prerelease=$PRE \
+            -f target_commitish="${{ github.sha }}"
+
+          echo "Release $VERSION published (prerelease=$PRE) at ${{ github.sha }}"
+          echo "URL: https://github.com/$REPO/releases/tag/$VERSION"
