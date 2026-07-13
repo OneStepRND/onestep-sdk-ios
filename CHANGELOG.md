@@ -1,3 +1,62 @@
+## OneStep iOS SDK 2.0.12
+###### Release Date: 2026-07-12
+
+### 🐛 Bug Fixes & Reliability
+
+* **Accurate recording duration**: a completed recording's duration is now rounded to the nearest second instead of being rounded down, so a full 30-second recording is reported as 30s (previously 29s) in summaries and stored data.
+
+---
+
+## OneStep iOS SDK 2.0.11
+###### Release Date: 2026-07-08
+
+### 🐛 Bug Fixes & Reliability
+
+* **Thread-safety hardening**: reworked the internal locking around recording and shared state to remove data races under concurrent access.
+
+---
+
+## OneStep iOS SDK 2.0.10
+###### Release Date: 2026-07-01
+
+### 🛠️ Distribution Changes
+
+* **Maintenance release**: version alignment with OneStepUIKit 2.0.10. No functional SDK changes.
+
+---
+
+## OneStep iOS SDK 2.0.9
+###### Release Date: 2026-06-28
+
+### 🪄 New Features
+
+* **Static Balance Test**: added the `static_balance_test` activity type.
+* **Configurable log ingestion**: host apps can opt out of SDK log ingestion via a feature flag and set their own logging identity.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Host-app stability**: removed internal crash-inducing trap sites so SDK errors no longer bring down the host app.
+* **Recording resilience**: measurements stay alive when the app is backgrounded or the device locks mid-recording, and truncated/incomplete recordings are discarded rather than saved.
+* **Offline self-report**: STS rep-count and TUG duration edits made while offline are queued and synced automatically on reconnect.
+
+---
+
+## OneStep iOS SDK 2.0.8
+###### Release Date: 2026-06-23
+
+### 🐛 Bug Fixes & Reliability
+
+* **Correct API base URL**: the default API host is restored to `app.onestep.co`, fixing failed requests for patient and App Clip consumers; expired-session (401) recovery is now non-destructive.
+* **Offline recording resilience**: recordings survive a mid-session loss of connectivity — the measurement is kept alive, reported as saved-pending-sync, and reconciled into the local store once uploaded and analyzed.
+* **Recording lifecycle**: a recording now finishes before it is persisted, and stale auto-stop timers are re-armed correctly.
+* **Quieter offline logging**: expected read-back misses and connectivity-related upload retries no longer emit noisy error logs.
+
+### 🔧 API Adjustments
+
+* **Self-report scoping**: the self-report endpoint (STS reps / TUG duration) is now correctly scoped to the target patient.
+
+---
+
 ## OneStep iOS SDK 2.0.6
 ###### Release Date: 2026-06-11
 
