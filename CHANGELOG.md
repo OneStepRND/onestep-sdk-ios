@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.0.12
+###### Release Date: 2026-07-12
+
+### 🐛 Bug Fixes & Reliability
+
+* **Accurate recording duration**: a completed recording's duration is now rounded to the nearest second instead of being rounded down, so a full 30-second recording is reported as 30s (previously 29s) in summaries and stored data.
+
+---
+
 ## OneStep iOS SDK 2.0.6
 ###### Release Date: 2026-06-11
 
