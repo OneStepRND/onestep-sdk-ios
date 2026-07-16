@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.0.13
+###### Release Date: 2026-07-16
+
+### 🛠️ Distribution Changes
+
+* **Maintenance release**: version alignment with OneStepUIKit 2.0.13. No functional SDK changes.
+
+---
+
 ## OneStep iOS SDK 2.0.12
 ###### Release Date: 2026-07-12
 
