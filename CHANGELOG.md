@@ -1,3 +1,18 @@
+## OneStep iOS SDK 2.1.0
+###### Release Date: 2026-07-28
+
+### ✨ Features
+
+* **Recording markers**: recordings can now carry timestamped markers via a new `addMarker` API, surfaced on the perception as a `markers` array.
+* **Imperial display precision**: parameter metadata now includes a dedicated imperial rounding precision, so values shown in imperial units use the precision defined for them rather than a derived one.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Accurate in-app recording duration**: recordings interrupted by the system (backgrounding, screen lock) are now detected reliably — the keep-alive arms without requiring an ambient session, mid-recording sensor gaps are detected, and a recording whose signal is truncated by a suspension is discarded rather than reported with an under-counted duration.
+* **Background walks and daily steps sync**: the daily-steps sync cursor now self-heals if it falls out of step, and the fetch cursor only advances once data is safely uploaded — preventing gaps in background activity data.
+
+---
+
 ## OneStep iOS SDK 2.0.13
 ###### Release Date: 2026-07-16
 
