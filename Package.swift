@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OneStepSDK",
-            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.1.0-rc3/OneStepSDK.xcframework.zip",
-            checksum: "c2750b63c30ed0924e798ff7b3fa2fc746798f814bc32fb55a86cb27b8a23779"
+            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.1.0-rc4/OneStepSDK.xcframework.zip",
+            checksum: "257e27898832fc9dd9d84645123caf104da67fadbc5dc466ca4ffe9523bb0d4d"
         ),
     ]
 )
