@@ -1,3 +1,30 @@
+## OneStep iOS SDK 2.1.2
+###### Release Date: 2026-08-11
+
+### 🐛 Bug Fixes & Reliability
+
+* **No duplicate measurement uploads**: each in-app measurement is now uploaded exactly once, preventing the same recording from being submitted more than once.
+* **Upload failures are diagnosable**: network transport errors surfaced during upload are now logged instead of being discarded, so failed submissions can be traced.
+
+---
+
+## OneStep iOS SDK 2.1.1
+###### Release Date: 2026-08-05
+
+### ✨ Features
+
+* **Recording window published**: the SDK now exposes the recording's `startedAt` and `willEndAt`, so hosts can render countdown and progress from SDK-owned timing rather than their own clock.
+* **Local-first measurement lookup**: `getMeasurement(id:)` now returns locally stored data first and falls back to the remote source only when needed.
+* **Activity name on analytics events**: events now carry `activity_name` alongside `activity_type`.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Uploads survive a screen lock**: the post-recording upload now keeps running when the screen locks mid-upload, instead of being cut short.
+* **Dependable auto-stop timing**: a recording's automatic stop now re-anchors to the "go" moment reliably, so the captured window matches the requested duration.
+* **Guaranteed terminal state on stop**: every `stop()` path now reports a terminal recording state, so hosts no longer observe a recording that never resolves.
+
+---
+
 ## OneStep iOS SDK 2.1.0
 ###### Release Date: 2026-07-28
 
