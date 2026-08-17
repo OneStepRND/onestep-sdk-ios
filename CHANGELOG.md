@@ -1,3 +1,19 @@
+## OneStep iOS SDK 2.1.3
+###### Release Date: 2026-08-17
+
+### ✨ Features
+
+* **Prepare a recording before it starts**: a new `prepareForRecording()` arms the recording keep-alive ahead of `start()`, for flows whose recording begins after the participant has already pocketed the phone. Optional and idempotent — existing integrations are unaffected, and OneStep UIKit calls it for you from the get-ready screen.
+* **Device context on the heartbeat**: the heartbeat now reports the battery state (unplugged, charging, full) and whether Low Power Mode is on, and no longer reports a placeholder battery level when the device has no reading to give.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Recordings that start in the background are no longer discarded**: when a measurement's recording begins while the app is already backgrounded, the keep-alive can now be armed while the app is still on screen — so the process is no longer suspended part-way through and the truncated recording thrown away, which reached the participant as a connection error with no completion cue. Applies to flows using OneStep UIKit's get-ready screen, or that call `prepareForRecording()` themselves.
+* **Silent upload failures are now logged**: a request skipped because the device is offline, and the transport error behind a failed send, were both discarded without a trace. Both are now logged, so an upload that never left the device can be told apart from one that reached the network and failed.
+* **Background launches are identifiable**: the SDK now records whether iOS launched the process in the background or the participant opened the app, so gaps in background activity can be diagnosed rather than inferred.
+
+---
+
 ## OneStep iOS SDK 2.1.2
 ###### Release Date: 2026-08-11
 
