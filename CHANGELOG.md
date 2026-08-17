@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.1.4
+###### Release Date: 2026-08-17
+
+### 🐛 Bug Fixes & Reliability
+
+* **Quieter default logging**: the once-per-launch background-launch diagnostic is now emitted at debug level, so it no longer appears in host logs at the default level. The event itself is unchanged and still available when debug logging is enabled.
+
+---
+
 ## OneStep iOS SDK 2.1.3
 ###### Release Date: 2026-08-17
 
