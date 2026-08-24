@@ -1,3 +1,13 @@
+## OneStep iOS SDK 2.1.5
+###### Release Date: 2026-08-24
+
+### ✨ Features
+
+* **Generic Recording**: a new `generic_recording` activity for open-ended protocols OneStep does not analyze — it records for up to 30 minutes with a count-up timer and no instructions. The raw recording is uploaded and banked rather than sent to the analysis pipeline, so no score, insight, or summary URL is produced for it; the recording can be re-classified into a real measurement later.
+* **A terminal state for uploads with no analysis**: `OSTAnalyzerState.uploadedWithoutAnalysis` reports a recording that was stored successfully without an analysis ever being requested. A stored recording is the success case here — it is not an empty or failed analysis. Adopting this release means handling the new `OSTActivityType` and `OSTAnalyzerState` cases in any exhaustive `switch` over them.
+
+---
+
 ## OneStep iOS SDK 2.1.4
 ###### Release Date: 2026-08-17
 
