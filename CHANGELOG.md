@@ -1,3 +1,11 @@
+## OneStep iOS SDK 2.2.1
+###### Release Date: 2026-09-02
+
+### 🐛 Bug Fixes & Reliability
+
+* **The display-awake hold is always released**: 2.2.0 began holding the idle timer for the length of a recording, but the release was tied to the recording's background task. On a host iOS grants no background execution — an App Clip, for instance — that task is never valid, so the hold was never lifted and the screen stayed awake for the rest of the process. The release is now unconditional, and a hold armed by a new measurement is no longer cleared by the previous one finishing, so the second measurement of a session keeps the display awake as well.
+
+---
 ## OneStep iOS SDK 2.2.0
 ###### Release Date: 2026-09-02
 
