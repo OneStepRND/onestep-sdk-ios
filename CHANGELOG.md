@@ -1,3 +1,19 @@
+## OneStep iOS SDK 2.2.0
+###### Release Date: 2026-09-02
+
+### ✨ Features
+
+* **A 3-second minimum for the General Recorder**: a session shorter than 10 seconds used to be discarded with a "recording too short" screen. The General Recorder banks the raw recording rather than analysing it, so it now accepts sessions from 3 seconds; every other activity keeps the 10-second minimum.
+
+### 🐛 Bug Fixes & Reliability
+
+* **The display no longer sleeps during a measurement**: the SDK now holds the idle timer for the length of a recording. A host driving the recorder without OneStep UIKit — an App Clip, for instance — could auto-lock mid-measurement, which suspended the process and left the truncated capture to be discarded as an interrupted recording.
+* **A 403 no longer ends the session**: a "not yours" response on a resource the caller cannot reach was reported as an expired session, so hosts that sign the user out on `OSTSessionExpired` did so on a session the server had just authenticated. A 403 is now surfaced as the terminal rejection it is, and the affected request is dropped from the upload queue instead of being retried on every drain. Agent-scoped configuration calls no longer signal expiry either — a genuine expiry still surfaces from the data calls in the same pass.
+* **A running measurement is no longer cut short by background monitoring**: a stop or reset raised by the background pipeline could tear down a foreground recording that was still in progress, so the measurement returned a few seconds of another session's data and was then deleted as too short. Stops and resets are now scoped to the session that owns them.
+* **Reported duration matches the timer the participant saw**: the persisted duration rounded to the nearest second while a recording timer floors, so a session stopped at 20.6s under a timer reading 00:20 was reported as 21s. Durations now floor, and a completed fixed-length recording still reports its full nominal length.
+* **iOS installs are eligible for push notifications again**: the heartbeat never reported the notification permission, so every iOS install was recorded as having notifications disabled and was skipped when push targets were chosen. The permission is now reported on each heartbeat, and cleared again if the grant is revoked.
+
+---
 ## OneStep iOS SDK 2.1.5
 ###### Release Date: 2026-08-24
 
