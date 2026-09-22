@@ -1,3 +1,20 @@
+## OneStep iOS SDK 2.3.0
+###### Release Date: 2026-09-22
+
+### ✨ Features
+
+* **Background collection without "Location Always"**: a new fallback tier keeps background walk collection running on devices that granted Motion & Fitness but not Location Always. Those devices previously had no background wake source and collected nothing at all. The tier is chosen automatically from the permissions actually granted — no host flag, no user choice — and is limited to patient apps; it never arms in an App Clip or an app extension. It is enabled per deployment from the server, so it stays dormant until OneStep switches it on for you. **Integration required:** forward your `AppDelegate`'s `application(_:handleEventsForBackgroundURLSession:completionHandler:)` to `OneStep.handleEventsForBackgroundURLSession(identifier:completionHandler:)`. A `true` return means the session belongs to the SDK and your app must not call the completion handler itself. It is safe to call before `initialize`, on the same early-launch contract as `registerBGTasks`. See `docs/BACKGROUND-INTEGRATION.md`.
+* **Preferences follow the patient, not the device**: settings the SDK keeps on a patient's behalf — starting with walk hallway length — are now stored per patient. `OneStepProtocol` gains `cachedCustomMetadata` for a synchronous read and `updateCustomMetadataOptimistically(_:)` for a write that applies locally right away and syncs to the server in the background. The cache is restored from the server after authentication, so a fresh install recovers preferences the backend already held, and it is cleared when the patient changes so one patient never sees another's. Both members have no-op defaults, so existing conformers keep compiling unchanged.
+* **A host can declare it never wants background monitoring**: set `additionalConfigurations["avoidBackgroundMonitoring"]` to guarantee background capture never activates. This closes the silent-restore path, where a historical opt-in stored on a device could revive monitoring on a later launch regardless of the host's intent. Intended for clinician-style hosts that only ever record in the foreground.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Background walks are no longer discarded**: the check deciding whether a background capture contained walking asked CoreMotion for step counts over a window the motion coprocessor had not yet committed. It read zero steps even while the participant was walking, so in practice nearly every capture was thrown away. The check now classifies from the recorded motion itself and keeps the capture when step data is unavailable rather than dropping it, so a genuine walk is preserved.
+* **The mock IMU produces a real analysed measurement**: the QA capture hook substituted its data at the uploader — below the recorder's interruption guards and outside the normal encode — so on a simulator the recording was discarded before the substitution could apply, and captures that did upload were scaled wrong and analysed as containing no gait. The capture now goes through the ordinary recorder path, so the gates, telemetry, upload and analysis all see it.
+* **Installs can be segmented by host app build**: the SDK now reports the host app's `CFBundleVersion` and `CFBundleShortVersionString` alongside its heartbeat and connect calls. Every iOS install previously landed in a single unidentified bucket, so the effect of an app or SDK rollout could not be measured on iOS.
+* **Quieter background logging**: the background tiers' per-wake and per-launch diagnostics were emitted at default level and dominated host logs. They are now counted or emitted at debug level. The events themselves are unchanged and remain available with debug logging enabled.
+
+---
 ## OneStep iOS SDK 2.2.1
 ###### Release Date: 2026-09-02
 
