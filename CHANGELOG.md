@@ -1,3 +1,11 @@
+## OneStep iOS SDK 2.3.6
+###### Release Date: 2026-10-08
+
+### 🐛 Bug Fixes & Reliability
+
+* **The Private data transfer extension now starts**: `OneStepPrivateDataTransfer` shipped as a dynamic framework, and Xcode embeds a package's dynamic framework only in app targets, never in an app extension. The packet-tunnel extension could not load it, so the tunnel never started. It is now a static framework, linked straight into the extension binary; no integration change is needed. Also published as `2.3.6-core`.
+
+---
 ## OneStep iOS SDK 2.3.5
 ###### Release Date: 2026-10-08
 
