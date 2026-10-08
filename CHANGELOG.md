@@ -1,3 +1,11 @@
+## OneStep iOS SDK 2.3.5
+###### Release Date: 2026-10-08
+
+### 🐛 Bug Fixes & Reliability
+
+* **Version aligned with OneStep UIKit 2.3.5**: no SDK changes since 2.3.4. OneStep UIKit 2.3.5 adds a `OneStepUIKitPrivateDataTransfer` product for the packet-tunnel extension target, so hosts integrating through UIKit can add the Private data transfer tier from a single package. Also published as `2.3.5-core`.
+
+---
 ## OneStep iOS SDK 2.3.4
 ###### Release Date: 2026-10-08
 
