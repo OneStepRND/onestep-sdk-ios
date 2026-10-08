@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.3.4
+###### Release Date: 2026-10-08
+
+### ✨ Features
+
+* **Private data transfer (Network Extension tier)**: a new background tier for patient apps that keeps walk collection running through a packet-tunnel app extension, with no Location Always grant. The extension samples motion while the patient walks, finds walks itself and uploads them, so walks reach OneStep even when the app is not running. It ships as a separate product, `OneStepPrivateDataTransfer`, which the host links into its packet-tunnel **extension** target only. The host app drives consent and the tunnel through `OSTPrivateDataTransfer`: register a controller with `registerController(_:)`, report the profile outcome with `setProfileApproved(_:)`, and opt in with `setEnabled(_:)`. The tier arms only when the patient opted in, the VPN profile is approved, and OneStep has enabled it for your deployment on the server; read `OSTPrivateDataTransfer.isServerEnabled` to decide whether to offer it. See `docs/NETWORK-EXTENSION-TIER.md`.
+* **A HealthKit-free "core" build**: this release is also published as `2.3.4-core`, compiled without any HealthKit API references, for hosts with no HealthKit feature that would otherwise be flagged under App Review guideline 2.5.1. Pin `exact: "2.3.4-core"` to use it. The module is still `OneStepSDK`; HealthKit-backed features (daily step aggregates, HealthKit walking bouts and the HealthKit background wake) are unavailable in this build and become no-ops.
+
+---
 ## OneStep iOS SDK 2.3.0
 ###### Release Date: 2026-09-22
 
