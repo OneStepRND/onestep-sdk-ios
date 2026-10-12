@@ -1,3 +1,20 @@
+## OneStep iOS SDK 2.3.8
+###### Release Date: 2026-10-12
+
+### ✨ Features
+
+* **Host apps can receive the SDK's telemetry events**: register an observer to forward the SDK's own telemetry (diagnostics events it already records) into your analytics pipeline.
+* **Tag-catalog answers upload as a structured `tag_map`**: recorder tagging answers driven by the server tag catalog are now submitted as a structured map instead of free-form fields.
+* **Balance score self-report**: hosts can attach a balance result self-report and custom metadata to a recording after it is saved.
+* **One aggregated background-capture report**: background collection now reports one daily `bg_daily_status` summary instead of per-recording log lines, reducing telemetry noise.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Signing out cancels only the SDK's own background task**: logout no longer cancels unrelated background tasks scheduled by the host app.
+* **Diagnostics for patients signed in through the app**: the SDK now stores the organization from `connect()` and the heartbeat, so diagnostics are no longer dropped for patients with no org on record.
+* Also published as `2.3.8-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). Note: `2.3.7-core` was a core-only interim release with this same content; `2.3.8`/`2.3.8-core` supersede it.
+
+---
 ## OneStep iOS SDK 2.3.6
 ###### Release Date: 2026-10-08
 
