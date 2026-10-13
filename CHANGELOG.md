@@ -40,6 +40,17 @@
 * **A HealthKit-free "core" build**: this release is also published as `2.3.4-core`, compiled without any HealthKit API references, for hosts with no HealthKit feature that would otherwise be flagged under App Review guideline 2.5.1. Pin `exact: "2.3.4-core"` to use it. The module is still `OneStepSDK`; HealthKit-backed features (daily step aggregates, HealthKit walking bouts and the HealthKit background wake) are unavailable in this build and become no-ops.
 
 ---
+## OneStep iOS SDK 2.3.1
+###### Release Date: 2026-09-23
+
+### 🐛 Bug Fixes & Reliability
+
+* **Dual Task audio is no longer lost when the screen locks**: the voice recording was opened only once the measurement began, by which point the phone is usually already pocketed and iOS refuses to start a microphone capture from the background, so the measurement completed with an empty audio file. The SDK now opens the capture in the foreground at the get-ready step and the measurement adopts it. If no capture is running, the SDK no longer hands back a path to an empty file. The recorder's prepare hook gains a source-compatible overload, so existing conformers keep compiling unchanged. **Note:** the audio now starts before the measurement does, by the spoken instruction plus however long the participant takes to begin (about 22 seconds in testing); if you score the audio against the start of the task, account for this lead-in. The offset is logged as `lead_in_seconds`.
+* **Abandoned flows no longer leave audio or hold the microphone**: a recording that no measurement claimed is now deleted, and the audio session is released when the flow is reset, instead of staying active for the life of the process (microphone indicator lit, later sounds declining playback). The SDK also no longer deactivates the shared audio session it does not own, which could silence a host's cues afterwards.
+* **Audio interruptions are handled, and failures are logged**: the recorder now reacts to audio-session interruptions such as calls and alarms, and a refused or failed capture is logged with the app state instead of passing silently.
+* **A walk no longer inherits the previous Dual Task audio**: the Dual Task file name was never cleared, so a walk recorded after a Dual Task could upload that voice recording under its own measurement.
+
+---
 ## OneStep iOS SDK 2.3.0
 ###### Release Date: 2026-09-22
 
