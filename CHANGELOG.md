@@ -1,3 +1,16 @@
+## OneStep iOS SDK 2.3.11
+###### Release Date: 2026-10-13
+
+### ✨ Features
+
+* **Static Balance duration selection**: Static Balance supports per-condition recording lengths (10/20/30 seconds). The minimum accepted Static Balance recording is now 3 seconds, so a trial the clinician ends early is saved with its real elapsed time instead of being rejected as too short.
+
+### 🐛 Bug Fixes & Reliability
+
+* **Background recordings shorter than 10 seconds are no longer uploaded**: captures under the minimum a walk analysis can use are dropped on-device instead of failing later server-side.
+* Also published as `2.3.11-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). Versions 2.3.9/2.3.10 were skipped to keep the SDK and UIKit version numbers aligned.
+
+---
 ## OneStep iOS SDK 2.3.8
 ###### Release Date: 2026-10-12
 
