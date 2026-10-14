@@ -1,3 +1,15 @@
+## OneStep iOS SDK 2.3.12
+###### Release Date: 2026-10-14
+
+### 🐛 Bug Fixes & Reliability
+
+* **Push tokens register reliably**: a push token supplied via `updatePushToken` before sign-in is no longer dropped — it is stored and registered automatically the moment the session is identified, and re-registered when the active patient changes. The method now returns what it did (`accepted` / `queued` / `unchanged`; `@discardableResult`, existing call sites unaffected), and a new `force:` parameter re-sends a token the SDK already holds.
+* **An expired session is reported as `notAuthenticated`**: when a measurement upload fails because the session expired, the SDK surfaces `notAuthenticated` instead of a generic server/connectivity error, so host apps can route users to re-authentication instead of showing an "offline" message. The OneStepUIKit 2.3.12 recording flow shows a dedicated "Session Expired" screen for it.
+* **Background collection restored to full cadence on devices with Location Always**: on cohorts with the URL-wake data-collection strategy enabled, devices that also had Location "Always" granted were unintentionally throttled to one background recording per 3 minutes during walks. They now record at the normal ~35-second cadence again; the throttle applies only to devices that rely solely on the URL-wake mechanism.
+* **Background keep-alive requests back off on server errors**: a keep-alive request answered with an HTTP error used to retry immediately, which could produce a burst of requests during a server-side outage; such responses now count toward the same backoff as connection failures.
+
+---
+
 ## OneStep iOS SDK 2.4.0
 ###### Release Date: 2026-10-14
 
