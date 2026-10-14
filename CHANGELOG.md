@@ -1,3 +1,13 @@
+## OneStep iOS SDK 2.4.0
+###### Release Date: 2026-10-14
+
+### 🐛 Bug Fixes & Reliability
+
+* **Background collection restored to full cadence on devices with Location Always**: on cohorts with the URL-wake data-collection strategy enabled, devices that also had Location "Always" granted were unintentionally throttled to one background recording per 3 minutes during walks. They now record at the normal ~35-second cadence again; the throttle applies only to devices that rely solely on the URL-wake mechanism.
+* Also published as `2.4.0-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1).
+
+---
+
 ## OneStep iOS SDK 2.3.11
 ###### Release Date: 2026-10-13
 
