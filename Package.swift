@@ -12,13 +12,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OneStepSDK",
-            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.3.12/OneStepSDK.xcframework.zip",
-            checksum: "0ac8f213bb255a88f23a9d0d605cc6f155ca238c7528053f349117c79b0c1681"
+            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.3.13-core/OneStepSDK.xcframework.zip",
+            checksum: "a3577b5b2ede9faaab8dbcc735701a289daef52f02433f0401667befd647798a"
         ),
         .binaryTarget(
             name: "OneStepPrivateDataTransfer",
-            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.3.12/OneStepPrivateDataTransfer.xcframework.zip",
-            checksum: "dbac0858cce30c8742b62c3fe97798cc16a68abd40f8904bd57c7c8bedea79d7"
+            url: "https://github.com/OneStepRND/onestep-sdk-ios/releases/download/2.3.13-core/OneStepPrivateDataTransfer.xcframework.zip",
+            checksum: "c70cf69d9551156344d81f16bfd3d0545b2f3ca7eec77977b5c97c33e37ca93a"
         ),
     ]
 )
