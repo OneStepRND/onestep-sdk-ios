@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.3.13
+###### Release Date: 2026-10-18
+
+### 🐛 Bug Fixes & Reliability
+* **Logout data safety**: logging out now uploads pending recordings first, and local recording data is always deleted at logout — even when the network or server is unavailable. Nothing is ever uploaded after logout.
+* **Diagnostics reliability**: SDK diagnostic events now carry descriptive event names, and transient network or server errors no longer discard queued diagnostics.
+
+---
+
 ## OneStep iOS SDK 2.3.12
 ###### Release Date: 2026-10-14
 
