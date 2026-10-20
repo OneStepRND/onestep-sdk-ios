@@ -1,3 +1,15 @@
+## OneStep iOS SDK 2.3.14
+###### Release Date: 2026-10-20
+
+### ⚠️ Breaking Changes
+* **Measurement location coordinates removed**: `OSTMeasurementMetadata.geoLat` and `geoLng`, and the matching initializer parameters, are removed. The SDK no longer stores or uploads location coordinates with measurements. Remove these arguments from any `OSTMeasurementMetadata(...)` call.
+
+### 🐛 Bug Fixes & Reliability
+* **Background crash fix**: fixed a crash that could occur when background data collection scheduled work on a background session that had already been shut down.
+* Also published as `2.3.14-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1).
+
+---
+
 ## OneStep iOS SDK 2.3.13
 ###### Release Date: 2026-10-18
 
