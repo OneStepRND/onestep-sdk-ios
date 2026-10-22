@@ -1,3 +1,15 @@
+## OneStep iOS SDK 2.3.15
+###### Release Date: 2026-10-23
+
+### ✨ Features
+* **VPN permission request**: hosts that use the Private Data Transfer (VPN) tier can now let the SDK's permission flow ask for the VPN grant. Implement the new `OSTPrivateDataTransferControlling.requestPermission(completion:)` on your tunnel controller. It has a default implementation that answers `false`, so existing hosts still compile. The SDK calls it through `OSTPrivateDataTransfer.requestPermission(completion:)`.
+* **New `OSTPrivateDataTransfer` properties**: `replacesLocationAlways` reports whether background walk analysis uses the VPN grant instead of Location Always for the current account. `grantsBackgroundMonitoring` reports whether the VPN grant is approved and switched on, so a VPN turned off in iOS Settings no longer counts as granted.
+
+### 🐛 Bug Fixes & Reliability
+* **URL wake-ups only when no background permission is granted**: with the VPN grant active or Location Always granted, the SDK no longer schedules URL wake-ups, saving battery. They still run as the fallback for patients with neither.
+
+---
+
 ## OneStep iOS SDK 2.3.14
 ###### Release Date: 2026-10-20
 
