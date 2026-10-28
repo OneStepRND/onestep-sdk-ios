@@ -1,3 +1,17 @@
+## OneStep iOS SDK 2.3.21
+###### Release Date: 2026-10-28
+
+### ✨ Features
+* **`OSTError.isRetryable`**: new property that reports whether a failed call is worth retrying. It is `true` for `.noConnection`, `.networkError`, `.timeout`, and `.serverError` with status 408, 429 or 5xx. Check it instead of matching individual error cases.
+* **`MockMotionLab.updateMeasurementError`**: lets hosts test how they handle a failed measurement update.
+
+### 🐛 Bug Fixes & Reliability
+* **Typed errors from measurement updates**: `updateMeasurement` now throws only `OSTError`, so a host can tell a network failure (`.noConnection`, `.timeout`, `.networkError`) from a server rejection (`.serverError`) or an expired session (`.sessionExpired`). It used to report every failure as the same generic error. `updateBalanceResult` uses the same mapping and no longer reports every transport failure as `.noConnection`.
+* **Background collection with the VPN grant**: when the Private Data Transfer (VPN) tier is active and its tunnel is running, it now handles background walk collection on its own, and Location Always and URL wake-ups stand down. If the tunnel fails to start or stops, Location Always and URL wake-ups take over again automatically. Without the VPN grant, URL wake-ups can now run alongside Location Always.
+* Also published as `2.3.21-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1).
+
+---
+
 ## OneStep iOS SDK 2.3.19
 ###### Release Date: 2026-10-28
 
