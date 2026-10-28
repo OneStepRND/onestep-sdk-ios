@@ -1,3 +1,11 @@
+## OneStep iOS SDK 2.3.19
+###### Release Date: 2026-10-28
+
+### 🐛 Bug Fixes & Reliability
+* **Background diagnostics**: each background walk sample now reports what woke the app to collect it, and the background heartbeat and daily battery diagnostics now report their fields correctly. No API changes.
+
+---
+
 ## OneStep iOS SDK 2.3.15
 ###### Release Date: 2026-10-23
 
