@@ -1,3 +1,18 @@
+## OneStep iOS SDK 2.4.1
+###### Release Date: 2026-11-02
+
+### 🐛 Bug Fixes & Reliability
+* **Patient switch keeps unsynced walks**: switching to a different patient no longer deletes the previous patient's recordings that haven't uploaded yet. They stay on the device, tagged with their patient, and upload on a later sync that may act for that patient. The switch no longer waits on the network.
+* **Recordings on an expired session**: when the session has expired, `start()` checks with the server before recording. If the server confirms the session is expired, the recording is refused with `.notAuthenticated` ("sessionExpired") instead of being lost after the walk. Uploads rejected with 401 are reported as session expired, and pending recordings upload once the session is valid again.
+* **Missing Info.plist keys no longer crash the host**: if `NSMotionUsageDescription` is missing, or `NSMicrophoneUsageDescription` is missing for a Dual Task walk, the recording is refused with an error that names the missing key, instead of iOS terminating the app.
+* **Crash hardening**: removed several places where the SDK could crash the host app (thread-safety of module accessors, background-task registration called more than once, defensive handling of invalid values).
+* **Crash visibility**: the SDK reports crash and hang diagnostics from MetricKit when its own code is in the call stack, so SDK-related crashes can be investigated without any extra setup in the host app.
+* **Privacy**: the SDK no longer writes patient details, request or response bodies, or credentials to its logs, and new installs send a hashed device identifier instead of the raw vendor ID.
+* **Less log noise**: routine messages moved to debug level and permission events are reported only when the permission actually changes.
+* Also published as `2.4.1-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.3.21
 ###### Release Date: 2026-10-28
 
