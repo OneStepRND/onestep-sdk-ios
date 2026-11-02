@@ -1,3 +1,15 @@
+## OneStep iOS SDK 2.4.2
+###### Release Date: 2026-11-02
+
+### ✨ Features
+* **Privacy manifest**: the `OneStepSDK` and `OneStepPrivateDataTransfer` frameworks now ship a `PrivacyInfo.xcprivacy`. It declares the required-reason APIs the SDK uses and the data it collects (health and fitness, audio for Dual Task walks, patient profile fields set through `updateUserAttributes`, user and device identifiers, and crash and performance diagnostics), all for app functionality and none for tracking. Xcode includes it in your app's privacy report automatically.
+
+### 🐛 Bug Fixes & Reliability
+* **Background diagnostics**: the SDK reports more detail about background collection (which collection method was active, wake-ups, upload attempts, and battery and screen-time context) so background gaps can be investigated without extra setup in the host app.
+* Also published as `2.4.2-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.1
 ###### Release Date: 2026-11-02
 
