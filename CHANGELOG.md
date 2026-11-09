@@ -1,3 +1,21 @@
+## OneStep iOS SDK 2.4.4
+###### Release Date: 2026-11-09
+
+> **Use 2.4.4 instead of 2.4.3.** The `2.4.3` tag of this package points at the 2.4.2 binary, so apps that resolved 2.4.3 through Swift Package Manager are running 2.4.2. 2.4.4 contains everything that was meant to ship in 2.4.3, plus the changes below. (`2.4.3-core` was not affected.)
+
+### ✨ Features
+* **Pending upload count**: `OneStep.pendingUploadCount()` returns how many in-app recordings are still waiting to upload. It reads the local store only (no network, no sync) and counts what a sync from the current session would upload: a patient session counts that patient's recordings, a clinician session counts every un-uploaded recording, and with nobody signed in the count is 0. Background samples are not included. Returns `.notInitialized` before `initialize`.
+* **Cancellable logout**: cancelling the task that awaits `OneStep.logout()` stops the logout's uploads at once. Local data is still wiped, but the server disconnect and session-cookie clear are skipped, so a "Log out now" button can't end the next user's session. The `logout()` signature is unchanged.
+* **Host session id** (from 2.4.3): `OSTConfiguration` has an optional `sessionId`. When set, the SDK's telemetry carries your app's session id, so one run can be traced across your analytics and the SDK's. It is read once at `initialize`; `updateConfiguration` does not change it.
+
+### 🐛 Bug Fixes & Reliability
+* **No crash without the Location background mode**: an app without `location` in `UIBackgroundModes` no longer crashes when the SDK enables background location (after `setPatient`, on silent restore, or during an in-app recording). The SDK skips background location instead and logs it once per launch.
+* **Upload diagnostics**: background upload events report the real signed-URL status, one event per batch, and the VPN extension's daily CPU measurement stays in one window across suspensions.
+* **Logging**: more accurate location-session logs, and event timestamps are formatted with less overhead.
+* Also published as `2.4.4-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.2
 ###### Release Date: 2026-11-02
 
