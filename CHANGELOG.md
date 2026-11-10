@@ -1,3 +1,13 @@
+## OneStep iOS SDK 2.4.5
+###### Release Date: 2026-11-10
+
+### 🐛 Bug Fixes & Reliability
+* **Timed recordings no longer fail when stopped at the deadline**: when your app called `stop()` at the same moment the recorder reached its own deadline, the second call could make `analyze()` read the recording before it was saved and report `generalError`. A repeated `stop()` for a recording that is already stopping is now ignored.
+* **Reported duration matches the length you set**: a timed recording that runs to its deadline reports its configured length in `metadata.seconds` (for example 10 rather than 9) even when your app's own timer calls `stop()` a few milliseconds early. A recording stopped early still reports the time actually recorded.
+* Also published as `2.4.5-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.4
 ###### Release Date: 2026-11-09
 
