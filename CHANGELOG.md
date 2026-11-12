@@ -1,3 +1,16 @@
+## OneStep iOS SDK 2.4.6
+###### Release Date: 2026-11-12
+
+### ✨ Features
+* **Logout without uploading pending recordings**: `OneStep.logout(uploadPending:)` takes an optional `uploadPending` flag. The default, `true`, behaves exactly as before. With `false`, logout skips uploading recordings that are still pending and deletes them with the rest of the local data, so a "Log out anyway" action no longer waits up to 10 seconds for uploads. The server disconnect and session-cookie clear still run. Existing `logout()` calls are unchanged.
+
+### 🐛 Bug Fixes & Reliability
+* **Short sit-to-stand recordings are kept**: sit-to-stand recordings of 3 seconds or more are now kept and uploaded, matching the Android SDK. Previously a sit-to-stand recording under 10 seconds was discarded without upload, so a recording stopped early could not be saved. Walks and all other activities still need 10 seconds.
+* **Background upload reliability**: after background uploads were stopped, a late system callback could start upload work on a background session that was no longer valid. Those callbacks are now ignored, while a relaunch delivered by the system still finishes its pending events.
+* Also published as `2.4.6-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.5
 ###### Release Date: 2026-11-10
 
