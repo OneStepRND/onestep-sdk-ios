@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.4.7
+###### Release Date: 2026-11-16
+
+### 🐛 Bug Fixes & Reliability
+* **Crash and hang diagnostics for the whole app**: crash and hang reports that iOS delivers through MetricKit are now logged one by one even when the SDK's code is not on the stack. Before, such a report only raised a count. Each one carries the termination reason, signal, exception type and code, the Objective-C exception name and class (never its message), and the binary-and-offset of the top frames. No free text from the report is logged.
+* Also published as `2.4.7-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.6
 ###### Release Date: 2026-11-12
 
