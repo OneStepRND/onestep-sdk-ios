@@ -1,3 +1,18 @@
+## OneStep iOS SDK 2.4.8
+###### Release Date: 2026-11-18
+
+### ✨ Features
+* **Recording events**: the recorder's new `recordingEvents` publisher emits each moment of an in-app recording, once each and in order: `started`, `stopped` (with the reason: user, timeout or deadline), `readyForAnalysis`, `saved`, `reset` and `error`. Every event carries the recording's `sessionId`. Event names and payloads match the Android SDK. The SDK itself gives no feedback on these events; hosts decide what to do.
+* **Know when a saved recording reaches the server**: the new `OneStep.measurementUploads` publisher emits once for each recording that was saved on the device and uploaded later, for example after it was recorded offline. Use it to refresh any screen that shows data from the server.
+
+### 🐛 Bug Fixes & Reliability
+* **No false "You're offline"**: a recording is always uploaded when the device has a connection. A stale offline signal no longer keeps it on the device.
+* **Offline recordings upload on their own**: recordings saved while offline now upload as soon as the connection returns or the app comes back to the foreground. They no longer wait for the next sync or a logout.
+* **Accurate upload errors**: a server error during upload is now reported as an error, not as "You're offline". A recording made with no connection is still saved and uploaded later.
+* **Results for recordings uploaded later**: the analysis of a recording that uploaded after the fact is now fetched onto the device.
+
+---
+
 ## OneStep iOS SDK 2.4.6
 ###### Release Date: 2026-11-12
 
