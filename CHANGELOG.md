@@ -1,3 +1,14 @@
+## OneStep iOS SDK 2.4.9
+###### Release Date: 2026-11-19
+
+### 🐛 Bug Fixes & Reliability
+* **`reset()` right after `stop()` keeps the recording**: the recording is now saved instead of discarded. Events arrive as `stopped`, `reset`, then `saved` or `error`, and `saved` may arrive after `analyzerState(.analyzing)`.
+* **Back-to-back recordings stay separate**: stopping a recording and starting the next one straight away no longer mixes them up. Each recording keeps its own metadata, background time and keep-awake hold, and `analyze()` always analyzes the recording that was stopped. After a cancelling stop, the next `start()` waits until the earlier recording is saved.
+* **A failed stop releases what it held**: the background task and keep-awake hold are released when a stop fails.
+* **Private data transfer follows the server setting**: when the server turns the private data transfer tier off, a VPN tunnel still running — left by an earlier app session, or switched on again in iOS Settings — is now stopped. The VPN profile stays installed, so turning the tier back on shows no new system prompt.
+
+---
+
 ## OneStep iOS SDK 2.4.8
 ###### Release Date: 2026-11-18
 
