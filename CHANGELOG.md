@@ -1,3 +1,12 @@
+## OneStep iOS SDK 2.4.10
+###### Release Date: 2026-11-22
+
+### 🐛 Bug Fixes & Reliability
+* **Private data transfer resource metrics arrive daily**: the VPN extension's CPU and network figures are now reported with the app's daily battery metrics, even when the host app stays suspended for days. Previously they waited for the app's next cold launch.
+* Also published as `2.4.10-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.9
 ###### Release Date: 2026-11-19
 
