@@ -1,3 +1,23 @@
+## OneStep iOS SDK 2.4.12
+###### Release Date: 2026-11-25
+
+### ✨ Features
+* **Optional notification for each background walk upload**: set `OSTPrivateDataTransfer.notifiesOnBackgroundWalkUpload = true` (off by default; meant for a host's developer or QA settings) and the VPN extension posts a local notification each time a background walk upload is confirmed: "Walk uploaded", with the walk's start time, steps and duration in seconds. All of these notifications group together. It needs the host's notification permission, which the SDK never requests. Nothing about the walk is logged.
+* **Report the host app's installation id**: pass `OSTConfiguration(installationId:)` to `initialize` so the SDK reports the same installation id as your app's own analytics (on connect, on the heartbeat and in `OSTTelemetryEvent.installationId`). The SDK keeps the id across launches until a different one is given; `nil` (the default) keeps the SDK's own id. It never changes the device id the SDK connects with. Use an opaque random id, such as a UUID.
+
+### 🐛 Bug Fixes & Reliability
+* **Early-morning walks are collected**: when the server sends no quiet hours, background capture now pauses only from 00:00 to 05:00 (was 23:00–07:00), and a walk already in progress is recorded even inside that window. Server-provided quiet hours still take precedence.
+* **Upload errors reported accurately**: a connection that times out, is refused or drops during an upload, while the device is online, is now reported as a network error (`noInternetConnection`) instead of a server error, matching the Android SDK.
+* **Private data transfer keeps collecting walks when things go wrong**: the VPN extension now recovers by itself when the motion stream or step counter stops answering, and when a storage file is damaged or missing. Being offline or signed out no longer uses up upload retries, a full disk pauses uploads for 15 minutes instead of failing them, and a walk waiting to upload is kept for 7 days (was 48 hours). Walks recorded after the device clock is set back are found again.
+* **Correct walks when the device sleeps**: samples keep their real time when the device sleeps during a walk. Separate parts of a walk are no longer joined into one recording, and a part with too little data is not uploaded.
+* **The host app is never put at risk**: `requestPermission` answers exactly once, on the main thread, from any calling thread. The host's tunnel controller is always called on the main thread, in the order the requests were made. The app no longer holds a file lock in the shared App Group container while it could be suspended.
+* **Lower battery and memory use**: the VPN extension does not sample motion while Motion & Fitness access is denied, stops sampling after 10 minutes with no step data, writes shared state at most once a minute, and keeps a hard cap on samples held in memory.
+* **Upload reporting**: every walk uploaded in the background is reported, including the time from the end of the walk to the confirmed upload, and each way a walk can be lost is counted in the daily status. Extension analytics honour the host's analytics opt-out (`ingestLoggingEnabled = false`), and they keep reaching OneStep when the host app routes its own SDK telemetry through `OneStep.setTelemetrySink`, which covers the app's process only.
+* 2.4.11 was published only as `2.4.11-core`; the full SDK gets its Private data transfer fixes (the last five above) with this release.
+* Also published as `2.4.12-core`, the HealthKit-free build (zero HealthKit API references, for hosts with no HealthKit feature — App Review guideline 2.5.1). The `-core` package does not include the `OneStepPrivateDataTransfer` product.
+
+---
+
 ## OneStep iOS SDK 2.4.10
 ###### Release Date: 2026-11-22
 
